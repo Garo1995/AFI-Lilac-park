@@ -1,0 +1,56 @@
+footer{
+    margin-top: 74px;
+    background: #5E4D6D;
+    padding: 29px 0 24px;
+}
+
+.footer-title h2{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'TT Travels';
+    text-align: left;
+    max-width: 410px;
+    width: 100%;
+}
+.footer-contact{
+    gap: 24px;
+}
+.footer-title .sales-office-time{
+    margin-top: 60px;
+}
+.footer-office-center .header-phone {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: right;
+    margin-right: 0;
+    color: #FFFFFF;
+}
+
+footer .head-menu-main {
+    margin-top: 62px;
+}
+
+.footer-policy{
+    margin-top: 58px;
+}
+.footer-policy a{
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+.footer-policy a, .footer-policy p{
+    color: #FFFFFFCC;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+
+}
+.footer-policy a:hover{
+    border-bottom: 1px solid #FFFFFF;
+
+}
+.compare-btn{
+    display: none;
+}

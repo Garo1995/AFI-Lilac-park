@@ -1,0 +1,273 @@
+header{
+    width: 100%;
+    z-index: 999;
+    margin-top: 55px;
+}
+
+
+.header-main{
+    width: 100%;
+}
+.open-menu{
+    gap: 12px;
+    cursor: pointer;
+}
+.open-menu strong{
+    color: #1A1A1A;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 90%;
+    text-transform: uppercase;
+    font-family: 'TT Travels';
+
+}
+.open-menu .icon-menu{
+    width: 26px;
+    height: 26px;
+    content: url("../img/icons/menu.svg");
+}
+.header-btn{
+    gap: 16px;
+}
+.header-phone{
+    color: #5E4D6D;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: left;
+    margin-right: 10px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+.btn-select{
+    white-space: nowrap;
+    transition: 0.3s;
+    border: 1px solid #5E4D6D;
+    border-radius: 32px;
+    gap: 8px;
+    padding: 12px 32px;
+    background: unset;
+    color: #5E4D6D;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+}
+.btn-select:hover{
+    background: #5E4D6D;
+    color: #fff;
+}
+.btn-sign-up{
+    white-space: nowrap;
+    transition: 0.3s;
+    background: #5E4D6D;
+    border-radius: 32px;
+    gap: 8px;
+    padding: 12px 32px;
+    color: #FBF9ED;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    border: 1px solid #5E4D6D;
+}
+.btn-sign-up:hover{
+    color: #5E4D6D;
+    background: unset;
+}
+
+.close-menu{
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+}
+.icon-close {
+    content: url('../img/icons/close.svg');
+    width: 100%;
+    display: block;
+}
+
+.body_fix {
+    overflow: hidden;
+}
+.body_fix:before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transition: 0.3s;
+    backdrop-filter: blur(8px);
+    background: rgba(0,0,0,.6);
+
+}
+
+
+
+
+.menu-content {
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    height: 0;
+    overflow: hidden;
+    background: #5E4D6D;
+
+}
+.transition-menu {
+    height: 740px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+
+
+.menu-content-main{
+    padding: 88px 140px;
+}
+.menu-content-title h2{
+    color: #FFFFFF;
+    max-width: 420px;
+    width: 100%;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+
+
+.head-menu-main{
+    margin-top: 75px;
+    gap: 30px;
+}
+.header-menu ul{
+    gap: 24px;
+}
+.header-menu a{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    transition: 0.3s;
+    white-space: nowrap;
+    border-bottom: 1px solid transparent;
+}
+
+.header-menu a:hover{
+    border-bottom: 1px solid #FFFFFF;
+
+}
+
+.documents-column{
+    gap: 24px;
+}
+.documents-column h3{
+    color: #FFFFFF;
+}
+.documents-name{
+    gap: 6px;
+}
+
+.documents-box{
+    gap: 6px;
+}
+.documents-box ul{
+    gap: 6px;
+}
+.documents-box ul li a{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+}
+
+
+.documents-box ul li a:hover{
+    border-bottom: 1px solid #FFFFFF;
+
+}
+.sales-office-center{
+    margin-top: 64px;
+}
+.sales-office-time{
+    max-width: 290px;
+    width: 100%;
+}
+.sales-office-time span{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+}
+.sales-office-time p{
+    margin-top: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.header-btn-white{
+    gap: 16px;
+}
+.header-btn-white .header-phone{
+    color: #FFFFFF;
+}
+.header-btn-white .btn-select{
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+.header-btn-white .btn-select:hover{
+    background: #FFFFFF;
+    color: #1A1A1A;
+
+}
+
+.header-btn-white .btn-sign-up{
+    background: #FFFFFF;
+   color: #1A1A1A;
+    border: 1px solid #FFFFFF;
+
+}
+.header-btn-white .btn-sign-up:hover{
+    background: unset;
+   color: #FFFFFF;
+}
+
+
+@media (max-width: 1699px){
+    header {
+        margin-top: 30px;
+    }
+
+    .menu-content-main {
+        padding: 68px 70px;
+    }
+
+
+}
+@media (max-width: 1599px){
+    .menu-content-main {
+        padding: 61px 30px;
+    }
+    .close-menu {
+        width: 26px;
+        height: 26px;
+    }
+    .transition-menu {
+        height: 654px;
+    }
+    .header-menu a {
+        font-size: 20px;
+    }
+    .menu-content-title h2 {
+        max-width: 360px;
+        font-size: 40px;
+    }
+
+
+
+}

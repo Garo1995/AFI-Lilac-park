@@ -1,0 +1,101 @@
+i{
+    transition: 0.3s;
+}
+.icon-walk{
+    width: 20px;
+    height: 20px;
+    content: url("../img/icons/walk.svg");
+}
+.icon-drive{
+    width: 20px;
+    height: 20px;
+    content: url("../img/icons/drive.svg");
+}
+.icon-slaq{
+    content: url("../img/icons/slaq.svg");
+    width: 22px;
+    height: 22px;
+}
+.sun-light{
+    content: url("../img/icons/sun-light.svg");
+}
+.hugeicons-floor{
+    content: url("../img/icons/hugeicons-floor.svg");
+}
+.oir-balcony{
+    content: url("../img/icons/oir-balcony.svg");
+}
+.guidance-elevator{
+    content: url("../img/icons/guidance-elevator.svg");
+}
+.air-conditioner{
+    content: url("../img/icons/air-conditioner.svg");
+}
+.healthicons-walki{
+    content: url("../img/icons/healthicons-walki.svg");
+}
+.dive-two{
+    content: url("../img/icons/dive-two.svg");
+}
+.icon-food{
+    content: url("../img/icons/food.svg");
+}
+.icon-retail{
+    content: url("../img/icons/retail.svg");
+}
+
+.icon-helth{
+    content: url("../img/icons/helth.svg");
+}
+.icon-education{
+    content: url("../img/icons/education.svg");
+}
+.icon-fitness{
+    content: url("../img/icons/fitness.svg");
+}
+
+.icon-finance{
+    content: url("../img/icons/finance.svg");
+}
+
+.icon-event{
+    content: url("../img/icons/event.svg");
+}
+.icon-services{
+    content: url("../img/icons/services.svg");
+}
+
+.icon-arrow-down{
+    content: url("../img/icons/arrow-down.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.icon-search{
+    content: url("../img/icons/search.svg");
+    width: 24px;
+    height: 24px;
+}
+.icon-heart{
+    content: url("../img/icons/heart.svg");
+    width: 28px;
+    height: 24px;
+}
+
+.icon-info{
+    width: 18px;
+    height: 18px;
+    content: url("../img/icons/info.svg");
+
+}
+.icon-arrow-top{
+    width: 24px;
+    height: 27px;
+    content: url("../img/icons/arrow-top.svg");
+
+}
+.light-camera{
+    content: url("../img/icons/light-camera.svg");
+    width: 24px;
+    height: 24px;
+}
