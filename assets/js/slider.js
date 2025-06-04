@@ -5,7 +5,7 @@ let lilacSwiper = new Swiper(".lilac-park-slider", {
     spaceBetween: 24,
     loop: true,
     breakpoints: {
-        '1020': {
+        '1199': {
             slidesPerView: 3,
             spaceBetween: 24,
         },
@@ -38,7 +38,7 @@ let spacesSwiper = new Swiper(".spaces-children-slider", {
             slidesPerView: 2,
             spaceBetween: 24,
         },
-        '767': {
+        '600': {
             slidesPerView: 2,
             spaceBetween: 20,
         },
@@ -69,7 +69,7 @@ let gallerySwiper = new Swiper(".gallery-slider", {
             slidesPerView: 2,
             spaceBetween: 24,
         },
-        '767': {
+        '600': {
             slidesPerView: 2,
             spaceBetween: 20,
         },
@@ -98,7 +98,7 @@ let favorableSwiper = new Swiper(".favorable-slider", {
             slidesPerView: 3,
             spaceBetween: 24,
         },
-        '767': {
+        '620': {
             slidesPerView: 2,
             spaceBetween: 20,
         },
@@ -134,6 +134,10 @@ let constructionSwiper = new Swiper(".construction-slider", {
             slidesPerView: 3,
             spaceBetween: 20,
         },
+        '620': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
         '320': {
             slidesPerView: 1,
             slidesPerGroup: 1,
@@ -161,7 +165,7 @@ let newsSwiper = new Swiper(".news-slider", {
             slidesPerView: 3,
             spaceBetween: 24,
         },
-        '767': {
+        '620': {
             slidesPerView: 2,
             spaceBetween: 20,
         },
@@ -179,4 +183,59 @@ let newsSwiper = new Swiper(".news-slider", {
         nextEl: ".news-button-next",
         prevEl: ".news-button-prev",
     },
+});
+
+
+
+let commercialSwiper = new Swiper(".commercial-slider", {
+    slidesPerView: 2,
+    spaceBetween: 24,
+    loop: true,
+    breakpoints: {
+        '1020': {
+            slidesPerView: 2,
+            spaceBetween: 24,
+        },
+        '575': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        '320': {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+    },
+    pagination: {
+        el: ".commercial-pagination",
+        clickable: true,
+    },
+
+});
+
+
+let calculateSwiper = new Swiper(".calculate-standard-slid", {
+    slidesPerView: 2,
+    spaceBetween: 24,
+    loop: true,
+    breakpoints: {
+        '1020': {
+            slidesPerView: 2,
+            spaceBetween: 24,
+        },
+        '530': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        '320': {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 8,
+        },
+    },
+    pagination: {
+        el: ".calculate-pagination",
+        clickable: true,
+    },
+
 });

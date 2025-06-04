@@ -35,7 +35,7 @@ p{
 }
 
 .btn{
-    background: #5E4D6D;
+    background: #754ABC;
     border-radius: 24px;
     gap: 8px;
     padding: 12px 24px;
@@ -45,11 +45,14 @@ p{
     font-size: 18px;
     line-height: 100%;
     transition: 0.3s;
-    border: 1px solid #5E4D6D;
+    border: 1px solid #754ABC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn:hover{
     background: unset;
-    color: #5E4D6D;
+    color: #754ABC;
 }
 
 .lilac-park{
@@ -73,29 +76,19 @@ p{
     border-radius: 1203px;
     padding: 10px 14px;
     gap: 4px;
-    color: #FFFFFF;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
+
     text-align: center;
     vertical-align: middle;
 }
 .lilac-boulevard p{
     color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
 }
-.red-circ{
-    display: block;
-    margin-right: 5px;
-    border-radius: 50%;
-    max-width: 10px;
-    min-width: 10px;
-    width: 100%;
-    height: 10px;
-    background: #F23D30;
 
-}
-.lilac-boulevard i{
-    margin-left: 4px;
+.moscow-metro {
+    margin-right: 4px;
 }
 .lilac-park-title {
     margin-top: 28px;
@@ -268,8 +261,10 @@ p{
     width: max-content;
     padding-right: 85px;
 }
-
-.master-plan-menu ul li a{
+.master-plan-click{
+    display: none;
+}
+.master-plan-menu ul li{
     border: 1px solid #686868;
     padding: 12px 11px;
     width: 198px;
@@ -283,31 +278,228 @@ p{
     align-items: center;
     justify-content: center;
     border-radius: 24px;
+    cursor: pointer;
 }
 
-.master-plan-menu ul li a:hover{
-    background: #5E4D6D;
-    border: 1px solid #5E4D6D;
+
+.master-plan-menu ul li:hover{
+    background: #754ABC;
+    border: 1px solid #754ABC;
     color: #FBF9ED;
 }
-.master-plan-menu ul .master-active a{
-    background: #5E4D6D;
-    border: 1px solid #5E4D6D;
+.master-plan-menu ul .master-active{
+    background: #754ABC;
+    border: 1px solid #754ABC;
     color: #FBF9ED;
 }
 
 
 
-.master-plan-info, .master-plan-photo{
+.master-plan-info{
     margin-top: 64px;
+
 }
+.master-plan-cnt{
+    margin-top: 64px;
+    position: relative;
+}
+.master-plan-cnt ul{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    gap: 8px;
+}
+.master-plan-cnt ul li{
+    background: #FFFFFF;
+    border: 1px solid #686868;
+    padding: 12px 24px;
+    border-radius: 24px;
+    transition: 0.3s;
+    color: #686868;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    width: 198px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.master-plan-cnt ul li.queue-floor-act{
+    background: #754ABC;
+    border: 1px solid #754ABC;
+    color: #FBF9ED;
+}
+.href-box-map{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    gap: 8px;
+}
+.href-box{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    padding: 12px;
+    background: #1A1A1A80;
+    backdrop-filter: blur(25px);
+
+}
+
+.compass{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 48px;
+}
+
+
+.corps-queue{
+    position: absolute;
+    width: max-content;
+    white-space: nowrap;
+    border-radius: 50px;
+    backdrop-filter: blur(25px);
+    background: #9F9DBA;
+
+    padding: 9px 12px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.corps-queue p{
+    color: #1A1A1A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+}
+.corps-queue:hover{
+    background: #754ABC;
+    color: #FFFFFF;
+}
+.corps-queue:hover p{
+    color: #FFFFFF;
+}
+.circle-clip{
+    max-width: 40px;
+    min-width: 40px;
+    width: 100%;
+    height: 40px;
+    border-radius: 50%;
+    padding: 8px;
+    background: #BBAED1;
+    display: flex;
+    position: absolute;
+    left: -9px;
+    transition: 0.3s;
+}
+.corps-queue .circle-clip:hover{
+
+    background: #B498E3;
+}
+.corps-queue-one{
+    top: 318px;
+    left: 397px;
+}
+.corps-queue-two{
+    top: 406px;
+    left: 509px;
+}
+.corps-queue-three{
+    top: 264px;
+    left: 757px;
+}
+.corps-queue-four{
+    top: 363px;
+    left: 778px;
+}
+.corps-queue-three, .corps-queue-four{
+    width: 125px;
+    justify-content: flex-end;
+}
+
+.corps-queue-five{
+    top: 239px;
+    right: 498px;
+}
+.corps-queue-six{
+    top: 358px;
+    right: 400px;
+}
+.clip-group{
+    content: url("../img/icons/clip-group.svg");
+}
+
+
+
+.genplan-corps-queue{
+    background: #FFFFFF;
+    width: 235px;
+    padding: 26px 18px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform-origin: 0 0;
+    transition: transform .3s, opacity .3s;
+    border-radius: 12px;
+    transform: scale(0);
+    opacity: 0;
+}
+.corps-queue:hover{
+    z-index: 2;
+}
+.corps-queue:hover .genplan-corps-queue{
+    transform: scale(1);
+    opacity: 1;
+}
+.genplan-corps-info{
+    margin-bottom: 12px;
+}
+.genplan-corps-info:before {
+    content: "";
+    order: 2;
+    flex-grow: 2;
+    border-top: 1px dashed #D6D6D6;
+}
+.genplan-corps-info span{
+    color: #686868;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+}
+.genplan-corps-info span:first-child {
+    order: 1
+}
+
+.genplan-corps-info span:nth-child(2) {
+    order: 3;
+
+}
+
+.corps-discounts{
+    margin-top: 23px;
+    width: 100%;
+    border-radius: 50px;
+    backdrop-filter: blur(25px);
+    background: #754ABC;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    height: 34px;
+    line-height: 100%;
+}
+
 
 
 
 .padding-section{
     padding: 74px 0;
 }
-
+.about-resid-marg{
+    margin-top: 64px;
+}
 
 .about-resid{
     margin-top: 64px;
@@ -356,7 +548,7 @@ p{
 }
 
 .elk-island{
-    background: #5E4D6D;
+    background: #754ABC;
     padding: 12px 24px;
     border-radius: 24px;
     width: max-content;
@@ -383,7 +575,7 @@ p{
 
 }
 .foot-car-box h3{
-    color: #5E4D6D;
+    color: #754ABC;
 }
 
 .healthicons-walki{
@@ -514,7 +706,7 @@ p{
     line-height: 20px;
 }
 .infrast-map-cnt .map-act .map-icon {
-    background: #5E4D6D;
+    background: #754ABC;
 }
 .infrast-map-cnt .map-act span{
     color: #1A1A1A;
@@ -548,9 +740,16 @@ p{
     max-width: 532px;
     width: 100%;
 }
+.apartments-items{
+    gap: 24px;
+    margin-top: 24px;
+}
 .apartments-flex{
     gap: 24px;
     margin-top: 24px;
+}
+.apartments-btn-mob{
+    display: none;
 }
 .apartments-box{
     width: 25%;
@@ -647,14 +846,14 @@ p{
     cursor: pointer;
 }
 .gallery-menu ul li:hover{
-    background: #5E4D6D;
-    border: 1px solid #5E4D6D;
+    background: #754ABC;
+    border: 1px solid #754ABC;
     color: #FBF9ED;
 }
 
 .gallery-menu ul .gallery-menu-act {
-    background: #5E4D6D;
-    border: 1px solid #5E4D6D;
+    background: #754ABC;
+    border: 1px solid #754ABC;
     color: #FBF9ED;
 }
 
@@ -748,11 +947,13 @@ p{
 }
 
 .commercial-title h2 span{
-    color: #5E4D6D;
+    color: #754ABC;
 }
-.commercial-title h2 + h2{
-    color: #C2C2C2;
+.commercial-title h2 + h2 {
     margin-left: 5px;
+}
+.commercial-title h2 + h2 a{
+    color: #C2C2C2;
 }
 
 .commercial-flex{
@@ -832,9 +1033,10 @@ p{
     font-size: 30px;
     line-height: 29.79px;
     text-align: center;
-    color: #5E4D6D;
+    color: #754ABC;
     white-space: nowrap;
 }
+
 .slider-container {
     position: relative;
     height: 30px;
@@ -855,7 +1057,7 @@ input[type=range]::-webkit-slider-thumb {
     width: 32px;
     border-radius: 50%;
     background: #fff;
-    border: 1px solid #5E4D6D;
+    border: 1px solid #754ABC;
     cursor: pointer;
     margin-top: -1px;
     z-index: 99;
@@ -864,7 +1066,7 @@ input[type=range]::-webkit-slider-thumb {
 .track {
     position: absolute;
     height: 4px;
-    background: #5E4D6D;
+    background: #754ABC;
     top: 16px;
     z-index: 1;
     border-radius: 24px;
@@ -974,7 +1176,9 @@ input[type=range]::-webkit-slider-thumb {
     width: 100%;
 }
 
-
+.commercial-rel{
+    display: none;
+}
 .commercial-scr{
     max-width: 1224px;
     width: 100%;
@@ -991,7 +1195,7 @@ input[type=range]::-webkit-slider-thumb {
 .commercial-scr::-webkit-scrollbar-thumb {
     width: 4px;
     height: 4px;
-    background: #5E4D6D;
+    background: #754ABC;
     border-radius: 24px;
 }
 .commercial-height{
@@ -1037,11 +1241,47 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: 16px;
     gap: 10px;
 }
+.valid-payment-info{
+    position: relative;
+    cursor: pointer;
+}
+.valid-payment-text{
+    background: #EEEDED;
+    width: 280px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 1;
+    padding: 28px 26px 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.valid-payment-text:after{
+    content: "";
+    position: absolute;
+    left: 44.5%;
+    bottom: -12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #EEEDED;
+    transform: rotate(45deg);
+}
 
+.valid-payment-opened .valid-payment-text{
+    display: block;
+}
+.valid-payment-text p{
+    color: #616161CC;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
 
 
 .commercial-price strong{
-    color: #5E4D6D;
+    color: #754ABC;
     font-weight: 700;
     font-size: 30px;
     line-height: 29.79px;
@@ -1098,7 +1338,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .calculate-box{
-    border: 1px solid #5E4D6D;
+    border: 1px solid #754ABC;
     max-width: 693px;
     width: 100%;
     border-radius: 36px;
@@ -1134,13 +1374,13 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
 }
 .calculate-click:hover{
-    background: #5E4D6D;
-    border: 1px solid #5E4D6D;
+    background: #754ABC;
+    border: 1px solid #754ABC;
     color: #FBF9ED;
 }
 .calculate-act{
-    background: #5E4D6D;
-    border: 1px solid #5E4D6D;
+    background: #754ABC;
+    border: 1px solid #754ABC;
     color: #FBF9ED;
 }
 
@@ -1170,7 +1410,7 @@ input[type=range]::-webkit-slider-thumb {
     font-size: 30px;
     line-height: 29.79px;
     text-align: right;
-    color: #5E4D6D;
+    color: #754ABC;
 }
 
 .mortgage-slider{
@@ -1192,7 +1432,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .view-options .btn:hover {
-    color: #5E4D6D;
+    color: #754ABC;
 }
 
 
@@ -1239,7 +1479,9 @@ input[type=range]::-webkit-slider-thumb {
     width: 100%;
     gap: 30px 18px;
 }
-
+.calculate-standard-rel{
+    display: none;
+}
 .calculate-standard-box{
     width: calc(33.333333% - 12px);
     transition: 0.3s;
@@ -1280,7 +1522,7 @@ input[type=range]::-webkit-slider-thumb {
     line-height: 100%;
 }
 .standard-bid-name span{
-    color: #5E4D6D;
+    color: #754ABC;
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
@@ -1296,7 +1538,7 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: 8px;
 }
 .monthly-payment-pric strong{
-    color: #5E4D6D;
+    color: #754ABC;
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
@@ -1330,7 +1572,7 @@ input[type=range]::-webkit-slider-thumb {
 
 }
 .mortgage-price strong{
-    color: #5E4D6D;
+    color: #754ABC;
     font-weight: 700;
     font-size: 54px;
     line-height: 100%;
@@ -1397,7 +1639,9 @@ input[type=range]::-webkit-slider-thumb {
     filter: grayscale(1);
 }
 
-
+.mount-box-mob{
+    display: none;
+}
 
 .afi-development{
     gap: 24px;
@@ -1436,7 +1680,7 @@ input[type=range]::-webkit-slider-thumb {
     gap: 4px;
 }
 .afi-dev-count strong{
-    color: #5E4D6D;
+    color: #754ABC;
     font-weight: 800;
     font-size: 48px;
     line-height: 78%;
@@ -1445,7 +1689,7 @@ input[type=range]::-webkit-slider-thumb {
 
 }
 .afi-dev-count small{
-    color: #5E4D6D;
+    color: #754ABC;
     font-family: 'TT Travels';
     font-weight: 400;
     font-size: 15px;
@@ -1523,19 +1767,19 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .construction-menu ul li:hover {
-    background: #5E4D6D;
-    border: 1px solid #5E4D6D;
+    background: #754ABC;
+    border: 1px solid #754ABC;
     color: #FBF9ED;
 }
 
 .construction-menu ul .construction-act {
-    background: #5E4D6D;
-    border: 1px solid #5E4D6D;
+    background: #754ABC;
+    border: 1px solid #754ABC;
     color: #FBF9ED;
 }
 
 .online-camera{
-    background: #5E4D6D;
+    background: #754ABC;
     max-width: 253px;
     width: 100%;
     height: 52px;
@@ -1587,10 +1831,6 @@ input[type=range]::-webkit-slider-thumb {
 }
 .news-rel .swiper-button-next, .news-rel .swiper-button-prev {
     top: 28%;
-}
-.news-slider{
-    border-radius: 36px;
-
 }
 .news-box{
     gap: 8px;
@@ -1743,9 +1983,13 @@ input[type=range]::-webkit-slider-thumb {
         max-width: 1400px;
         padding: 0 20px;
     }
-    .master-plan-info, .master-plan-photo {
+    .master-plan-info{
         margin-top: 32px;
     }
+    .master-plan-cnt{
+        margin-top: 32px;
+    }
+
     .about-resid {
         margin-top: 32px;
     }
@@ -1806,7 +2050,7 @@ input[type=range]::-webkit-slider-thumb {
     }
     .family-mortgage {
         gap: 26px;
-        padding: 32px;
+        padding: 47px 30px;
     }
     .view-options-text {
         margin-top: 40px;
@@ -2083,6 +2327,7 @@ input[type=range]::-webkit-slider-thumb {
         font-size: 24px;
         line-height: 90%;
         text-transform: uppercase;
+        color: #754ABC;
     }
     .close-filter{
         position: absolute;
@@ -2128,6 +2373,918 @@ input[type=range]::-webkit-slider-thumb {
     .favorable-data {
         font-size: 16px;
     }
+    .calculate-click {
+        padding: 10px 13px;
+        width: 32%;
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 1199px){
+    .lilac-park-cnt {
+        padding: 120px 20px 130px;
+        border-radius: 16px;
+    }
+    .lilac-park-title h1 {
+        font-size: 60px;
+        line-height: 80%
+    }
+    .lilac-park-title {
+        max-width: 560px;
+    }
+    .lilac-park-title h1 span {
+        font-size: 16px;
+    }
+    .infrast-map-cnt li span {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .map-icon {
+        max-width: 24px;
+        height: 24px;
+    }
+    .spaces-children-title {
+        gap: 31px;
+        flex-direction: column;
+    }
+    .apartments-box span {
+        font-size: 22px;
+    }
+    .apartments-box p{
+        font-size: 14px;
+    }
+    .apartments-text li span {
+        font-size: 20px;
+    }
+    .apartments-text li {
+        width: 47%;
+        gap: 12px;
+    }
+    .apartments-text li p {
+        font-size: 12px;
+    }
+    .apartments-text ul {
+        gap: 20px 14px;
+    }
+    .future-home {
+        gap: 16px;
+    }
+    .future-home-photo {
+        height: 500px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .commercial-photo {
+        border-radius: 16px;
+    }
+    .commercial-price del {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .commercial-price strong {
+        font-size: 20px;
+        line-height: 22.79px;
+    }
+    .comme-line-info p {
+        font-size: 14px;
+    }
+    .comme-line-info span {
+        font-size: 14px;
+    }
+    .commercial-info .btn {
+        padding: 8px 24px;
+        font-size: 12px;
+    }
+    .family-mortgage {
+        gap: 24px;
+        padding: 16px;
+        border-radius: 16px;
+    }
+    .calculate-standard-box {
+        padding: 14px 16px 16px;
+    }
+    .afi-development-photo img {
+        border-radius: 16px;
+    }
+    .news-box img {
+        border-radius: 16px;
+    }
+    .news-box h4 {
+        font-size: 16px;
+    }
+    .news-box span {
+        font-size: 12px;
+    }
+    .news-box p {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 1020px){
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
+    }
+    .lilac-park-photo {
+        padding: 16px;
+        height: 148px;
+        border-radius: 16px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .lilac-park-photo p {
+        margin-top: 12px;
+    }
+    .swiper-pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0!important;
+    }
+    .lilac-park-rel{
+        padding-bottom: 18px;
+    }
+    .swiper-pagination-bullet {
+        background: #16161640;
+        backdrop-filter: blur(45.833335876464844px);
+        transition: 0.3s;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: #754ABC;
+    }
+    .master-plan-min{
+        position: relative;
+    }
+    .master-plan-menu {
+        overflow-x: unset;
+        margin-right: 0;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        z-index: 91;
+        width: 100%;
+        background: #ffffff;
+        padding: 20px 0;
+        display: none;
+    }
+    .master-plan-menu-act .master-plan-menu{
+        display: block;
+    }
+    .master-plan-click{
+        border-radius: 24px;
+        padding: 11px 24px;
+        background: #754ABC;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .master-plan-click span{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        color: #ffffff;
+    }
+    .master-plan-click:after{
+        content: "";
+        position: absolute;
+        right: 26px;
+        top: 9px;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+        transform: rotate(135deg);
+        transition: 0.3s;
+    }
+    .master-plan-main{
+        display: none;
+    }
+    .master-plan-menu ul {
+        gap: 10px;
+        width: 100%;
+        padding-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .master-plan-menu ul li {
+        padding: 8px 11px;
+        font-size: 16px;
+        width: 100%;
+    }
+    .master-plan {
+        overflow: unset;
+    }
+    .bright-apartments {
+        flex-wrap: wrap;
+    }
+
+    .bright-icons {
+        max-width: 176px;
+        width: 100%;
+    }
+    .bright-icons p {
+        font-size: 12px;
+    }
+    .elk-island{
+        display: none;
+    }
+    .about-resid-img img {
+        border-radius: 16px;
+    }
+    .infrastructure-info {
+        border-radius: 17px;
+        width: calc(50% - 8px);
+    }
+    .infrastructure-info {
+        padding: 16px;
+    }
+    .infrastructure-box {
+        width: calc(50% - 8px);
+    }
+    .infrastructure-box:last-child {
+        width: calc(50% - 8px);
+    }
+    .infrastructure-box {
+        padding: 16px;
+        height: 150px;
+    }
+    .infrastructure-map img {
+        border-radius: 16px;
+    }
+
+
+    .infrast-map-cnt {
+        top: 0;
+        left: 0;
+        padding: 20px;
+        position: relative;
+        width: 100%;
+        border-radius: 16px;
+    }
+    .infrastructure-map {
+        margin-top: 24px;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .spaces-children {
+        padding-bottom: 18px;
+    }
+    .apartments-cnt h3 {
+        font-size: 16px;
+    }
+    .apartments-items {
+        gap: 12px;
+        margin-top: 17px;
+        flex-wrap: wrap;
+    }
+    .apartments-box {
+        height: 118px;
+        width: 49%;
+        border-radius: 16px;
+    }
+    .apartments-flex {
+        flex-direction: column;
+    }
+
+    .apartments-flex:nth-child(even) {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .apartments-btn-mob{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .apartments-info .btn{
+        display: none;
+    }
+    .apartments-cnt {
+        margin-top: 20px;
+    }
+
+    .apartments-btn-mob .btn {
+        width: 100%;
+        font-size: 16px;
+        padding: 9px 24px;
+    }
+    .apartments-text {
+        margin-top: 4px;
+    }
+    .apartments-photo img {
+        border-radius: 16px;
+    }
+    .gallery-menu ul li {
+        font-size: 14px;
+    }
+    .gallery-rel {
+        margin-top: 24px;
+        padding-bottom: 18px;
+    }
+    .future-home {
+        flex-wrap: wrap;
+    }
+
+    .future-home-photo {
+        width: 48%;
+        height: 477px;
+        border-radius: 16px;
+    }
+    .future-home-photo h3 {
+        font-size: 20px;
+    }
+    .commercial-title h2 + h2{
+        display: none;
+    }
+
+    .commercial-scr{
+        display: none;
+    }
+    .commercial-rel {
+        display: block;
+        position: relative;
+        padding-bottom: 18px;
+        width: 100%;
+    }
+    .commercial-box {
+        width: 100%;
+    }
+    .family-mortgage h2 {
+        font-size: 18px;
+    }
+     h2 {
+        font-size: 24px;
+    }
+    .mortgage-price strong {
+        font-size: 32px;
+    }
+    .mortgage-price p {
+        font-size: 14px;
+    }
+    .family-mortgage-price span {
+        font-size: 16px;
+    }
+    .icon-arrow-top {
+        width: 20px;
+        height: 20px;
+    }
+    .family-mortgage-price {
+        gap: 10px;
+    }
+    .family-mortgage-photo {
+        width: 38px;
+    }
+    .mortgage-count {
+        width: 38px;
+        height: 38px;
+    }
+    .mortgage-count span {
+        font-size: 18px;
+    }
+    .calculate-standard-rel{
+        display: block;
+        position: relative;
+        padding-bottom: 18px;
+        width: 100%;
+    }
+    .calculate-standard-wrap{
+        display: none;
+    }
+    .calculate-standard-box{
+        width: 100%;
+    }
+    .calculate-standard-box {
+        border-radius: 16px;
+    }
+    .afi-development {
+        gap: 15px;
+        flex-direction: column;
+    }
+    .favorable-cond {
+        margin-top: 24px;
+        margin-bottom: 22px;
+        position: relative;
+        padding-bottom: 26px;
+    }
+    .construction-cnt {
+        margin-top: 24px;
+        flex-direction: column;
+        align-items: self-start;
+    }
+    .construction-menu ul li {
+        padding: 9px 25px;
+        font-size: 14px;
+    }
+
+    .online-camera {
+
+        display: none;
+    }
+    .news-rel {
+        margin-top: 24px;
+        margin-bottom: 26px;
+        padding-bottom: 24px;
+    }
+
+    .mount-box-mob{
+        display: block;
+        position: relative;
+        margin-top: 8px;
+    }
+    .click-mount{
+        border: 1px solid #686868;
+        width: 100%;
+        height: 32px;
+        gap: 6px;
+        border-radius: 24px;
+        padding: 8px 24px;
+        color: #686868;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        position: relative;
+        transition: 0.3s;
+    }
+    .click-mount span{
+        position: relative;
+        transition: 0.3s;
+        padding-right: 27px;
+    }
+    .click-mount span:after{
+        content: "";
+        position: absolute;
+        top: 1px;
+        right: 3px;
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid #C3C3C3;
+        border-right: 2px solid #C3C3C3;
+        transition: 0.3s;
+        transform: rotate(135deg);
+    }
+
+    .click-mount .mount-circle{
+        display: none;
+    }
+
+
+    .mount-box-drop{
+        background: #F6F6F6;
+        border-radius: 16px;
+        padding: 24px;
+        position: absolute;
+        top: 40px;
+        z-index: 22;
+        width: 100%;
+        display: none;
+    }
+    .mount-box-mob-act .mount-box-drop{
+        display: block;
+    }
+    .mount-box-drop ul{
+        gap: 8px;
+    }
+
+    .mount-box-drop ul li{
+        border-bottom: 1px solid #D9D9D933;
+        padding-bottom: 8px;
+        gap: 8px;
+        color: #1A1A1A;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .mount-box-drop ul li.plan-menu-active{
+        color: #754ABC;
+    }
+    .mount-circle{
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1px solid #1A1A1A;
+        transition: 0.3s;
+        position: relative;
+    }
+    .mount-circle:before {
+        content: "";
+        position: absolute;
+        display: none;
+        background: white;
+        left: 6px;
+        top: 4px;
+        width: 3px;
+        height: 6px;
+        border: solid #754ABC;
+        border-width: 0 1px 1px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .plan-menu-active .mount-circle:before{
+       display: block;
+    }
+
+    .plan-menu-active .mount-circle{
+        border: 1px solid #754ABC;
+    }
+    .lilac-boulevard p {
+        font-size: 14px;
+    }
+    .lilac-boulevard {
+        padding: 6px 16px;
+    }
+
+    .btn-white {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+    .btn-liners {
+        padding: 10px 29px;
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .on-foot-car {
+        gap: 8px;
+    }
+    .foot-car-box {
+        padding: 16px 16px;
+        border-radius: 16px;
+    }
+    .metro-station-min strong {
+        font-size: 24px;
+    }
+    .commercial-title h2 span {
+        color: #2F2E2E;
+    }
+
+    .valid-payment-text {
+        width: 200px;
+        padding: 20px 20px 30px;
+    }
+    .valid-payment-text p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .commercial-info .btn {
+        max-width: 177px;
+        width: 100%;
+    }
+    .infrastructure-map img {
+        height: 436px;
+        object-fit: cover;
+    }
+    .spaces-children {
+        margin-top: 16px;
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .calculate-box {
+        max-width: 800px;
+    }
+    .construction-rel {
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+    .favorite-heart{
+        display: none;
+    }
+
+
+
+}
+
+@media (max-width: 767px){
+    .lilac-park-items {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lilac-park-title {
+        margin-top: 65px;
+    }
+
+    .lilac-park-photo {
+        background-position: center;
+    }
+    .on-foot-car {
+        flex-direction: column;
+    }
+    .foot-car-box {
+        max-width: 100%;
+    }
+
+    .metro-station-min strong {
+        font-size: 20px;
+    }
+    .foot-car-box i{
+        display: none;
+    }
+    .metro-station-text {
+        width: 48%;
+    }
+    .label {
+        font-size: 16px;
+    }
+    .values {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .infrastructure-info {
+        width: 100%;
+        gap: 16px;
+    }
+    .btn {
+        gap: 8px;
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+    .infrastructure-box {
+        width: 100%;
+        background-position: center;
+    }
+    .infrastructure-box:last-child{
+        width: 100%;
+
+    }
+    .future-home-photo {
+        background-position: center;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .family-mortgage-flex {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .favorable-box {
+        max-width: 631px;
+    }
+    .news-box {
+        max-width: 631px;
+    }
+    .calculate-click {
+        font-size: 12px;
+    }
+
+
+    .calculate-standard-name img {
+        max-width: 32px;
+    }
+    .calculate-standard-name h4 {
+        font-size: 16px;
+    }
+    .standard-bid-name p, .monthly-payment-min p {
+        font-size: 12px;
+    }
+    .standard-bid-name span {
+        font-size: 14px;
+    }
+    .afi-dev-count strong {
+        font-size: 32px;
+    }
+    .family-mortgage-flex {
+        gap: 15px;
+    }
+    .filter-search{
+        display: none;
+    }
+
+}
+
+@media (max-width: 575px){
+    .lilac-park-cnt {
+        padding: 110px 16px 134px;
+        background-position: -14px;
+    }
+    .lilac-park-title h1 {
+        font-size: 40px;
+        line-height: 100%;
+    }
+    .lilac-park-title h1 span {
+        font-size: 12px;
+    }
+    .lilac-park-photo {
+        justify-content: flex-start;
+    }
+    .lilac-park-photo h3 {
+        font-size: 18px;
+    }
+    .lilac-park-photo p {
+        font-size: 12px;
+    }
+    .lilac-park-rel {
+        margin-top: 12px;
+    }
+    .master-plan {
+        padding-top: 32px;
+    }
+    .about-resid-info>p {
+        font-size: 12px;
+    }
+    .metro-station-min span {
+        font-size: 14px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .about-resid-img img {
+        height: 248px;
+        object-fit: cover;
+    }
+    .commercial-price {
+        gap: 16px;
+        justify-content: flex-start;
+    }
+    .commercial-price del {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .icon-info {
+        width: 12px;
+        height: 12px;
+    }
+    .valid-payment-text {
+        width: 171px;
+        padding: 15px 14px 20px;
+        bottom: 37px;
+    }
+    .valid-payment-text:after {
+        left: 44.1%;
+        bottom: -9px;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+    }
+    .comme-line-info p {
+        font-size: 12px;
+    }
+    .comme-line-info span {
+        font-size: 12px;
+    }
+    .infrast-map-cnt ul {
+        gap: 8px;
+    }
+    .infrast-map-cnt {
+        padding: 16px;
+    }
+    .apartments-box {
+        width: 100%;
+    }
+    .apartments-box span {
+        font-size: 20px;
+    }
+    .apartments-box p {
+        font-size: 12px;
+        max-width: 285px;
+        width: 100%;
+    }
+    .apartments-btn-mob .btn {
+        font-size: 14px;
+    }
+    .apartments-text li {
+        width: 100%;
+    }
+    .apartments-text li p {
+        max-width: 347px;
+    }
+    .gallery-menu {
+        overflow-x: scroll;
+    }
+    .gallery-menu::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .gallery-menu::-webkit-scrollbar-thumb {
+        width: 0;
+        height: 0;
+    }
+    .gallery-menu ul li {
+        font-size: 12px;
+        padding: 9px 16px;
+
+    }
+    .gallery-menu ul {
+        width: max-content;
+    }
+    .calculate-click {
+        padding: 9px 13px;
+        width: 48%;
+    }
+    .calculate-box {
+        padding: 16px;
+    }
+    .mortgage-label h4 {
+        font-size: 12px;
+    }
+    .mortgage-label span {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .btn {
+        width: 100%;
+    }
+    .monthly-payment-pric {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .family-mortgage-cnt {
+        gap: 24px;
+        flex-direction: column;
+    }
+    .icon-arrow-top {
+        width: 14px;
+        height: 14px;
+    }
+    .family-mortgage-photo {
+        width: 32px;
+    }
+    .mortgage-count {
+        width: 32px;
+        height: 32px;
+    }
+    .afi-dev-cnt {
+        gap: 10px;
+        max-width: 47%;
+    }
+    .favorable-data {
+        font-size: 14px;
+    }
+
+
+   .favorable-desc p {
+        font-size: 14px;
+    }
+    .construction-cnt {
+        overflow-x: scroll;
+    }
+    .construction-cnt::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .construction-cnt::-webkit-scrollbar-thumb {
+        width: 0;
+        height: 0;
+    }
+   .construction-menu{
+       width: max-content;
+   }
+    .construction-menu ul {
+        gap: 8px;
+    }
+    .construction-menu ul li {
+        font-size: 12px;
+    }
+    .check-radio small {
+        font-size: 16px;
+    }
+    .icon-arrow-down {
+        width: 20px;
+        height: 20px;
+    }
+    .accordion-click span {
+        font-size: 16px;
+    }
+    .close-filter {
+        width: 15px;
+        height: 15px;
+    }
+
+    .lilac-boulevard p {
+        font-size: 12px;
+    }
+    h2{
+        line-height: 100%;
+    }
+    .about-resid-marg {
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 370px){
+    .lilac-park-title h1 {
+        font-size: 36px;
+    }
+    .favorable-desc p {
+        font-size: 13px;
+    }
+
+
+
+
 
 
 }

@@ -99,3 +99,6 @@ i{
     width: 24px;
     height: 24px;
 }
+.moscow-metro{
+    content: url("../img/icons/moscow-metro.svg");
+}

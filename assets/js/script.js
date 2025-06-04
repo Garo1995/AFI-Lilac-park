@@ -86,11 +86,60 @@ $('.close-filter').on('click', function () {
 })
 
 
+$('.queue-floor li').on('click', function () {
+    $('.queue-floor li').removeClass('queue-floor-act')
+    $(this).addClass('queue-floor-act')
+
+})
 
 
 
 
 
+
+$('.master-plan-click').on('click', function (e) {
+    $(this).parent().toggleClass('master-plan-menu-act');
+    e.stopPropagation();
+});
+
+$('.master-plan-menu ul li').on('click', function () {
+    $('.master-plan-min').removeClass('master-plan-menu-act')
+    // let text_in = $('.master-plan-click span').html();
+    let selected_text = $(this).html();
+    $('.master-plan-click span').html(selected_text);
+    // $(this).html(text_in)
+});
+$(window).on('click', function (e) {
+    let menuSort = $('.master-plan-min');
+    if (e.target !== menuSort) {
+        menuSort.removeClass('master-plan-menu-act');
+    }
+});
+
+
+
+$('.click-mount').on('click', function (e) {
+    $(this).parent().toggleClass('mount-box-mob-act');
+    e.stopPropagation();
+});
+
+$('.mount-box-drop ul li').on('click', function () {
+    $('.mount-box-mob').removeClass('mount-box-mob-act')
+
+    $('.mount-box-drop ul li').removeClass('plan-menu-active');
+    $(this).addClass('plan-menu-active');
+
+    // let text_in = $('.click-mount span').html();
+    let selected_text = $(this).html();
+    $('.click-mount span').html(selected_text);
+    // $(this).html(text_in)
+});
+$(window).on('click', function (e) {
+    let menuMount = $('.master-plan-min');
+    if (e.target !== menuMount) {
+        menuMount.removeClass('mount-box-mob-act');
+    }
+});
 
 
 
@@ -174,3 +223,15 @@ const termVal = document.getElementById('mortgage-term-val');
 termInput.addEventListener('input', () => {
     termVal.textContent = termInput.value + ' лет';
 });
+
+
+
+
+
+
+
+
+
+$('.valid-payment-info').on('click', function () {
+    $(this).toggleClass('valid-payment-opened');
+})

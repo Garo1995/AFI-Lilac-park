@@ -30,7 +30,7 @@ header{
     gap: 16px;
 }
 .header-phone{
-    color: #5E4D6D;
+    color: #754ABC;
     font-weight: 500;
     font-size: 20px;
     line-height: 100%;
@@ -42,24 +42,24 @@ header{
 .btn-select{
     white-space: nowrap;
     transition: 0.3s;
-    border: 1px solid #5E4D6D;
+    border: 1px solid #754ABC;
     border-radius: 32px;
     gap: 8px;
     padding: 12px 32px;
     background: unset;
-    color: #5E4D6D;
+    color: #754ABC;
     font-weight: 500;
     font-size: 18px;
     line-height: 100%;
 }
 .btn-select:hover{
-    background: #5E4D6D;
+    background: #754ABC;
     color: #fff;
 }
 .btn-sign-up{
     white-space: nowrap;
     transition: 0.3s;
-    background: #5E4D6D;
+    background: #754ABC;
     border-radius: 32px;
     gap: 8px;
     padding: 12px 32px;
@@ -67,10 +67,10 @@ header{
     font-weight: 500;
     font-size: 18px;
     line-height: 100%;
-    border: 1px solid #5E4D6D;
+    border: 1px solid #754ABC;
 }
 .btn-sign-up:hover{
-    color: #5E4D6D;
+    color: #754ABC;
     background: unset;
 }
 
@@ -114,7 +114,8 @@ header{
     transition: 0.5s;
     height: 0;
     overflow: hidden;
-    background: #5E4D6D;
+    background: #754ABC;
+
 
 }
 .transition-menu {
@@ -268,6 +269,155 @@ header{
         font-size: 40px;
     }
 
+
+
+}
+
+@media (max-width: 1199px){
+    .header-menu a {
+        font-size: 16px;
+    }
+    .header-menu ul {
+        gap: 8px;
+    }
+    .documents-box ul li a {
+        font-size: 12px;
+    }
+
+    .documents-column h3 {
+        font-size: 16px;
+    }
+    .documents-name i{
+        display: none;
+    }
+    .documents-column {
+        gap: 8px;
+    }
+
+    .btn-sign-up {
+        padding: 10px 26px;
+        font-size: 16px;
+    }
+    .btn-select {
+        padding: 10px 26px;
+        font-size: 16px;
+    }
+    .menu-content-title{
+        align-items: start;
+    }
+    .menu-content-main {
+        padding: 50px 20px;
+    }
+    .header-phone {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1020px){
+    .open-menu strong {
+        font-size: 16px;
+    }
+    .open-menu .icon-menu {
+        width: 24px;
+        height: 24px;
+    }
+    .open-menu strong {
+        padding-top: 4px;
+    }
+    .header-main  .header-phone{
+        display: none;
+    }
+    header {
+        margin-top: 20px;
+    }
+    .close-menu {
+        width: 22px;
+        height: 22px;
+    }
+    .menu-content-main {
+        padding: 20px 10px;
+    }
+    .menu-content-title h2 {
+        max-width: 234px;
+        font-size: 33px;
+    }
+    .head-menu-main {
+        margin-top: 64px;
+        gap: 32px 16px;
+        flex-wrap: wrap;
+    }
+    .header-menu{
+        width: 48%;
+    }
+    .documents-column{
+        width: 48%;
+
+    }
+    .sales-office-center {
+        margin-top: 64px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+    .transition-menu {
+        height: 100%;
+    }
+    .header-btn-white {
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .header-phone {
+        font-size: 20px;
+    }
+    header .btn-select {
+        order: 2;
+        max-width: 380px;
+        width: 100%;
+    }
+    header .btn-sign-up{
+        order: 3;
+        max-width: 380px;
+        width: 100%;
+    }
+    .sales-office-time span {
+        font-size: 16px;
+    }
+    .sales-office-time p {
+        margin-top: 8px;
+        font-size: 12px;
+    }
+
+
+
+}
+@media (max-width: 767px){
+    .header-btn .btn-sign-up{
+        display: none;
+    }
+}
+@media (max-width: 575px){
+    .documents-column {
+        width: 47%;
+    }
+    .header-menu {
+        width: 47%;
+    }
+    .close-menu {
+        width: 16px;
+        height: 16px;
+    }
+    .btn-select {
+        font-size: 14px;
+    }
+}
+@media (max-width: 370px){
+    .header-menu a {
+        font-size: 14px;
+    }
+    .documents-column h3 {
+        font-size: 14px;
+    }
 
 
 }
