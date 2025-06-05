@@ -230,8 +230,7 @@ termInput.addEventListener('input', () => {
 
 
 
-
-
-$('.valid-payment-info').on('click', function () {
-    $(this).toggleClass('valid-payment-opened');
+$('.family-mortgage').on('click', function (){
+    $('.family-mortgage').addClass('standard-opacity')
+    $(this).removeClass('standard-opacity')
 })
