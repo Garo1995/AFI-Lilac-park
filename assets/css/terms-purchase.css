@@ -1,0 +1,296 @@
+.terms-purchase-title{
+    max-width: 450px;
+    width: 100%;
+}
+.terms-purchase-flex{
+    margin-top: 64px;
+    margin-bottom: 96px;
+    gap: 24px;
+}
+.terms-purchase-main{
+    margin-top: 64px;
+}
+.terms-purchase-flex .apartments-text li {
+    width: 100%;
+}
+.terms-purchase-flex .apartments-text li p {
+    max-width: 100%;
+}
+
+.terms-purchase-flex .apartments-text {
+    margin-top: 24px;
+}
+.terms-purchase-flex .apartments-text ul {
+    gap: 24px 24px;
+}
+.terms-purchase-btn{
+    gap: 8px;
+}
+.terms-purchase-btn .btn-lin{
+    width: 305px;
+}
+.terms-purchase-flex .apartments-info .btn{
+    display: none;
+}
+.calculate-mortgage-min{
+    margin-top: 185px;
+    margin-bottom: 90px;
+
+}
+
+.purchasing-main{
+    margin-top: 164px;
+}
+.purchasing-flex{
+    gap: 24px;
+}
+.purchasing-cnt{
+    max-width: 808px;
+    width: 100%;
+}
+.purchasing-cnt .btn{
+    margin-top: 20px;
+}
+.down-payment-flex{
+    margin-top: 48px;
+    gap: 24px;
+}
+.down-payment{
+    max-width: 255px;
+    width: 100%;
+    position: relative;
+}
+.down-payment + .down-payment:before{
+    content: "";
+    position: absolute;
+    bottom: 32px;
+    left: -90px;
+    background: #9F9DBA;
+    width: 157px;
+    height: 4px;
+    border-radius: 6px;
+
+}
+.down-payment strong{
+    display: block;
+    color: #754ABC;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+.down-payment p{
+    text-align: center;
+    margin-top: 8px;
+}
+.down-payment-circle{
+    background-image: url("../img/circle.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 64px;
+    width: 100%;
+    height: 64px;
+    border-radius: 50%;
+    margin-top: 16px;
+    display: flex;
+}
+.installment-plan{
+    margin-top: 48px;
+    max-width: 267px;
+    width: 100%;
+}
+
+.installment-plan p{
+   color: #1A1A1A99;
+}
+
+.additional-terms{
+    margin-top: 60px;
+}
+.additional-terms h3{
+    color: #754ABC;
+}
+.additional-terms-desc{
+    margin-top: 22px;
+    backdrop-filter: blur(20px);
+    background: #F8F8F8;
+    padding: 16px;
+    border-radius: 24px;
+}
+
+.additional-terms-desc ul{
+    gap: 16px;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+.additional-terms-desc ul li{
+    color: #1A1A1A;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 650px;
+    width: 100%;
+}
+.purchasing-photo{
+    max-width: 808px;
+    width: 100%;
+}
+
+
+
+@media (max-width: 1799px){
+    .apartments-info {
+        max-width: 650px;
+    }
+    .terms-purchase-flex .apartments-text ul {
+        gap: 16px 24px;
+    }
+    .terms-purchase-flex .apartments-text li p {
+        font-size: 16px;
+    }
+    .terms-purchase-flex  h3 {
+        font-size: 20px;
+    }
+    .apartments-info {
+        max-width: 600px;
+    }
+
+
+
+
+}
+@media (max-width: 1499px){
+    .down-payment strong {
+        font-size: 40px;
+    }
+    .down-payment + .down-payment:before {
+        left: -83px;
+        width: 140px;
+    }
+
+
+
+}
+@media (max-width: 1399px){
+    .down-payment-flex {
+        margin-top: 32px;
+        gap: 12px;
+    }
+    .down-payment strong {
+        font-size: 34px;
+    }
+    .down-payment p {
+        font-size: 14px;
+    }
+    .down-payment-circle {
+        width: 52px;
+        height: 52px;
+        margin-top: 14px;
+    }
+    .down-payment + .down-payment:before {
+        left: -68px;
+        width: 120px;
+        bottom: 24px;
+    }
+    .additional-terms {
+        margin-top: 42px;
+    }
+    .installment-plan {
+        margin-top: 30px;
+    }
+    .purchasing-main {
+        margin-top: 94px;
+    }
+
+}
+
+@media (max-width: 1299px){
+    .calculate-mortgage-min {
+        margin-top: 120px;
+        margin-bottom: 54px;
+    }
+    .terms-purchase-flex {
+        margin-top: 32px;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+    .terms-purchase-flex .apartments-text li p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1199px){
+    .terms-purchase-flex {
+        flex-direction: column-reverse;
+    }
+    .apartments-info {
+        max-width: 900px;
+    }
+    .terms-purchase-flex .apartments-info .btn {
+        display: flex;
+        margin-top: 16px;
+    }
+    .consultation-btn {
+        display: none;
+    }
+
+    .terms-purchase-flex h3 {
+        font-size: 16px;
+    }
+    .purchasing-flex {
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 1020px){
+    .terms-purchase-flex .apartments-text li p {
+        font-size: 12px;
+    }
+    .terms-purchase-btn .btn-lin {
+        width: auto;
+    }
+    .terms-purchase-main {
+        margin-top: 32px;
+    }
+    .purchasing-main {
+        margin-top: 64px;
+    }
+}
+@media (max-width: 767px){
+    .catalog-title h1 {
+        max-width: 249px;
+        width: 100%;
+    }
+    .additional-terms {
+        margin-top: 32px;
+    }
+
+
+
+
+}
+@media (max-width: 575px){
+    .down-payment + .down-payment:before{
+        display: none;
+    }
+    .down-payment strong {
+        font-size: 32px;
+    }
+    .down-payment-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .purchasing-main {
+        margin-top: 32px;
+    }
+    .additional-terms-desc ul li {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .additional-terms-desc ul {
+        gap: 12px;
+        margin-left: 14px;
+    }
+
+}

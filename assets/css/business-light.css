@@ -1,0 +1,114 @@
+.business-light-min{
+    margin-top: 98px;
+    margin-bottom: 100px;
+}
+.business-light-flex{
+    gap: 24px;
+}
+
+.business-light-info{
+    max-width: 760px;
+    width: 100%;
+}
+.business-light-info h3{
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+.business-light-info p{
+    margin-top: 64px;
+    max-width: 670px;
+    width: 100%;
+}
+
+.quarter-located-flex{
+    margin-top: 148px;
+    gap: 24px;
+}
+.quarter-located-photo{
+    max-width: 808px;
+    width: 100%;
+}
+.quarter-located-photo img{
+    border-radius: 36px;
+    width: 100%;
+}
+.quarter-located{
+    max-width: 765px;
+    width: 100%;
+    padding-right: 43px;
+}
+
+.located-pic{
+    max-width: 393px;
+    width: 100%;
+    margin-left: auto;
+}
+.located-pic img{
+    border-radius: 36px;
+}
+
+.two-stylistic h2 {
+    max-width: 844px;
+    width: 100%;
+}
+.two-stylistic .apartments-text {
+    margin-top: 0;
+    max-width: 808px;
+    width: 100%;
+}
+.two-stylistic .apartments-text  ul li{
+    width: 100%;
+}
+.two-stylistic .apartments-text li p {
+    max-width: 100%;
+}
+.two-stylistic-cnt{
+    margin-top: 48px;
+}
+
+.two-stylistic-cnt .apartments-flex{
+    margin-top: 48px;
+
+}
+
+
+.monolithic-const-min{
+    margin-top: 112px;
+}
+.monolithic-const-min h2{
+    max-width: 944px;
+    width: 100%;
+}
+.monolithic-const-flex{
+    margin-top: 64px;
+    gap: 24px;
+}
+.monolithic-const-photo{
+    max-width: 808px;
+    width: 100%;
+}
+
+.monolithic-const-photo img{
+    border-radius: 36px;
+}
+.monolithic-const-text{
+    max-width: 808px;
+    width: 100%;
+}
+.monolithic-const-text ul{
+    gap: 36px;
+}
+.monolithic-const-text ul li{
+    gap: 30px;
+    color: #1A1A1A;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+}
+.monolithic-const-text ul li .down-payment-circle{
+    margin: 0;
+}

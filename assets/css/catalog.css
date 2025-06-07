@@ -1,0 +1,126 @@
+.catalog-main{
+    margin-top: 96px;
+}
+.catalog-title{
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.catalog-title h1{
+    max-width: 600px;
+    width: 100%;
+}
+
+.catalog-btn{
+    gap: 8px;
+}
+
+.btn-lin{
+    transition: 0.3s;
+    border: 1px solid #686868;
+    border-radius: 24px;
+    padding: 12px 24px;
+    color: #686868;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    background: unset;
+    width: 198px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.btn-lin-act{
+    background: #754ABC;
+    border: 1px solid #754ABC;
+    color: #FBF9ED;
+}
+.catalog-btn .btn-sign-up{
+    font-weight: 400;
+    width: 198px;
+
+}
+
+.see-more-catalog{
+    margin-top: 110px;
+}
+
+@media (max-width: 1499px){
+    .catalog-title h1 {
+        max-width: 400px;
+    }
+}
+
+
+@media (max-width: 1199px){
+    .catalog-main {
+        margin-top: 72px;
+    }
+    .btn-lin {
+        padding: 9px 24px;
+        font-size: 14px;
+        width: auto;
+    }
+    .master-plan-info{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1020px){
+    .catalog-cards .commercial-box {
+        width: calc(50% - 16px);
+        gap: 12px;
+    }
+    .catalog-cards .commercial-info .btn{
+        display: none;
+    }
+    .catalog-cards .commercial-photo {
+        padding: 35px 20px;
+    }
+    .commercial-price {
+        gap: 7px;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .commercial-wrap {
+        gap: 16px 16px;
+    }
+    .catalog-cards .commercial-box {
+        width: calc(50% - 8px);
+    }
+    .see-more-catalog {
+        margin-top: 62px;
+    }
+}
+
+@media (max-width: 575px){
+    .btn-lin {
+        font-size: 12px;
+    }
+    .catalog-cards .comme-line-info {
+        width: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .see-more-catalog {
+        margin-top: 32px;
+    }
+}
+
+
+@media (max-width: 370px){
+    .catalog-cards .commercial-box {
+        width: 100%;
+    }
+    .catalog-cards .comme-line-info {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+}

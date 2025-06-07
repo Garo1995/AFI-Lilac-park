@@ -4,7 +4,7 @@ h1{
     font-size: 64px;
     line-height: 90%;
     text-transform: uppercase;
-    color: #5E4D6D;
+    color: #754ABC;
     text-align: left;
 }
 h2{
@@ -1461,6 +1461,15 @@ input[type=range]::-webkit-slider-thumb {
 .view-options .btn:hover {
     color: #754ABC;
 }
+.mortgage-slider input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(to right, #7c3aed var(--progress, 0%), #ccc var(--progress, 0%));
+    outline: none;
+}
+
 
 
 
@@ -2516,7 +2525,9 @@ input[type=range]::-webkit-slider-thumb {
     .news-box p {
         font-size: 12px;
     }
-
+    h1 {
+        font-size: 52px;
+    }
 }
 
 @media (max-width: 1020px){
@@ -2652,7 +2663,9 @@ input[type=range]::-webkit-slider-thumb {
     .infrastructure-map img {
         border-radius: 16px;
     }
-
+    h1 {
+        font-size: 48px;
+    }
 
     .infrast-map-cnt {
         top: 0;
@@ -2994,12 +3007,20 @@ input[type=range]::-webkit-slider-thumb {
     .favorite-heart{
         display: none;
     }
-
-
+    .btn {
+        padding: 10px 24px;
+        font-size: 16px;
+    }
 
 }
 
 @media (max-width: 767px){
+    h1 {
+        font-size: 32px;
+    }
+    .gallery-menu ul li {
+        width: 155px;
+    }
     .lilac-park-items {
         flex-direction: column;
         align-items: flex-start;
