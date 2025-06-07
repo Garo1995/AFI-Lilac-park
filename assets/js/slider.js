@@ -239,3 +239,109 @@ let calculateSwiper = new Swiper(".calculate-standard-slid", {
     },
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Основной слайдер с картинками
+    let floorSwiper = new Swiper(".floor-plan-slider", {
+        slidesPerView: 1,
+        loop: true,
+        fadeEffect: { crossFade: true },
+        virtualTranslate: true,
+        effect: "fade",
+        speed: 600,
+        navigation: {
+            nextEl: ".floor-button-next",
+            prevEl: ".floor-button-prev",
+        },
+    });
+
+
+    const activeFloorSpans = document.querySelectorAll(".active-floor");
+
+    const floorCountSwiper = new Swiper(".count-slid", {
+        slidesPerView: 7,
+        direction: "vertical",
+        loop: true,
+        spaceBetween: 5,
+        centeredSlides: true,
+        breakpoints: {
+            1199: {
+                slidesPerView: 7,
+                slidesPerGroup: 1,
+            },
+            620: {
+                slidesPerView: 3,
+                slidesPerGroup: 1,
+                direction: "horizontal",
+            },
+            320: {
+                direction: "horizontal",
+                slidesPerView: 3,
+                slidesPerGroup: 1,
+            },
+        },
+        navigation: {
+            nextEl: ".floor-button-next",
+            prevEl: ".floor-button-prev",
+        },
+        on: {
+            init: updateActiveNumber,
+            slideChangeTransitionEnd: updateActiveNumber,
+        },
+    });
+
+    function updateActiveNumber() {
+        const activeSlides = document.querySelectorAll(".count-slid .swiper-slide-active:not(.swiper-slide-duplicate)");
+        if (activeSlides.length === 0) return;
+
+        const middleIndex = Math.floor(activeSlides.length / 2);
+        const centralSlide = activeSlides[middleIndex];
+        if (!centralSlide) return;
+
+        const numberEl = centralSlide.querySelector(".count-slid-floor");
+        if (!numberEl) return;
+
+        // Обновим все элементы с классом .active-floor
+        activeFloorSpans.forEach(span => {
+            span.textContent = numberEl.textContent.trim();
+        });
+    }
+
+});

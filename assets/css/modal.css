@@ -1,0 +1,349 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1A1A1A66;
+    backdrop-filter: blur(13px);
+
+}
+.modal.out {
+    -webkit-animation: unfoldOut 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: unfoldOut 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.body-hidd{
+    overflow: hidden;
+}
+@keyframes unfoldOut {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+}
+
+
+
+#modal-thanks.out {
+    -webkit-animation: opacity-anim 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: opacity-anim 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes opacity-anim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.modal-content {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-animation: zoomIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: zoomIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+@-webkit-keyframes zoomIn {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+}
+@keyframes zoomIn {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+}
+
+
+
+
+#modal-thanks .modal-content {
+    -webkit-animation: opaIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: opaIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+@-webkit-keyframes opaIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+@keyframes opaIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.close{
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    z-index: 99;
+    transition: 0.3s;
+}
+.close:before,
+.close:after{
+    content: "";
+    position: absolute;
+    background-color: #1A1A1A99;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.close:before{
+    width: 22px;
+    height: 2px;
+}
+.close:after{
+    width: 2px;
+    height: 22px;
+}
+
+.modal-registration{
+    background: #F8F8F8;
+    max-width: 1022px;
+    width: 100%;
+    position: relative;
+    border-radius: 36px;
+    padding: 40px;
+
+}
+.modal-registration h3{
+    text-align: center;
+    color: #754ABC;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+
+.booking-request-flex{
+    margin-top: 48px;
+    gap: 32px;
+}
+.booking-request-info{
+    max-width: 392px;
+    width: 100%;
+}
+
+.modal-form{
+    max-width: 518px;
+    width: 100%;
+}
+.modal-form-cnt{
+    gap: 8px;
+}
+.modal-form-inp{
+    width: 100%;
+}
+.modal-form-inp label{
+    width: 100%;
+    display: flex;
+}
+.modal-form-inp input{
+    width: 100%;
+    border: 1px solid #754ABC;
+    gap: 8px;
+    border-radius: 32px;
+    padding: 12px 32px;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #5E4D6D;
+}
+.modal-form-inp input::placeholder{
+    color: #5E4D6D66;
+}
+
+.check-form{
+    margin-top: 16px;
+}
+
+.check-form label {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.check-form label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.check-form label small{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1A1A1A;
+}
+.check-form label small a{
+    color: #1A1A1A;
+    text-decoration: underline;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: unset;
+    border: 1px solid #1A1A1A99;
+    border-radius: 2px;
+}
+.check-form label input:checked ~ .checkmark {
+    background-color: #754ABC;
+}
+
+.check-form label .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.check-form label input:checked ~ .checkmark:after {
+    display: block;
+}
+.modal-form .btn{
+    margin-top: 16px;
+    width: 100%;
+}
+
+#apartment .btn{
+    margin-top: 55px;
+}
+.booking-request-floor img{
+    max-width: 240px;
+    width: 100%;
+}
+
+.booking-request-flex .commercial-price del {
+    font-size: 20px;
+    line-height: 23.83px;
+}
+.booking-request-flex .commercial-item {
+    margin-top: 16px;
+}
+.booking-request-flex .comme-line-info p {
+    font-size: 16px;
+    line-height: 100%;
+}
+.booking-request-flex .comme-line-info span {
+    font-size: 16px;
+    line-height: 100%;
+}
+
+
+@media (max-width: 1200px){
+    .modal-registration {
+        max-width: 900px;
+        border-radius: 16px;
+        padding: 30px;
+    }
+    .check-form label small {
+        font-size: 14px;
+    }
+    .modal-registration {
+        max-width: 600px;
+        padding: 60px 18px 40px;
+    }
+}
+
+@media (max-width: 1020px){
+    .booking-request-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .close {
+        top: 20px;
+        right: 20px;
+    }
+    .booking-request-floor img {
+        max-width: 170px;
+    }
+   .modal .commercial-price {
+        gap: 7px;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    #apartment .btn {
+        margin-top: 16px;
+    }
+    .check-form label small {
+        font-size: 12px;
+    }
+    .modal-form-inp input {
+        padding: 10px 24px;
+        font-size: 16px;
+    }
+    .modal .commercial-price strong {
+        font-size: 26px;
+        line-height: 28.79px;
+    }
+
+
+}

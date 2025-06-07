@@ -184,7 +184,7 @@
         font-size: 14px;
     }
     .down-payment-circle {
-        width: 52px;
+        max-width: 52px;
         height: 52px;
         margin-top: 14px;
     }
@@ -240,7 +240,10 @@
     .purchasing-flex {
         flex-direction: column;
     }
-
+    .down-payment-circle {
+        max-width: 32px;
+        height: 32px;
+    }
 }
 @media (max-width: 1020px){
     .terms-purchase-flex .apartments-text li p {

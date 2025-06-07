@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $('.open-menu').on('click', function () {
         $('.menu-content').addClass('transition-menu');
@@ -12,11 +11,9 @@ $(document).ready(function () {
 });
 
 
-
 $('.price-ascending-click').on('click', function () {
     $(this).parent().toggleClass('price-ascending-act');
 })
-
 
 
 $(function () {
@@ -49,7 +46,10 @@ $(function () {
 });
 
 
-
+$('.family-mortgage').on('click', function () {
+    $('.family-mortgage').addClass('standard-opacity')
+    $(this).removeClass('standard-opacity')
+})
 
 $('.calculate-click').on('click', function () {
     $('.calculate-click').removeClass('calculate-act');
@@ -61,6 +61,57 @@ $('.calculate-click').on('click', function () {
 })
 
 
+$(document).ready(function () {
+
+
+    function formatRUB(num) {
+        return num.toLocaleString('ru-RU') + ' ₽';
+    }
+
+    function updateProgress(el) {
+        const percent = (el.value - el.min) / (el.max - el.min) * 100;
+        el.style.setProperty('--progress', percent + '%');
+    }
+
+// Все range input'ы
+    const rangeInputs = document.querySelectorAll('.mortgage-slider input[type="range"]');
+    rangeInputs.forEach(input => {
+        updateProgress(input);
+        input.addEventListener('input', () => updateProgress(input));
+    });
+
+// Стоимость недвижимости
+    const priceInput = document.getElementById('mortgage-price');
+    const priceVal = document.getElementById('mortgage-price-val');
+    if (priceInput && priceVal) {
+        priceVal.textContent = formatRUB(+priceInput.value);
+        priceInput.addEventListener('input', () => {
+            priceVal.textContent = formatRUB(+priceInput.value);
+        });
+    }
+
+// Первый взнос
+    const downInput = document.getElementById('mortgage-down');
+    const downVal = document.getElementById('mortgage-down-val');
+    if (downInput && downVal) {
+        downVal.textContent = formatRUB(+downInput.value);
+        downInput.addEventListener('input', () => {
+            downVal.textContent = formatRUB(+downInput.value);
+        });
+    }
+
+// Срок кредита
+    const termInput = document.getElementById('mortgage-term');
+    const termVal = document.getElementById('mortgage-term-val');
+    if (termInput && termVal) {
+        termVal.textContent = termInput.value + ' лет';
+        termInput.addEventListener('input', () => {
+            termVal.textContent = termInput.value + ' лет';
+        });
+    }
+
+});
+
 
 $('.compare-btn').on('click', function () {
     $('.calculate-mort-main').removeClass('calculate-mort-none')
@@ -68,7 +119,6 @@ $('.compare-btn').on('click', function () {
     $('.calculate-standard').removeClass('calculate-standard-open')
 
 })
-
 
 
 $('.open-filter').on('click', function () {
@@ -86,15 +136,16 @@ $('.close-filter').on('click', function () {
 })
 
 
+$('.floor-path').on('click', function () {
+    $('.floor-plan-mod').toggleClass('floor-plan-mod-act')
+
+})
+
 $('.queue-floor li').on('click', function () {
     $('.queue-floor li').removeClass('queue-floor-act')
     $(this).addClass('queue-floor-act')
 
 })
-
-
-
-
 
 
 $('.master-plan-click').on('click', function (e) {
@@ -115,7 +166,6 @@ $(window).on('click', function (e) {
         menuSort.removeClass('master-plan-menu-act');
     }
 });
-
 
 
 $('.click-mount').on('click', function (e) {
@@ -140,6 +190,86 @@ $(window).on('click', function (e) {
         menuMount.removeClass('mount-box-mob-act');
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$('.open_modal').on('click', function () {
+    let attr = $(this).attr('data-val');
+    let modal = $('#' + attr);
+    modal.removeClass('out');
+    modal.fadeIn();
+    $('body').addClass('body-hidd');
+});
+
+$('.close').on('click', function () {
+    $('body').removeClass('body-hidd');
+    let prt = $(this).parents('.modal');
+    prt.addClass('out')
+    setTimeout(function () {
+        prt.fadeOut();
+    }, 100);
+});
+
+
+$(window).on('click', function (event) {
+    $('.modal').each(function () {
+
+        let gtattr = $(this).attr('id');
+        let new_mod = $('#' + gtattr);
+        let md_cnt = $(new_mod).find('.modal-content');
+        if (event.target === $(md_cnt)[0]) {
+            setTimeout(function () {
+                $('body').removeClass('body-hidd');
+
+                $(new_mod).addClass('out');
+                $(new_mod).fadeOut()
+            }, 100)
+        }
+        if (event.target === this) {
+            setTimeout(function () {
+                $('body').removeClass('body-hidd');
+
+                $(new_mod).addClass('out');
+                $(new_mod).fadeOut()
+            }, 100)
+        }
+    })
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -173,64 +303,3 @@ updateSlider('sqm-min', 'sqm-max', 'sqm-val', 'sqm-track');
 updateSlider('area-min', 'area-max', 'area-val', 'area-track');
 updateSlider('floor-min', 'floor-max', 'floor-val', 'floor-track');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function formatRUB(num) {
-    return num.toLocaleString('ru-RU') + ' ₽';
-}
-
-function updateProgress(el) {
-    const percent = (el.value - el.min) / (el.max - el.min) * 100;
-    el.style.setProperty('--progress', percent + '%');
-}
-
-// Все range input'ы
-const rangeInputs = document.querySelectorAll('.mortgage-slider input[type="range"]');
-rangeInputs.forEach(input => {
-    updateProgress(input);
-    input.addEventListener('input', () => updateProgress(input));
-});
-
-// Стоимость недвижимости
-const priceInput = document.getElementById('mortgage-price');
-const priceVal = document.getElementById('mortgage-price-val');
-priceInput.addEventListener('input', () => {
-    priceVal.textContent = formatRUB(+priceInput.value);
-});
-
-// Первый взнос
-const downInput = document.getElementById('mortgage-down');
-const downVal = document.getElementById('mortgage-down-val');
-downInput.addEventListener('input', () => {
-    downVal.textContent = formatRUB(+downInput.value);
-});
-
-// Срок кредита
-const termInput = document.getElementById('mortgage-term');
-const termVal = document.getElementById('mortgage-term-val');
-termInput.addEventListener('input', () => {
-    termVal.textContent = termInput.value + ' лет';
-});
-
-
-
-
-
-
-
-$('.family-mortgage').on('click', function (){
-    $('.family-mortgage').addClass('standard-opacity')
-    $(this).removeClass('standard-opacity')
-})

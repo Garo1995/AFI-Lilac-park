@@ -1,0 +1,203 @@
+.frame-content{
+    margin-top: 64px;
+    position: relative;
+    margin-bottom: 148px;
+}
+.frame-content-map{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    max-width: 479px;
+    width: 100%;
+}
+
+.frame-box{
+    background: #754ABC;
+    max-width: 456px;
+    width: 100%;
+    top: 124px;
+    right: 51px;
+    gap: 30px;
+    padding: 32px;
+    border-radius: 24px 24px 24px 0;
+    position: absolute;
+}
+
+.active-floor{
+    margin-right: 8px;
+    display: block;
+}
+
+.frame-box-info{
+    gap: 12px;
+}
+.frame-box-name{
+    gap: 23px;
+}
+.frame-box-name span{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+}
+.frame-box-name strong{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: right;
+}
+.frame-liner{
+    background: #FFFFFF66;
+    width: 60px;
+    height: 1px;
+}
+.icon-remont{
+    content: url("../img/icons/remont.svg");
+}
+.frame-box-name span:first-child{
+    width: 26px;
+    display: block;
+}
+.frame-box-price{
+    margin-top: 30px;
+}
+.frame-box-price strong{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 29.79px;
+    text-align: left;
+}
+
+.page-floor-main{
+    margin-top: 14px;
+}
+
+.page-floor{
+    gap: 40px;
+    position: relative;
+
+}
+.page-floor .compass {
+    bottom: 0;
+    left: 0;
+    width: 87px;
+}
+.page-floor .compass img{
+    width: 100%;
+}
+.page-floor-map{
+    max-width: 479px;
+    width: 100%;
+    margin-top: 62px;
+}
+
+.floor-plan-rel{
+    max-width: 677px;
+    width: 100%;
+    margin-top: 39px;
+
+}
+.floor-plan-photo{
+    display: flex;
+    position: relative;
+}
+
+.floor-plan-arrow{
+    width: 114px;
+    position: relative;
+    gap: 38px;
+    margin-left: auto;
+}
+.floor-plan-arrow .floor-button-prev{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+}
+.floor-plan-arrow .floor-button-next{
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: rotate(90deg);
+
+}
+.count-slid-floor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    color: #8F8F8F;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 90%;
+    text-align: center;
+    height: 100%;
+}
+.swiper-slide-active .count-slid-floor{
+    color: #754ABC;
+    font-weight: 800;
+    font-size: 64px;
+
+}
+.count-slid{
+    width: 100%;
+    height: 502px;
+}
+
+.floor-plan-svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.floor-path{
+    cursor: pointer;
+}
+
+.floor-plan-mod{
+    background: #754ABC;
+    max-width: 456px;
+    padding: 32px;
+    border-radius: 24px 24px 24px 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    right: 140px;
+    display: none;
+}
+.floor-plan-mod-act{
+    display: block;
+}
+.floor-plan-mod .commercial-item{
+    margin-top: 0;
+}
+.floor-plan-mod .comme-line-info p {
+    color: #FFFFFF;
+}
+.floor-plan-mod .comme-line-info span{
+    color: #FFFFFF;
+}
+.floor-plan-price{
+    margin-top: 30px;
+    gap: 8px;
+}
+.floor-plan-price strong{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 29.79px;
+    text-align: left;
+}
+.floor-plan-price del{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23.83px;
+    text-align: left;
+    color: #FFFFFF;
+    opacity: 0.50;
+}

@@ -183,7 +183,7 @@
                     </a>
                 </div>
                 <div class="filter-btn G-flex-column G-align-center">
-                    <button class="btn">Забронировать</button>
+                    <button class="open_modal btn" data-val="apartment">Забронировать</button>
                     <button class="btn-select">Записаться на просмотр</button>
                 </div>
             </div>
@@ -1023,6 +1023,97 @@
         </div>
     </div>
 </footer>
+
+
+
+<div id="apartment" class="modal">
+    <div class="modal-content">
+        <div class="modal-registration">
+            <div class="close"></div>
+            <h3>Заявка на бронирование</h3>
+            <div class="booking-request-flex G-justify-between">
+                <div class="booking-request-info">
+                    <div class="booking-request-floor G-justify-center">
+                        <img src="./assets/img/floor.svg" alt="floor">
+                    </div>
+                    <div class="commercial-info">
+                        <div class="commercial-price G-align-center G-justify-between">
+                            <strong>15 550 960 ₽</strong>
+                            <div class="G-align-center">
+                                <del>20 196 051 ₽</del>
+                            </div>
+                        </div>
+                        <div class="commercial-item G-flex-column">
+                            <div class="commercial-line G-align-center G-justify-between">
+                                <div class="comme-line-info G-align-center G-justify-between">
+                                    <p>Квартира</p>
+                                    <span>№<b>669</b></span>
+                                </div>
+                                <div class="comme-line-info G-align-center G-justify-between">
+                                    <p>Корпус</p>
+                                    <span><b>К7В</b></span>
+                                </div>
+                            </div>
+                            <div class="commercial-line G-align-center G-justify-between">
+                                <div class="comme-line-info G-align-center G-justify-between">
+                                    <p>Площадь</p>
+                                    <span><b>38.8м²</b></span>
+                                </div>
+                                <div class="comme-line-info G-align-center G-justify-between">
+                                    <p>Комнат</p>
+                                    <span><b>С</b></span>
+                                </div>
+                            </div>
+                            <div class="commercial-line G-align-center G-justify-between">
+                                <div class="comme-line-info G-align-center G-justify-between">
+                                    <p>Этаж</p>
+                                    <span><b>12</b></span>
+                                </div>
+                                <div class="comme-line-info G-align-center G-justify-between">
+                                    <p>Сдача</p>
+                                    <span><b>сдан</b></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-form">
+                    <form>
+                        <div class="modal-form-cnt G-flex-column">
+                            <div class="modal-form-inp">
+                                <label>
+                                    <input type="text" placeholder="Имя">
+                                </label>
+                            </div>
+                            <div class="modal-form-inp">
+                                <label>
+                                    <input type="text" placeholder="Телефон">
+                                </label>
+                            </div>
+                            <div class="modal-form-inp">
+                                <label>
+                                    <input type="text" placeholder="E-mail">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="check-form">
+                            <label>
+                                <small>
+                                    Нажимая на кнопку Отправить, Вы соглашаетесь на обработку
+                                    <a href="#">персональных данных</a>
+                                </small>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <button class="btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script src="assets/js/jquery-3.6.4.js"></script>
