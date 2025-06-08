@@ -187,6 +187,9 @@ let newsSwiper = new Swiper(".news-slider", {
 
 
 
+
+
+
 let commercialSwiper = new Swiper(".commercial-slider", {
     slidesPerView: 2,
     spaceBetween: 24,
@@ -249,6 +252,20 @@ let calculateSwiper = new Swiper(".calculate-standard-slid", {
 
 
 
+let gallerySlider = new Swiper(".gallery-slider", {
+    slidesPerView: 1,
+    spaceBetween: 4,
+    loop: true,
+    speed: 600,
+    pagination: {
+        el: ".gallery-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".gallery-button-next",
+        prevEl: ".gallery-button-prev",
+    }
+});
 
 
 

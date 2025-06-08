@@ -643,6 +643,8 @@ p{
     top: 0;
     left: 0;
     z-index: 0;
+    height: 100%;
+    object-fit: cover;
 }
 .infrastructure-box:hover img{
     transform: scale(1.1);
@@ -953,7 +955,7 @@ p{
 .price-ascending-down ul{
     gap: 9px;
 }
-.price-ascending-down a{
+.price-ascending-down li{
     width: 100%;
     padding: 8px 10px;
     border-radius: 16px;
@@ -963,8 +965,9 @@ p{
     line-height: 100%;
     transition: 0.3s;
     white-space: nowrap;
+    cursor: pointer;
 }
-.price-ascending-down a:hover{
+.price-ascending-down li:hover{
     background: #FFFFFF7D;
 
 }
@@ -1250,9 +1253,16 @@ input[type=range]::-webkit-slider-thumb {
     position: absolute;
     top: 22px;
     right: 22px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-
-
+.favorite-heart svg path{
+    transition: 0.3s;
+}
+.favorite-heart-act svg path{
+    stroke: #754ABC;
+    fill: #754ABC;
+}
 .commercial-info .btn {
     padding: 9px 24px;
     font-size: 14px;
@@ -1849,6 +1859,7 @@ input[type=range]::-webkit-slider-thumb {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 24px;
+    cursor: pointer;
 }
 .construction-photo .favorable-data{
     position: relative;
@@ -1909,8 +1920,27 @@ input[type=range]::-webkit-slider-thumb {
 
 
 
-
-
+.modal-gallery{
+    width: 100%;
+    background: #FFFFFF;
+    padding: 90px 90px;
+    position: relative;
+}
+.modal-gallery-rel{
+    position: relative;
+}
+.modal-gallery-rel .swiper-button-next, .modal-gallery-rel  .swiper-button-prev {
+    top: 44%;
+    background: #1A1A1A40;
+    backdrop-filter: blur(25px)
+}
+.gallery-pic {
+    width: 100%;
+    height: 100%;
+}
+.gallery-pic img{
+    width: 100%;
+}
 
 
 
@@ -2162,7 +2192,9 @@ input[type=range]::-webkit-slider-thumb {
         margin-right: -6px;
         padding-right: 14px;
     }
-
+    .modal-gallery {
+        padding: 80px 40px 40px;
+    }
 }
 @media (max-width: 1399px){
     .swiper-button-next, .swiper-button-prev {

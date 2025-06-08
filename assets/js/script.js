@@ -16,6 +16,14 @@ $('.price-ascending-click').on('click', function () {
 })
 
 
+$('.price-ascending-down li').on('click', function () {
+    $('.price-ascending').removeClass('price-ascending-act');
+})
+
+$('.favorite-heart').on('click', function () {
+    $(this).toggleClass('favorite-heart-act');
+})
+
 $(function () {
     let Accordion = function (el, multiple) {
         this.el = el || {};
@@ -196,9 +204,44 @@ $(window).on('click', function (e) {
 
 
 
+$('.time-call-click').on('click', function (e) {
+    $(this).parent().toggleClass('time-call-act');
+    e.stopPropagation();
+});
+
+$('.time-call-drop ul li').on('click', function () {
+    $('.time-call').removeClass('time-call-act')
+
+    let selected_text = $(this).html();
+    $('.time-call-click ').html(selected_text);
+});
+$(window).on('click', function (e) {
+    let timeCall = $('.time-call');
+    if (e.target !== timeCall) {
+        timeCall.removeClass('time-call-act');
+    }
+});
 
 
 
+
+
+
+
+
+$('.infrast-map-cnt li').on('click', function () {
+    $('.infrast-map-cnt li').removeClass('map-act')
+    $(this).addClass('map-act')
+})
+
+
+
+
+
+$('.construction-menu ul li').on('click', function () {
+    $('.construction-menu li').removeClass('construction-act')
+    $(this).addClass('construction-act')
+})
 
 
 

@@ -46,6 +46,34 @@
     margin-top: 110px;
 }
 
+
+
+.catalog-main .price-ascending {
+    max-width: 442px;
+}
+
+.price-ascending-number{
+    gap: 8px;
+    max-width: 143px;
+    width: 100%;
+}
+.price-ascending-number span{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #1A1A1A;
+}
+.price-ascending-number input{
+    width: 99px;
+    border-bottom: 1px solid #1A1A1A;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #1A1A1A;
+}
+
+
+
 @media (max-width: 1499px){
     .catalog-title h1 {
         max-width: 400px;

@@ -206,7 +206,71 @@
 .modal-form-inp input::placeholder{
     color: #5E4D6D66;
 }
+.time-call{
+    position: relative;
+}
+.time-call-click{
+    color: #5E4D6D66;
+    width: 100%;
+    border: 1px solid #754ABC;
+    gap: 8px;
+    border-radius: 32px;
+    padding: 12px 32px;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.time-call-click:before{
+    content: '';
+    position: absolute;
+    right: 32px;
+    top: 14px;
+    border-top: 2px solid #9F9DBA;
+    border-right: 2px solid #9F9DBA;
+    width: 9px;
+    height: 9px;
+    transform: rotate(135deg);
+    transition: 0.3s;
 
+}
+.time-call-drop{
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #754ABC;
+    background: #FFFFFF;
+    border-radius: 16px;
+    z-index: 5;
+    padding: 6px 8px;
+    display: none;
+}
+.time-call-act .time-call-drop {
+    display: block;
+}
+.time-call-drop ul{
+    gap: 4px;
+}
+.time-call-drop ul li{
+    color: #5E4D6D;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    padding: 7px 24px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 16px;
+
+}
+.time-call-drop ul li:hover{
+    background: #5E4D6D66;
+
+}
 .check-form{
     margin-top: 16px;
 }
@@ -267,7 +331,7 @@
 .check-form label input:checked ~ .checkmark:after {
     display: block;
 }
-.modal-form .btn{
+.modal .btn{
     margin-top: 16px;
     width: 100%;
 }
@@ -295,6 +359,18 @@
     font-size: 16px;
     line-height: 100%;
 }
+
+
+
+
+
+.request-viewing{
+    max-width: 536px;
+    width: 100%;
+}
+
+
+
 
 
 @media (max-width: 1200px){
@@ -344,6 +420,22 @@
         font-size: 26px;
         line-height: 28.79px;
     }
-
+    .time-call-click {
+        padding: 10px 24px;
+        font-size: 16px;
+    }
+    .time-call-click:before {
+        right: 24px;
+        top: 12px;
+        width: 8px;
+        height: 8px;
+    }
+    .time-call-drop {
+        top: 43px;
+    }
+    .time-call-drop ul li {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
 
 }
