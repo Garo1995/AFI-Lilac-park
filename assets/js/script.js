@@ -204,6 +204,29 @@ $(window).on('click', function (e) {
 
 
 
+
+
+$('.menu-scroll').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+        let $target = $(this.hash);
+        $target = $target.length && $target
+            || $('[name=' + this.hash.slice(1) +']');
+        if ($target.length) {
+            let targetOffset = $target.offset().top-30;
+            $('html,body')
+                .animate({scrollTop: targetOffset}, 1000);
+            return false;
+        }
+    }
+});
+
+
+
+
+
+
+
 $('.time-call-click').on('click', function (e) {
     $(this).parent().toggleClass('time-call-act');
     e.stopPropagation();
@@ -299,6 +322,34 @@ $(window).on('click', function (event) {
 
 
 
+document.querySelectorAll('.favorable-box').forEach(box => {
+    box.addEventListener('click', () => {
+        // 1. Получаем элементы внутри карточки
+        const imgSrc = box.querySelector('img').getAttribute('src');
+        const date = box.querySelector('.favorable-data')?.textContent || '';
+        const title = box.querySelector('h4')?.textContent || '';
+        const text = box.querySelector('p')?.textContent || '';
+
+        // 2. Находим модальное окно
+        const modal = document.getElementById('favorable');
+        const modalPhoto = modal.querySelector('.favorable-photo');
+        const modalText = modal.querySelector('.favorable-modal-text');
+
+        // 3. Заполняем содержимое модалки
+        modalPhoto.innerHTML = `
+      <span class="favorable-data">${date}</span>
+      <img src="${imgSrc}" alt="favorable">
+    `;
+
+        modalText.innerHTML = `
+      <h4>${title}</h4>
+      <p>${text}</p>
+    `;
+
+        // 4. Показываем модалку
+        modal.classList.add('active');
+    });
+});
 
 
 
@@ -306,11 +357,36 @@ $(window).on('click', function (event) {
 
 
 
+const slider = document.querySelector('.master-plan-menu ul');
 
+let isDown = false;
+let startX;
+let scrollLeft;
 
+slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+});
 
+slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+});
 
+slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+});
 
+slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 1.5; // множитель скорости
+    slider.scrollLeft = scrollLeft - walk;
+});
 
 
 

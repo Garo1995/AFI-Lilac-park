@@ -252,18 +252,18 @@ let calculateSwiper = new Swiper(".calculate-standard-slid", {
 
 
 
-let gallerySlider = new Swiper(".gallery-slider", {
+let galleryModSlider = new Swiper(".gallery-mod-slider", {
     slidesPerView: 1,
     spaceBetween: 4,
     loop: true,
     speed: 600,
     pagination: {
-        el: ".gallery-pagination",
+        el: ".gallery-mod-pagination",
         clickable: true,
     },
     navigation: {
-        nextEl: ".gallery-button-next",
-        prevEl: ".gallery-button-prev",
+        nextEl: ".gallery-mod-button-next",
+        prevEl: ".gallery-mod-button-prev",
     }
 });
 

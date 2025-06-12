@@ -20,8 +20,9 @@
 
             <div class="header-btn G-align-center">
                 <a href="tel:+7 (495) 324-97-58" class="header-phone">+7 (495) 324-97-58</a>
-                <button class="btn-select G-center">Выбрать квартиру</button>
-                <button class="btn-sign-up G-center">Записаться на просмотр</button>
+                <a href="./catalog.html" class="btn-select G-center">Выбрать квартиру</a>
+                <button class="btn-sign-up open_modal G-center" data-val="modal">Записаться на просмотр</button>
+
             </div>
 
         </div>
@@ -103,8 +104,10 @@
                     </div>
                     <div class="header-btn-white G-align-center">
                         <a href="tel:+7 (495) 324-97-58" class="header-phone">+7 (495) 324-97-58</a>
-                        <button class="btn-select G-center">Выбрать квартиру</button>
-                        <button class="btn-sign-up G-center">Записаться на просмотр</button>
+                        <a href="./catalog.html" class="btn-select G-center">Выбрать квартиру</a>
+
+                        <button class="btn-sign-up open_modal G-center" data-val="modal">Записаться на просмотр</button>
+
                     </div>
                 </div>
             </div>
@@ -116,7 +119,7 @@
 <section class="page-apartment-min">
     <div class="container">
         <div class="page-apartment-title">
-            <a href="#" class="go-back-apart">Назад к генплану</a>
+            <a href="./general-plan.html" class="go-back-apart">Назад к генплану</a>
             <h1>Корпус 3</h1>
             <ul class="bread-caps G-align-center">
                 <li>Очередь 3</li>
@@ -127,37 +130,208 @@
             <div class="frame-content-map G-flex">
                 <img src="./assets/img/frame-1.svg" alt="map">
             </div>
-            <div class="frame-box">
-                <div class="frame-box-info G-flex-column">
-                    <div class="frame-box-name G-align-center G-justify-between">
-                        <span>СК</span>
-                        <div class="frame-liner"></div>
-                        <span>2</span>
-                        <div class="frame-liner"></div>
-                        <strong>от 11 764 125₽</strong>
-                    </div>
-                    <div class="frame-box-name G-align-center G-justify-between">
-                        <span>1К</span>
-                        <div class="frame-liner"></div>
-                        <span>1</span>
-                        <div class="frame-liner"></div>
-                        <strong>от 11 764 125₽</strong>
-                    </div>
-                </div>
-                <div class="frame-box-price G-align-center G-justify-between">
-                    <strong>22 этаж</strong>
-                    <i class="icon-remont"></i>
-                </div>
-            </div>
-            <div class="frame-genp-photo G-flex">
-                <img src="./assets/img/genplan-frame.png" alt="frame">
+            <div class="genplan-map">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 2402 1140" preserveAspectRatio="xMidYMid meet" fill="none"
+                     class="genplan-map-svg">
+                    <image xlink:href="./assets/img/corpus-4.png"  x="0" y="0"></image>
+                    <a href="/genplan/4/10/2">
+                        <path d="M 731.635,841.461 L 731.835,801.0244 L 817.77371,816.116 L 829.31715,814.15223 L 919.767,828.86446 L 1066.5236,801.25074 V 834.29667 L 1062.9021,835.65472 V 844.93475 L 946.10963,869.83237 L 919.767,864.17382 L 907.40514,866.88992 L 907.63149,873.45384 L 829.31715,855.79916 L 817.77371,858.705 Z"
+                              class="genplan-map-floor" data-hover="false"></path>
+                    </a><a href="/genplan/4/10/4">
+                    <path d="M 732.435,759.60381 L 732.66911,719.562 L 817.77371,728.169 L 829.76983,727.01056 L 920.0803,734.02716 L 1066.5236,720.2203 V 760.73552 L 920.067,781.55898 L 828.917,769.7892 L 817.77371,771.37359 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/10/6">
+                    <path d="M 733.12179,678.79971 V 638.05814 L 817.77371,640.32156 L 828.63812,639.64254 L 920.0803,640.985 L 1066.5236,638.28449 V 678.79971 L 920.0803,687.85339 L 829.54349,683.32655 L 817.77371,684.00557 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/10/7">
+                    <path d="M 733.12179,638.05814 V 598.22195 L 817.77371,595.73219 L 828.63812,595.2795 L 920.0803,593.46877 L 1066.5236,596.18487 V 638.28449 L 920.0803,640.985 L 828.63812,639.64254 L 817.77371,640.32156 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/10/8">
+                    <path d="M 733.12179,598.22195 L 733.374,554.76428 L 817.77371,550.69013 L 828.63812,550.91647 L 920.53298,546.61597 L 1066.5236,555.66965 V 596.18487 L 920.0803,593.46877 L 828.63812,595.2795 L 817.54736,595.73219 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/10/10">
+                    <path d="M 733.174,517.044 L 732.44277,457.43722 L 817.32102,444.76206 L 825.92202,444.9884 L 920.53298,430.503 L 1066.5236,453.36306 V 514.4754 L 920.53298,499.421 L 827.28007,508.13783 L 818.00005,508.796 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/11/2">
+                    <path d="M 591.21722,812.08342 V 778.15325 L 673.442,791.777 L 685.16538,789.67671 L 731.939,797.19896 L 731.635,841.461 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/11/4">
+                    <path d="M 591.53731,743.10275 L 591.85741,707.73214 L 673.64193,715.09435 L 685.32543,713.33382 L 732.719,717.33502 L 732.439,757.187 L 682.92471,751.74534 L 673.48188,752.70563 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/11/6">
+                    <path d="M 592.01746,671.72135 L 592.778,634.75 L 673.482,636.151 L 684.04504,635.63 L 733.16,636.1907 L 733.12,676.84289 L 684.68524,674.60221 L 673.64193,675.72255 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/11/7">
+                    <path d="M 592.778,634.75 L 592.8177,599.85981 L 673.80197,599.05957 L 682.76466,598.25933 L 733.12179,598.22195 L 733.16,636.1907 L 684.04504,635.63 L 673.482,636.151 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/11/9">
+                    <path d="M 592.8177,565.23 L 592.33755,528.63846 L 673.96202,521.59635 L 683.2448,522.39659 L 733.174,517.044 L 733.38,557.127 L 684.04504,559.548 L 673.96202,560.48801 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/11/10">
+                    <path d="M 592.33755,528.63846 L 591.85741,478.923 L 674.28212,466.69989 L 683.885,467.18004 L 732.58,460.938 L 733.174,517.044 L 683.2448,522.39659 L 673.96202,521.59635 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/12/2">
+                    <path d="M 540.73108,802.15611 L 541.18376,769.33651 L 591.21722,778.15325 V 812.08342 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/12/3">
+                    <path d="M 541.18376,769.33651 L 541.4423,738.30131 L 591.53731,743.10275 L 591.21722,778.15325 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/12/4">
+                    <path d="M 541.4423,738.30131 V 736.54078 L 541.60235,705.33142 L 591.85741,707.73214 L 591.53731,743.10275 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/12/6">
+                    <path d="M 541.76239,672.84169 L 541.562,640.03185 L 592.698,641.15219 L 592.01746,674.92231 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/12/7">
+                    <path d="M 541.562,640.03185 V 640.03185 L 541.60235,608.34235 L 592.878,607.86221 L 592.698,641.15219 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/12/8">
+                    <path d="M 541.60235,608.34235 L 541.422,576.49281 L 592.878,573.77199 V 607.86221 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/12/9">
+                    <path d="M 541.622,576.49281 L 541.00206,544.063 L 592.43777,539.20163 L 592.97823,573.77199 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/12/10">
+                    <path d="M 541.00206,544.063 L 540.80211,511.19323 L 592.138,505.59155 L 592.43777,539.20163 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/12/11">
+                    <path d="M 540.80211,511.19323 V 479.304 L 619.86581,467.08 L 653.47588,469.74081 L 591.85741,478.923 L 592.138,505.59155 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/12/13">
+                    <path d="M 541.602,447.694 L 541.4423,396.43883 L 620.1859,374.9924 L 826.48774,408.76253 L 825.92202,444.9884 L 817.32102,444.76206 L 790.357,448.77452 L 620.506,431.85 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/2">
+                    <path d="M 1066.5236,770.771 L 1066.537,743.75987 L 1089.6105,745.68377 L 1162.053,737.988 L 1162.009,765.17 L 1090.2468,773.252 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/3">
+                    <path d="M 1066.537,743.75987 L 1066.5236,717.204 L 1088.9314,717.789 L 1162.053,711.27979 V 737.988 L 1089.6105,745.68377 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/4">
+                    <path d="M 1066.5236,717.204 L 1066.55,688.87193 L 1089.1578,690.00364 L 1162.027,686.15582 L 1162.053,711.27979 L 1088.9314,717.789 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/5">
+                    <path d="M 1066.55,688.87193 L 1066.5236,662.27674 L 1089.4973,662.335 L 1162.0399,660.44 L 1162.027,686.15582 L 1089.1578,690.00364 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/9">
+                    <path d="M 1066.55,580.90679 L 1066.537,553.5194 L 1089.8368,553.06672 L 1162.0399,557.8199 L 1162.027,583.28338 L 1089.6105,580.141 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/10">
+                    <path d="M 1066.537,553.5194 L 1066.55,526.027 L 1089.6105,525.1 L 1162.027,531.56423 L 1162.0399,557.8199 L 1089.8368,553.06672 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/11">
+                    <path d="M 1066.55,526.027 L 1066.537,499.324 L 1090.0632,497.526 L 1162.0399,505.98758 L 1162.027,531.56423 L 1089.6105,525.1 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/12">
+                    <path d="M 1066.537,499.324 L 1066.5236,471.47042 L 1089.6105,470.11237 L 1162.027,480.337 L 1162.0399,505.98758 L 1090.0632,497.526 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/13">
+                    <path d="M 1066.5236,471.47042 V 453.36306 L 1032.083,447.97 L 1089.345,442.251 L 1162.0399,454.182 L 1162.027,480.337 L 1089.6105,470.11237 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/14">
+                    <path d="M 1032.083,447.97 L 940.867,433.732 L 1089.497,414.924 L 1211.043,437.611 V 440.096 L 1162.009,445.874 L 1162.0399,454.182 L 1089.345,442.251 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/16">
+                    <path d="M 938.862,410.84315 L 938.901,385.87567 L 1089.6066,359.6278 L 1211.023,389.71682 L 1210.983,413.56397 L 1089.6066,386.83595 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/17">
+                    <path d="M 938.901,385.87567 L 938.84142,361.22828 L 1089.6066,331.45936 L 1211.023,366.02972 V 389.71682 L 1089.6066,359.6278 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/20">
+                    <path d="M 938.762,311.9335 L 938.562,287.92631 L 1089.1265,249.35474 L 1211.023,293.04784 V 317.21509 L 1089.6066,276.40285 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/13/25">
+                    <path d="M 938.481,188.69656 L 938.381,157.287 L 1089.4466,104.03118 L 1211.023,164.52932 V 194.93843 L 1089.4466,138.60155 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/7/2">
+                    <path d="M 1681.464,835.13033 V 795.43843 L 1746.803,768.87047 V 802.081 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/7/3">
+                    <path d="M 1681.464,795.43843 V 755.74654 L 1746.803,734.30011 V 768.87047 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/7/4">
+                    <path d="M 1681.464,755.74654 V 717.01493 L 1746.803,700.04984 V 734.30011 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/7/7">
+                    <path d="M 1681.464,636.99094 V 598.25933 L 1746.803,601.221 V 635.71056 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/7/8">
+                    <path d="M 1681.464,598.25933 V 558.367 L 1746.803,568.551 V 601.221 Z" class="genplan-map-floor"
+                          data-hover="false"></path>
+                </a><a href="/genplan/4/7/9">
+                    <path d="M 1681.464,558.367 V 500.95016 L 1729.1583,514.07409 V 518.55544 L 1746.803,523.03678 V 568.551 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/8/2">
+                    <path d="M 1554.586,886.02559 L 1554.986,837.6911 L 1569.67,838.97148 L 1681.464,795.43843 V 835.13033 L 1569.67,887.94616 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/8/3">
+                    <path d="M 1554.986,837.6911 L 1555.6663,787.11594 L 1569.67,788.537 L 1681.464,755.74654 V 795.43843 L 1569.67,838.97148 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/8/4">
+                    <path d="M 1555.6663,787.11594 V 738.78145 L 1569.67,739.582 L 1681.464,717.01493 V 755.74654 L 1569.67,788.537 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/8/6">
+                    <path d="M 1555.646,689.16658 L 1555.966,640.83209 H 1569.77 L 1681.464,636.99094 V 676.923 L 1569.77,690.44696 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/8/7">
+                    <path d="M 1555.966,640.83209 V 591.21722 L 1569.77,591.85741 L 1681.464,598.25933 V 636.99094 L 1569.77,640.83209 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/8/8">
+                    <path d="M 1555.966,591.21722 V 540.64206 L 1569.77,542.24254 L 1681.464,558.367 V 598.25933 L 1569.77,591.85741 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/8/9">
+                    <path d="M 1555.966,540.64206 V 471.18124 L 1569.77,469.58076 L 1681.464,500.95016 V 558.367 L 1569.77,542.24254 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/9/2">
+                    <path d="M 1162.809,929.23854 L 1162.009,869.3806 L 1384.7351,908.893 L 1554.986,837.6911 L 1554.586,886.02559 L 1384.7351,973.852 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/9/3">
+                    <path d="M 1162.009,869.3806 V 814.3241 L 1384.7351,843.45283 L 1555.6663,787.11594 L 1554.986,837.6911 L 1384.7351,908.893 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/9/4">
+                    <path d="M 1162.009,814.3241 V 756.607 L 1384.7351,777.77326 L 1555.6663,738.78145 V 787.11594 L 1384.7351,843.45283 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/9/5">
+                    <path d="M 1162.009,756.607 V 700.36994 L 1384.7351,712.85368 L 1555.646,689.16658 L 1555.6663,738.78145 L 1384.7351,777.77326 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/9/6">
+                    <path d="M 1162.009,700.36994 V 643.39286 L 1384.7351,646.954 L 1555.966,640.83209 L 1555.646,689.16658 L 1384.7351,712.85368 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/9/7">
+                    <path d="M 1162.009,643.39286 V 586.73588 L 1384.7351,581.61434 L 1555.966,591.21722 V 640.83209 L 1384.7351,646.954 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a><a href="/genplan/4/9/9">
+                    <path d="M 1162.009,529.4387 V 445.874 L 1384.7351,419.64579 L 1508.092,453.57596 V 458.6975 L 1555.966,471.18124 V 540.64206 L 1384.7351,515.515 Z"
+                          class="genplan-map-floor" data-hover="false"></path>
+                </a></svg>
             </div>
         </div>
 
     </div>
 </section>
 
-
+<div class="frame-box" id="floorTooltip">
+    <div class="frame-box-info G-flex-column">
+        <div class="frame-box-name G-align-center ">
+            <span>СК</span>
+            <div class="frame-liner"></div>
+            <span class="warehouse">–</span>
+            <div class="frame-liner"></div>
+            <strong class="warehouse-price">–</strong>
+        </div>
+        <div class="frame-box-name G-align-center ">
+            <span>1К</span>
+            <div class="frame-liner"></div>
+            <span class="apartments-count">–</span>
+            <div class="frame-liner"></div>
+            <strong class="apartments-price">–</strong>
+        </div>
+    </div>
+    <div class="frame-box-price G-align-center G-justify-between">
+        <strong class="number-floor">– этаж</strong>
+        <i class="icon-remont"></i>
+    </div>
+</div>
 
 
 <footer>
@@ -264,5 +438,457 @@
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/slider.js"></script>
 <script src="assets/js/script.js"></script>
+
+
+<script>
+    const tooltip = document.getElementById("floorTooltip");
+
+    const floorData = {
+        "/genplan/4/10/2": {
+            floor: "22 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 764 125₽",
+            apartmentsCount: 1,
+            apartmentsPrice: "от 11 764 125₽"
+        },
+        "/genplan/4/10/4": {
+            floor: "21 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 000 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 9 850 000₽"
+        },
+        "/genplan/4/10/6": {
+            floor: "20 этаж",
+            warehouse: 3,
+            warehousePrice: "от 12 500 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 900 000₽"
+        },
+        "/genplan/4/10/7": {
+            floor: "19 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 100 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 10 200 000₽"
+        },
+        "/genplan/4/10/8": {
+            floor: "18 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 850 000₽",
+            apartmentsCount: 1,
+            apartmentsPrice: "от 9 700 000₽"
+        },
+        "/genplan/4/10/10": {
+            floor: "17 этаж",
+            warehouse: 0,
+            warehousePrice: "–",
+            apartmentsCount: 4,
+            apartmentsPrice: "от 12 500 000₽"
+        },
+        "/genplan/4/11/2": {
+            floor: "16 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 500 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 000 000₽"
+        },
+        "/genplan/4/11/4": {
+            floor: "15 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 000 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 10 900 000₽"
+        },
+        "/genplan/4/11/6": {
+            floor: "14 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 800 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 9 700 000₽"
+        },
+        "/genplan/4/11/7": {
+            floor: "13 этаж",
+            warehouse: 2,
+            warehousePrice: "от 10 900 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 10 200 000₽"
+        },
+        "/genplan/4/11/9": {
+            floor: "12 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 600 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 9 550 000₽"
+        },
+        "/genplan/4/11/10": {
+            floor: "11 этаж",
+            warehouse: 0,
+            warehousePrice: "–",
+            apartmentsCount: 4,
+            apartmentsPrice: "от 12 300 000₽"
+        },
+        "/genplan/4/12/2": {
+            floor: "10 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 400 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 100 000₽"
+        },
+        "/genplan/4/12/3": {
+            floor: "9 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 200 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 10 900 000₽"
+        },
+        "/genplan/4/12/4": {
+            floor: "8 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 900 000₽",
+            apartmentsCount: 1,
+            apartmentsPrice: "от 9 800 000₽"
+        },
+        "/genplan/4/12/6": {
+            floor: "7 этаж",
+            warehouse: 0,
+            warehousePrice: "–",
+            apartmentsCount: 4,
+            apartmentsPrice: "от 12 200 000₽"
+        },
+        "/genplan/4/12/7": {
+            floor: "6 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 200 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 000 000₽"
+        },
+        "/genplan/4/12/8": {
+            floor: "5 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 000 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 10 700 000₽"
+        },
+        "/genplan/4/12/9": {
+            floor: "4 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 700 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 9 600 000₽"
+        },
+        "/genplan/4/12/10": {
+            floor: "3 этаж",
+            warehouse: 0,
+            warehousePrice: "–",
+            apartmentsCount: 4,
+            apartmentsPrice: "от 12 400 000₽"
+        },
+        "/genplan/4/12/11": {
+            floor: "2 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 300 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 100 000₽"
+        },
+        "/genplan/4/12/13": {
+            floor: "1 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 100 000₽",
+            apartmentsCount: 1,
+            apartmentsPrice: "от 11 000 000₽"
+        },
+        "/genplan/4/13/2": {
+            floor: "22 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 900 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 800 000₽"
+        },
+        "/genplan/4/13/3": {
+            floor: "21 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 700 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 11 400 000₽"
+        },
+        "/genplan/4/13/4": {
+            floor: "20 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 900 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 9 800 000₽"
+        },
+        "/genplan/4/13/5": {
+            floor: "19 этаж",
+            warehouse: 0,
+            warehousePrice: "–",
+            apartmentsCount: 4,
+            apartmentsPrice: "от 12 500 000₽"
+        },
+        "/genplan/4/13/9": {
+            floor: "18 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 200 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 000 000₽"
+        },
+        "/genplan/4/13/10": {
+            floor: "17 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 100 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 10 900 000₽"
+        },
+        "/genplan/4/13/11": {
+            floor: "16 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 800 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 9 700 000₽"
+        },
+        "/genplan/4/13/12": {
+            floor: "15 этаж",
+            warehouse: 0,
+            warehousePrice: "–",
+            apartmentsCount: 4,
+            apartmentsPrice: "от 12 600 000₽"
+        },
+        "/genplan/4/13/13": {
+            floor: "14 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 300 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 100 000₽"
+        },
+        "/genplan/4/13/14": {
+            floor: "13 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 000 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 10 900 000₽"
+        },
+        "/genplan/4/13/16": {
+            floor: "12 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 900 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 9 800 000₽"
+        },
+        "/genplan/4/13/17": {
+            floor: "11 этаж",
+            warehouse: 0,
+            warehousePrice: "от 9 900 000₽",
+            apartmentsCount: 4,
+            apartmentsPrice: "от 12 700 000₽"
+        },
+        "/genplan/4/13/20": {
+            floor: "10 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 400 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 200 000₽"
+        },
+        "/genplan/4/13/25": {
+            floor: "9 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 200 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 11 000 000₽"
+        },
+        "/genplan/4/7/2": {
+            floor: "8 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 900 000₽",
+            apartmentsCount: 1,
+            apartmentsPrice: "от 9 800 000₽"
+        },
+        "/genplan/4/7/3": {
+            floor: "7 этаж",
+            warehouse: 2,
+            warehousePrice: "от 10 500 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 200 000₽"
+        },
+        "/genplan/4/7/4": {
+            floor: "6 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 600 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 9 500 000₽"
+        },
+        "/genplan/4/7/7": {
+            floor: "5 этаж",
+            warehouse: 2,
+            warehousePrice: "от 9 600 000₽",
+            apartmentsCount: 4,
+            apartmentsPrice: "от 12 100 000₽"
+        },
+        "/genplan/4/7/8": {
+            floor: "4 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 000 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 9 900 000₽"
+        },
+        "/genplan/4/7/9": {
+            floor: "3 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 100 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 10 800 000₽"
+        },
+        "/genplan/4/8/2": {
+            floor: "2 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 700 000₽",
+            apartmentsCount: 1,
+            apartmentsPrice: "от 9 600 000₽"
+        },
+        "/genplan/4/8/3": {
+            floor: "1 этаж",
+            warehouse: 2,
+            warehousePrice: "от 10 300 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 000 000₽"
+        },
+        "/genplan/4/8/4": {
+            floor: "22 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 900 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 10 700 000₽"
+        },
+        "/genplan/4/8/6": {
+            floor: "21 этаж",
+            warehouse: 2,
+            warehousePrice: "от 7 300 000",
+            apartmentsCount: 4,
+            apartmentsPrice: "от 12 300 000₽"
+        },
+        "/genplan/4/8/7": {
+            floor: "20 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 100 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 9 900 000₽"
+        },
+        "/genplan/4/8/8": {
+            floor: "19 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 200 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 10 800 000₽"
+        },
+        "/genplan/4/8/9": {
+            floor: "18 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 900 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 9 800 000₽"
+        },
+        "/genplan/4/9/2": {
+            floor: "17 этаж",
+            warehouse: 60,
+            warehousePrice: "от 13 400 000₽",
+            apartmentsCount: 4,
+            apartmentsPrice: "от 12 400 000₽"
+        },
+        "/genplan/4/9/3": {
+            floor: "16 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 300 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 100 000₽"
+        },
+        "/genplan/4/9/4": {
+            floor: "15 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 100 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 10 900 000₽"
+        },
+        "/genplan/4/9/5": {
+            floor: "14 этаж",
+            warehouse: 1,
+            warehousePrice: "от 9 800 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 9 700 000₽"
+        },
+        "/genplan/4/9/6": {
+            floor: "13 этаж",
+            warehouse: 2,
+            warehousePrice: "от 6 800 000₽",
+            apartmentsCount: 4,
+            apartmentsPrice: "от 12 600 000₽"
+        },
+        "/genplan/4/9/7": {
+            floor: "12 этаж",
+            warehouse: 1,
+            warehousePrice: "от 10 400 000₽",
+            apartmentsCount: 2,
+            apartmentsPrice: "от 10 200 000₽"
+        },
+        "/genplan/4/9/9": {
+            floor: "11 этаж",
+            warehouse: 2,
+            warehousePrice: "от 11 200 000₽",
+            apartmentsCount: 3,
+            apartmentsPrice: "от 10 900 000₽"
+        }
+    };
+
+
+
+
+    document.querySelectorAll(".genplan-map-floor").forEach(path => {
+        const link = path.closest("a");
+        if (!link) return;
+        const href = link.getAttribute("href");
+        const data = floorData[href];
+
+        path.addEventListener("mouseenter", (e) => {
+            if (!data) return;
+
+            tooltip.querySelector(".warehouse").textContent = data.warehouse;
+            tooltip.querySelector(".warehouse-price").textContent = data.warehousePrice;
+            tooltip.querySelector(".apartments-count").textContent = data.apartmentsCount;
+            tooltip.querySelector(".apartments-price").textContent = data.apartmentsPrice;
+            tooltip.querySelector(".number-floor").textContent = data.floor;
+
+            // Показываем тултип сразу
+            tooltip.style.display = "block";
+
+            // Обновим позицию сразу при наведении
+            updateTooltipPosition(e, path);
+        });
+
+        path.addEventListener("mousemove", (e) => {
+            // Обновляем позицию тултипа при движении мыши
+            updateTooltipPosition(e, path);
+        });
+
+        path.addEventListener("mouseleave", () => {
+            tooltip.style.display = "none";
+        });
+    });
+
+    // Функция обновления позиции тултипа
+    function updateTooltipPosition(event, path) {
+        const rect = path.getBoundingClientRect();
+
+        // Вертикальная позиция — чуть выше элемента (например, 220px сверху)
+        const top = window.scrollY + rect.top - tooltip.offsetHeight + 10;
+
+        // Горизонтальная позиция — привязываем к позиции мыши относительно страницы
+        // Добавим небольшой сдвиг по горизонтали, чтобы тултип не был прямо под мышкой
+        const left = window.scrollX + event.clientX + 15;
+
+        tooltip.style.top = top + "px";
+        tooltip.style.left = left + "px";
+    }
+</script>
+
+
 </body>
 </html>
