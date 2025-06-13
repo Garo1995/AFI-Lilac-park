@@ -209,7 +209,6 @@ $(window).on('click', function (e) {
 
 
 
-
 $('.menu-scroll').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
         && location.hostname == this.hostname) {
@@ -354,6 +353,96 @@ document.querySelectorAll('.favorable-box').forEach(box => {
         modal.classList.add('active');
     });
 });
+
+
+
+
+
+
+const hoverColor = '#754abc';
+const hoverOpacity = 0.5;
+
+const pathMap = new Map();
+document.querySelectorAll('.general-path').forEach(link => {
+    const path = link.querySelector('path');
+    const href = link.getAttribute('href');
+    if (path && href) {
+        pathMap.set(href, path);
+    }
+});
+
+function getBlockHref(block) {
+    return block.getAttribute('href') || block.querySelector('a')?.getAttribute('href');
+}
+
+pathMap.forEach((path, href) => {
+    const originalColor = path.getAttribute('fill') || path.style.fill;
+    const originalOpacity = path.getAttribute('fill-opacity') || path.style.fillOpacity;
+
+    const relatedBlock = document.querySelector(`.corps-queue[href="${href}"], .corps-queue a[href="${href}"]`)?.closest('.corps-queue');
+
+    path.addEventListener('mouseenter', () => {
+        if (path.dataset.ready !== 'true') return;
+
+        path.dataset.hover = 'true';
+        path.dataset.colored = 'true';
+        path.style.fill = hoverColor;
+        path.style.fillOpacity = hoverOpacity;
+
+        if (relatedBlock) relatedBlock.classList.add('active');
+    });
+
+    path.addEventListener('mouseleave', () => {
+        path.dataset.hover = 'false';
+        setTimeout(() => {
+            if (path.dataset.hover === 'false') {
+                if (path.dataset.colored === 'true') {
+                    path.style.fill = originalColor || '';
+                    path.style.fillOpacity = originalOpacity || '';
+                    path.dataset.colored = '';
+                }
+                if (relatedBlock) relatedBlock.classList.remove('active');
+            }
+        }, 50);
+    });
+});
+
+document.querySelectorAll('.corps-queue').forEach(block => {
+    const href = getBlockHref(block);
+    const path = pathMap.get(href);
+
+    if (path) {
+        const originalColor = path.getAttribute('fill') || path.style.fill;
+        const originalOpacity = path.getAttribute('fill-opacity') || path.style.fillOpacity;
+
+        block.addEventListener('mouseenter', () => {
+            if (path.dataset.ready !== 'true') return;
+
+            path.dataset.hover = 'true';
+            path.dataset.colored = 'true';
+            path.style.fill = hoverColor;
+            path.style.fillOpacity = hoverOpacity;
+            block.classList.add('active');
+        });
+
+        block.addEventListener('mouseleave', () => {
+            path.dataset.hover = 'false';
+            setTimeout(() => {
+                if (path.dataset.hover === 'false') {
+                    if (path.dataset.colored === 'true') {
+                        path.style.fill = originalColor || '';
+                        path.style.fillOpacity = originalOpacity || '';
+                        path.dataset.colored = '';
+                    }
+                    block.classList.remove('active');
+                }
+            }, 50);
+        });
+    }
+});
+
+
+
 
 
 

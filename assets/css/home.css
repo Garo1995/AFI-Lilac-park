@@ -323,6 +323,12 @@ p{
     border: 1px solid #754ABC;
     color: #FBF9ED;
 }
+.genplan-map-corpus {
+    fill: #754abc;
+    transition: fill 0.5s ease;
+    cursor: pointer;
+    fill-opacity: 0;
+}
 .genplan-map-stage-act{
     stroke: #754abc;
 }
@@ -373,11 +379,11 @@ p{
     font-size: 16px;
     line-height: 100%;
 }
-.corps-queue:hover{
+.corps-queue.active{
     background: #754ABC;
     color: #FFFFFF;
 }
-.corps-queue:hover p{
+.corps-queue.active p{
     color: #FFFFFF;
 }
 .circle-clip{
@@ -393,7 +399,7 @@ p{
     left: -9px;
     transition: 0.3s;
 }
-.corps-queue .circle-clip:hover{
+.corps-queue.active .circle-clip{
 
     background: #B498E3;
 }
@@ -445,10 +451,10 @@ p{
     transform: scale(0);
     opacity: 0;
 }
-.corps-queue:hover{
+.corps-queue.active{
     z-index: 2;
 }
-.corps-queue:hover .genplan-corps-queue{
+.corps-queue.active .genplan-corps-queue{
     transform: scale(1);
     opacity: 1;
 }
@@ -2597,6 +2603,9 @@ input[type=range]::-webkit-slider-thumb {
     }
     h1 {
         font-size: 52px;
+    }
+    .master-plan-info{
+        display: none;
     }
     .favorable-modal-cnt {
         margin-top: 30px;
