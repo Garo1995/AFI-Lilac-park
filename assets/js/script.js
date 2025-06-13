@@ -144,15 +144,19 @@ $('.close-filter').on('click', function () {
 })
 
 
-$('.floor-path').on('click', function () {
-    $('.floor-plan-mod').toggleClass('floor-plan-mod-act')
-
+$('.queue-floor li').on('click', function () {
+    $(this).toggleClass('queue-floor-act')
+})
+$('.queue-floor-two').on('click', function () {
+    $('.genplan-map-stage-two').toggleClass('genplan-map-stage-act')
 })
 
-$('.queue-floor li').on('click', function () {
-    $('.queue-floor li').removeClass('queue-floor-act')
-    $(this).addClass('queue-floor-act')
+$('.queue-floor-three').on('click', function () {
+    $('.genplan-map-stage-three').toggleClass('genplan-map-stage-act')
+})
 
+$('.queue-floor-four').on('click', function () {
+    $('.genplan-map-stage-four').toggleClass('genplan-map-stage-act')
 })
 
 

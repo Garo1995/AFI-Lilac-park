@@ -165,9 +165,7 @@
     height: 100%;
 }
 
-.floor-path{
-    cursor: pointer;
-}
+
 
 .floor-plan-mod{
     background: #754ABC;
@@ -175,9 +173,7 @@
     padding: 32px;
     border-radius: 24px 24px 24px 0;
     position: absolute;
-    top: 0;
     z-index: 2;
-    right: 140px;
     display: none;
 }
 .floor-plan-mod-act{
