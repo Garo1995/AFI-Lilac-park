@@ -246,7 +246,15 @@ header{
     background: unset;
    color: #FFFFFF;
 }
-
+.card-favorite{
+    display: flex;
+    transition: 0.3s;
+}
+/*.card-favorite svg path {*/
+/*    stroke: #754ABC;*/
+/*    fill: #754ABC;*/
+/*    transition: 0.3s;*/
+/*}*/
 
 @media (max-width: 1699px){
     header {
@@ -404,6 +412,10 @@ header{
     .header-btn .btn-sign-up{
         display: none;
     }
+    .header-btn {
+        gap: 20px;
+        flex-direction: row-reverse;
+    }
 }
 @media (max-width: 575px){
     .documents-column {
@@ -418,6 +430,9 @@ header{
     }
     .btn-select {
         font-size: 14px;
+    }
+    .btn-select {
+        padding: 10px 20px;
     }
 }
 @media (max-width: 370px){
