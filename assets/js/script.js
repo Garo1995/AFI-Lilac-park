@@ -1,3 +1,9 @@
+
+$(document).ready(function () {
+    $.mask.definitions['h'] = "[0|1|3|4|5|6|7|9]"
+    $(".mask-phone").mask("+7 (h99) 999-99-99");
+});
+
 $(document).ready(function () {
     $('.open-menu').on('click', function () {
         $('.menu-content').addClass('transition-menu');
@@ -165,7 +171,7 @@ $('.master-plan-click').on('click', function (e) {
     e.stopPropagation();
 });
 
-$('.master-plan-menu ul li').on('click', function () {
+$('.master-plan-menu ul li a').on('click', function () {
     $('.master-plan-min').removeClass('master-plan-menu-act')
     // let text_in = $('.master-plan-click span').html();
     let selected_text = $(this).html();
@@ -178,6 +184,11 @@ $(window).on('click', function (e) {
         menuSort.removeClass('master-plan-menu-act');
     }
 });
+
+$('.menu-scroll').on('click', function (e) {
+    $('.menu-scroll').removeClass('master-active');
+    $(this).addClass('master-active');
+})
 
 
 $('.click-mount').on('click', function (e) {
@@ -254,11 +265,6 @@ $(window).on('click', function (e) {
 
 
 
-
-$('.infrast-map-cnt li').on('click', function () {
-    $('.infrast-map-cnt li').removeClass('map-act')
-    $(this).addClass('map-act')
-})
 
 
 
@@ -446,6 +452,25 @@ document.querySelectorAll('.corps-queue').forEach(block => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const cookieBlock = document.querySelector(".cookie");
+    const acceptBtn = document.querySelector(".cookie__btn");
+
+    // Показываем баннер, если не было принятия
+    if (!localStorage.getItem("cookieAccepted")) {
+        cookieBlock.style.display = "flex";
+    } else {
+        cookieBlock.style.display = "none";
+    }
+
+    // При нажатии — скрываем и сохраняем в localStorage
+    acceptBtn.addEventListener("click", () => {
+        localStorage.setItem("cookieAccepted", "true");
+        cookieBlock.style.display = "none";
+    });
+});
+
+
 
 
 
@@ -456,12 +481,12 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
-slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-});
+// slider.addEventListener('mousedown', (e) => {
+//     isDown = true;
+//     slider.classList.add('active');
+//     startX = e.pageX - slider.offsetLeft;
+//     scrollLeft = slider.scrollLeft;
+// });
 
 slider.addEventListener('mouseleave', () => {
     isDown = false;

@@ -90,7 +90,11 @@
         font-size: 14px;
         width: auto;
     }
-
+    .catalog-btn .btn-sign-up {
+        padding: 8px 24px;
+        font-size: 14px;
+        width: auto;
+    }
 }
 
 

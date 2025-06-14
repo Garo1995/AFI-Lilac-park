@@ -169,7 +169,6 @@
     }
 
 
-
 }
 @media (max-width: 1020px){
     .page-apartment-price strong {
@@ -213,5 +212,14 @@
     }
     .page-apartment-cnt {
         margin-top: 48px;
+    }
+}
+
+@media (max-width: 575px){
+    .apartment-mortgage {
+        gap: 20px;
+    }
+    .modal .comme-line-info {
+        width: 152px;
     }
 }

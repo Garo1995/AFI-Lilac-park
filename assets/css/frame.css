@@ -164,7 +164,10 @@
     width: 100%;
     height: 100%;
 }
-
+.floor-plan-svg svg{
+    width: 100%;
+    height: 100%;
+}
 
 
 .floor-plan-mod{
@@ -256,4 +259,69 @@
 .genplan-filter-scheme-corpuses path[data-active=false] {
     fill-opacity: .2
 }
+@media (max-width: 1399px){
+    .frame-content-map {
+        max-width: 330px;
+    }
+    .frame-box {
+        max-width: 390px;
+        padding: 20px;
+    }
+    .frame-box-name {
+        gap: 11px;
+    }
+    .frame-box-name strong {
+        font-size: 18px;
+    }
+    .frame-box-price strong {
+        font-size: 24px;
+        line-height: 23.79px;
+    }
+    .frame-box-price {
+        margin-top: 20px;
+    }
+    .page-floor-map {
+        max-width: 360px;
+        margin-top: 40px;
+    }
+    .page-floor {
+        gap: 30px;
+    }
+    .floor-plan-arrow {
+        width: 90px;
+        gap: 20px;
+    }
+    .page-floor .compass {
+        width: 60px;
+    }
+    .floor-plan-mod {
+        max-width: 360px;
+        padding: 20px;
+    }
+    .comme-line-info p {
+        font-size: 14px;
+    }
+    .comme-line-info span {
+        font-size: 14px;
+    }
+    .floor-plan-rel {
+        max-width: 560px;
+        margin-top: 30px;
+    }
+    .floor-plan-price strong {
+        font-size: 26px;
+        line-height: 24.79px;
+    }
+    .floor-plan-price del {
+        font-size: 20px;
+    }
+    .floor-plan-price {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 1199px){
+    .page-none-mob{
+        display: none;
+    }
 
+}

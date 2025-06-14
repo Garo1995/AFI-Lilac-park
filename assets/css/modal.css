@@ -15,6 +15,9 @@
 .body-hidd{
     overflow: hidden;
 }
+
+
+
 @-webkit-keyframes unfoldIn {
     0% {
         -webkit-transform: scaleY(0.005) scaleX(0);
@@ -378,7 +381,7 @@
 }
 
 #apartment .btn{
-    margin-top: 55px;
+    margin-top: 65px;
 }
 .booking-request-floor img{
     max-width: 240px;
@@ -399,7 +402,7 @@
     line-height: 23.83px;
 }
 .booking-request-flex .commercial-item {
-    margin-top: 16px;
+    margin-top: 12px;
 }
 .booking-request-flex .comme-line-info p {
     font-size: 16px;
@@ -475,10 +478,23 @@
 
 
 
-
-
-
-
+.modal-thanks-info {
+    padding: 74px 0 70px;
+    gap: 48px;
+}
+.modal-thanks-info p{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+    color: #1A1A1A;
+    max-width: 680px;
+    width: 100%;
+}
+.modal-thanks-info .btn{
+    margin-top: 74px;
+    width: max-content;
+}
 @media (max-width: 1200px){
     .modal-registration {
         max-width: 900px;
