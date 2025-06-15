@@ -191,7 +191,7 @@
         </div>
     </div>
 </section>
-<section class="master-plan padding-section">
+<section class="master-plan">
     <div class="container">
         <div class="master-plan-min">
             <div class="master-plan-click">
@@ -213,7 +213,11 @@
             </div>
         </div>
 
-        <div id="complex" class="about-resid-marg">
+    </div>
+</section>
+<section id="complex" >
+    <div class="container">
+        <div class="about-resid-marg">
             <h2>О жилом квартале</h2>
             <div class="about-resid G-align-start G-justify-between">
                 <div class="about-resid-img G-flex">
@@ -2046,7 +2050,7 @@
                 </ul>
             </div>
             <div class="map">
-                <div class="zoom-map G-center">
+                <div class="zoom-map G-center open_modal" data-val="all-map">
                     <i class="icon-zoom-map"></i>
                 </div>
                 <div class="map-icons G-flex-column">
@@ -3572,6 +3576,37 @@
 </div>
 
 
+
+
+
+
+
+
+
+<div id="all-map" class="modal">
+    <div class="modal-content">
+        <div class="modal-map-box">
+            <div class="close"></div>
+           <div class="modal-map-rel">
+               <div class="infrast-map-cnt">
+                   <ul id="category-list-modal" class="G-flex-column">
+
+                   </ul>
+               </div>
+               <div id="modal-map">
+
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
 <div class="cookie">
     <p class="cookie__text">
         Мы обрабатываем cookies, чтобы сделать наш сайт удобнее и персонализированее для вас.
@@ -3721,6 +3756,55 @@
     }
 </script>
 
+
+<script>
+    const homePageModalMap = new YandexMapConstructor({
+        mapContainerId: 'modal-map',
+        defaultMarker: defaultMarker,
+    })
+
+
+
+
+
+    const categoryListContainerModal = document.getElementById('category-list-modal')
+    for (let i = 0; i < productsList.length; i++) {
+        let productItem = document.createElement('li')
+        productItem.innerHTML = `
+            <div class="map-icon"><img src="${productsList[i].icon}" alt="food"/></div>
+                        <div class="map-cnt-info G-align-center G-justify-between"><span>${productsList[i].title}</span> <span>${productsList[i].points.length}</span>
+                        </div>
+        `
+        productItem.addEventListener('click', function () {
+            let selectedItem = homePageModalMap.changeCategory(productsList[i])
+
+            const items = categoryListContainerModal.querySelectorAll('li')
+            items.forEach((item) => {
+                item.classList.remove('map-act')
+            })
+
+            if (selectedItem) {
+                productItem.classList.add('map-act')
+            } else {
+                productItem.classList.remove('map-act')
+            }
+        })
+        categoryListContainerModal.append(productItem)
+
+
+        document.querySelector('.zoom-map-plus').addEventListener('click', function () {
+            homePageModalMap.zoomIn()
+        })
+
+        document.querySelector('.zoom-map-minus').addEventListener('click', function () {
+            homePageModalMap.zoomOut()
+        })
+        document.querySelector('.map-location').addEventListener('click', function () {
+            homePageModalMap.resetToDefaultCenter()
+        })
+    }
+
+</script>
 
 </body>
 </html>

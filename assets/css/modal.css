@@ -495,6 +495,40 @@
     margin-top: 74px;
     width: max-content;
 }
+
+#all-map .modal-content{
+    padding: 0;
+}
+
+
+.modal-map-box{
+    width: 100%;
+    background: #FFFFFF;
+    position: relative;
+    padding: 60px 0 0;
+    height: 100%;
+
+}
+#modal-map{
+    width: 100%;
+    height: 100%;
+}
+#all-map .close {
+    top: 20px;
+    right: 20px;
+}
+.modal-map-rel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.modal-map-rel .infrast-map-cnt{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+
+}
+
 @media (max-width: 1200px){
     .modal-registration {
         max-width: 900px;
@@ -575,6 +609,12 @@
     }
    .consultation-check .check-form label small {
         font-size: 16px;
+    }
+    .modal-map-rel .infrast-map-cnt {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        width: 244px;
     }
 }
 

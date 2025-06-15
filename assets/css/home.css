@@ -248,10 +248,9 @@ p {
     background-image: url("../img/icons/chevron-right.svg");;
 }
 
-
 .master-plan-menu {
     overflow: hidden;
-
+    margin-right: -130px;
 }
 
 .master-plan-menu ul {
@@ -2399,7 +2398,11 @@ input[type=range]::-webkit-slider-thumb {
 .cookie__btn:hover {
     background: #4F3080;
 }
-
+.master-plan{
+    padding-bottom: 0;
+    overflow: hidden;
+    padding-top: 74px;
+}
 @media (min-width: 768px) {
     .cookie {
         flex-direction: row;
@@ -2416,11 +2419,21 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 
+@media (max-width: 1869px) {
+    .master-plan-menu {
+        margin-right: -130px;
+        padding-right: 60px;
+    }
+}
+
 @media (max-width: 1799px) {
     .container {
         max-width: 1600px;
     }
-
+    .master-plan-menu {
+        margin-right: -80px;
+        padding-right: 40px;
+    }
 }
 
 
@@ -2508,6 +2521,10 @@ input[type=range]::-webkit-slider-thumb {
         padding: 60px 0;
     }
 
+    .master-plan {
+        padding-top: 60px;
+    }
+
     .lilac-park {
         margin-top: 32px;
     }
@@ -2577,7 +2594,9 @@ input[type=range]::-webkit-slider-thumb {
     .padding-section {
         padding: 48px 0;
     }
-
+    .master-plan {
+        padding-top: 48px;
+    }
     .future-home {
         margin-top: 32px;
     }
@@ -2706,6 +2725,16 @@ input[type=range]::-webkit-slider-thumb {
     .modal-gallery {
         padding: 80px 40px 40px;
     }
+    .master-plan-menu {
+        margin-right: -130px;
+        padding-right: 40px;
+    }
+}
+@media (max-width: 1499px) {
+    .master-plan-menu {
+        margin-right: -70px;
+        padding-right: 40px;
+    }
 }
 
 @media (max-width: 1399px) {
@@ -2713,7 +2742,10 @@ input[type=range]::-webkit-slider-thumb {
         width: 46px;
         height: 46px;
     }
-
+    .master-plan-menu {
+        margin-right: -16px;
+        padding-right: 0;
+    }
     .swiper-button-prev {
         left: -16px;
     }
@@ -3799,7 +3831,12 @@ input[type=range]::-webkit-slider-thumb {
     }
 
 
-
+    .map-icons {
+        top: 300px;
+        right: 16px;
+        gap: 8px;
+        z-index: 2;
+    }
 
 }
 
