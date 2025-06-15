@@ -2042,53 +2042,13 @@
         <div class="infrastructure-map ">
             <div class="infrast-map-cnt">
                 <ul id="category-list" class="G-flex-column">
-                    <!--                    <li data-type="food">-->
-                    <!--                        <div class="map-icon"><img src="./assets/img/icons/food.svg" alt="food"/></div>-->
-                    <!--                        <div class="map-cnt-info G-align-center G-justify-between"><span>Еда</span> <span>24</span>-->
-                    <!--                        </div>-->
-                    <!--                    </li>-->
-                    <!--                    <li data-type="shop">-->
-                    <!--                        <div class="map-icon"><img src="./assets/img/icons/retail.svg" alt="retail"/></div>-->
-                    <!--                        <div class="map-cnt-info G-align-center G-justify-between"><span>Торговля</span> <span>11</span>-->
-                    <!--                        </div>-->
-                    <!--                    </li>-->
-                    <!--                    <li data-type="medicine">-->
-                    <!--                        <div class="map-icon"><img src="./assets/img/icons/helth.svg" alt="helth"/></div>-->
-                    <!--                        <div class="map-cnt-info G-align-center G-justify-between"><span>Медицина</span> <span>7</span>-->
-                    <!--                        </div>-->
-                    <!--                    </li>-->
-                    <!--                    <li data-type="edu">-->
-                    <!--                        <div class="map-icon"><img src="./assets/img/icons/education.svg" alt="education"/></div>-->
-                    <!--                        <div class="map-cnt-info G-align-center G-justify-between"><span>Образование</span>-->
-                    <!--                            <span>3</span></div>-->
-                    <!--                    </li>-->
-                    <!--                    <li data-type="sport">-->
-                    <!--                        <div class="map-icon"><img src="./assets/img/icons/fitness.svg" alt="fitness"/></div>-->
-                    <!--                        <div class="map-cnt-info G-align-center G-justify-between"><span>Спорт</span> <span>5</span>-->
-                    <!--                        </div>-->
-                    <!--                    </li>-->
-                    <!--                    <li data-type="finance">-->
-                    <!--                        <div class="map-icon"><img src="./assets/img/icons/finance.svg" alt="finance"/></div>-->
-                    <!--                        <div class="map-cnt-info G-align-center G-justify-between"><span>Финансы</span> <span>4</span>-->
-                    <!--                        </div>-->
-                    <!--                    </li>-->
-                    <!--                    <li data-type="culture">-->
-                    <!--                        <div class="map-icon"><img src="./assets/img/icons/event.svg" alt="event"/></div>-->
-                    <!--                        <div class="map-cnt-info G-align-center G-justify-between"><span>Культура</span> <span>4</span>-->
-                    <!--                        </div>-->
-                    <!--                    </li>-->
-                    <!--                    <li data-type="services">-->
-                    <!--                        <div class="map-icon"><img src="./assets/img/icons/services.svg" alt="services"/></div>-->
-                    <!--                        <div class="map-cnt-info G-align-center G-justify-between"><span>Услуги</span> <span>15</span>-->
-                    <!--                        </div>-->
-                    <!--                    </li>-->
+
                 </ul>
             </div>
             <div class="map">
                 <div class="zoom-map G-center">
                     <i class="icon-zoom-map"></i>
                 </div>
-
                 <div class="map-icons G-flex-column">
                     <div class="map-icons-zoom G-flex-column">
                         <div class="zoom-map-plus">
@@ -3661,7 +3621,62 @@
                 {title: "Торговля 2", lat: 55.817862, lot: 37.770941},
             ]
         },
+        {
+            title: "Медицина",
+            category: "food",
+            icon: './assets/img/icons/helth.svg',
+            points: [
+                {title: "Медицина 1", lat: 55.814863, lot: 37.740991},
+                {title: "Медицина 2", lat: 55.816862, lot: 37.760941},
+            ]
+        },
+        {
+            title: "Образование",
+            category: "food",
+            icon: './assets/img/icons/education.svg',
+            points: [
+                {title: "Образование 1", lat: 55.817868, lot: 37.770991},
+                {title: "Образование 2", lat: 55.817868, lot: 37.760941},
+            ]
+        },
+        {
+            title: "Спорт",
+            category: "food",
+            icon: './assets/img/icons/fitness.svg',
+            points: [
+                {title: "Спорт 1", lat: 55.813863, lot: 37.740991},
+                {title: "Спорт 2", lat: 55.813812, lot: 37.770941},
+            ]
+        },
+        {
+            title: "Финансы",
+            category: "food",
+            icon: './assets/img/icons/finance.svg',
+            points: [
+                {title: "Финансы 1", lat: 55.815863, lot: 37.752991},
+                {title: "Финансы 2", lat: 55.813862, lot: 37.737941},
+            ]
+        },
+        {
+            title: "Культура",
+            category: "food",
+            icon: './assets/img/icons/event.svg',
+            points: [
+                {title: "Культура 1", lat: 55.815863, lot: 37.752991},
+                {title: "Культура 2", lat: 55.813862, lot: 37.737941},
+            ]
+        },
+        {
+            title: "Услуги",
+            category: "food",
+            icon: './assets/img/icons/services.svg',
+            points: [
+                {title: "Культура 1", lat: 55.815863, lot: 37.752991},
+                {title: "Культура 2", lat: 55.813862, lot: 37.737941},
+            ]
+        },
     ]
+
 
     const homePageMa = new YandexMapConstructor({
         mapContainerId: 'map',

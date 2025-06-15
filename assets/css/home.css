@@ -864,11 +864,9 @@ p {
     height: 24px;
 }
 
+/* map design*/
 
-#map {
-    width: 100%;
-    height: 688px;
-}
+
 
 
 .map-icon {
@@ -907,6 +905,73 @@ p {
 .infrast-map-cnt .map-act span {
     color: #1A1A1A;
 }
+
+#map {
+    width: 100%;
+    height: 688px;
+    border: 1px solid #1A1A1A1A;
+    border-radius: 36px;
+    overflow: hidden;
+}
+
+
+
+.bs-point-custom {
+    border-radius: 50px;
+    background: #754ABC;
+    backdrop-filter: blur(25px);
+    padding: 4px;
+    height: 40px;
+    min-width: 40px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.bs-point-custom img {
+    max-width: 20px;
+    width: 100%;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: contain;
+
+}
+
+.bs-point-custom .cover {
+    object-fit: cover;
+    height: 32px;
+    max-width: 32px;
+
+}
+
+.bs-point-custom p {
+    display: none;
+    white-space: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.bs-point-custom.hover{
+    padding: 4px 12px;
+}
+.bs-point-custom.hover, .bs-point-custom.main{
+    padding-right: 12px;
+}
+.bs-point-custom.hover p, .bs-point-custom.main p {
+    display: block;
+}
+
+.bs-point-custom.hover img {
+    display: none;
+}
+
+
+
+
 
 
 .spaces-children-title {
@@ -3660,6 +3725,82 @@ input[type=range]::-webkit-slider-thumb {
         font-size: 16px;
     }
 
+
+
+
+
+
+
+    #map {
+        height: 436px;
+        border-radius: 16px;
+    }
+    .map{
+        margin-top: 16px;
+
+    }
+    .icon-zoom-map {
+        width: 20px;
+        height: 20px;
+    }
+    .zoom-map {
+        width: 32px;
+        height: 32px;
+        padding: 6px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .bs-point-custom {
+        height: 32px;
+        min-width: 32px;
+    }
+
+
+    .bs-point-custom img {
+        max-width: 16px;
+        height: 16px;
+    }
+
+    .bs-point-custom .cover {
+        height: 24px;
+        max-width: 24px;
+    }
+
+    .bs-point-custom p {
+        font-size: 12px;
+    }
+    .map-location {
+        width: 32px;
+        height: 32px;
+    }
+    .icon-location {
+        width: 18px;
+        height: 17px;
+    }
+    .zoom-map-plus {
+        width: 32px;
+        height: 32px;
+        padding: 7px;
+    }
+
+    .zoom-map-minus {
+        width: 32px;
+        height: 32px;
+        padding: 7px;
+    }
+    .icon-minus {
+        width: 20px;
+        height: 20px;
+    }
+    .icon-plus {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+
 }
 
 @media (max-width: 767px) {
@@ -4080,62 +4221,4 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 
-/* map design*/
 
-
-.bs-point-custom {
-    border-radius: 50px;
-    background: #754ABC;
-    backdrop-filter: blur(25px);
-    padding: 4px;
-    height: 40px;
-    width: max-content;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-
-.bs-point-custom img {
-    max-width: 32px;
-    width: 100%;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: contain;
-
-}
-
-.bs-point-custom .cover {
-    object-fit: cover;
-}
-
-.bs-point-custom p {
-    display: none;
-    white-space: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    color: #FFFFFF;
-}
-.bs-point-custom.hover{
-    padding: 4px 12px;
-}
-.bs-point-custom.hover, .bs-point-custom.main{
-    padding-right: 12px;
-}
-.bs-point-custom.hover p,  .bs-point-custom.main p {
-    display: block;
-}
-
-.bs-point-custom.hover img {
-    display: none;
-}
-
-#map-contact{
-    height: 600px;
-    width: 100%;
-}
-#map-contact ymaps{
-    height: 100%;
-    width: 100%;
- }

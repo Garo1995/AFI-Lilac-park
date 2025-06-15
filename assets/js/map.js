@@ -66,7 +66,7 @@ class YandexMapConstructor {
         category.points.forEach((point) => {
             const iconContent = ymaps.templateLayoutFactory.createClass(`
         <div class="bs-point-custom" data-id="${point.lat}">
-          <img class="cover" src="${category.icon}" alt="icons">
+          <img src="${category.icon}" alt="icons">
           <p class="title">${point.title}</p>
         </div>
       `);
