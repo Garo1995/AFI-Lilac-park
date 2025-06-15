@@ -5,7 +5,7 @@ footer{
     padding: 29px 0 24px;
 }
 
-.footer-title h2{
+.logo-foot{
     font-weight: 800;
     font-size: 48px;
     line-height: 90%;
@@ -65,7 +65,7 @@ footer .head-menu-main {
         font-size: 30px;
     }
 
-    .footer-title h2 {
+    .logo-foot {
         font-size: 32px;
         max-width: 245px;
     }
@@ -106,7 +106,7 @@ footer .head-menu-main {
 }
 
 @media (max-width: 575px){
-    .footer-title h2 {
+    .logo-foot {
         font-size: 26px;
         max-width: 184px;
     }

@@ -130,7 +130,7 @@ header{
 .menu-content-main{
     padding: 88px 140px;
 }
-.menu-content-title h2{
+.logo{
     color: #FFFFFF;
     max-width: 420px;
     width: 100%;
@@ -281,7 +281,7 @@ header{
     .header-menu a {
         font-size: 20px;
     }
-    .menu-content-title h2 {
+    .logo {
         max-width: 360px;
         font-size: 40px;
     }
@@ -353,7 +353,7 @@ header{
     .menu-content-main {
         padding: 20px 10px;
     }
-    .menu-content-title h2 {
+    .logo {
         max-width: 234px;
         font-size: 33px;
     }
