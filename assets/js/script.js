@@ -71,6 +71,15 @@ $('.calculate-click').on('click', function () {
     $('.calculate-mort-main').addClass('calculate-mort-none')
     $('.view-options').addClass('view-options-act')
     $('.calculate-standard').addClass('calculate-standard-open')
+    $('.nothing-was-found').removeClass('nothing-was-found-open')
+
+})
+$('.standard').on('click', function () {
+    $('.calculate-mort-main').addClass('calculate-mort-none')
+    $('.view-options').addClass('view-options-act')
+    $('.calculate-standard').removeClass('calculate-standard-open')
+    $('.nothing-was-found').addClass('nothing-was-found-open')
+
 
 })
 
@@ -131,6 +140,7 @@ $('.compare-btn').on('click', function () {
     $('.calculate-mort-main').removeClass('calculate-mort-none')
     $('.view-options').removeClass('view-options-act')
     $('.calculate-standard').removeClass('calculate-standard-open')
+    $('.nothing-was-found').removeClass('nothing-was-found-open')
 
 })
 

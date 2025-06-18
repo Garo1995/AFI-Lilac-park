@@ -250,6 +250,9 @@ header{
     display: flex;
     transition: 0.3s;
 }
+.card-favorite:hover svg path{
+    stroke: #754ABC;
+}
 /*.card-favorite svg path {*/
 /*    stroke: #754ABC;*/
 /*    fill: #754ABC;*/
