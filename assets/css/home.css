@@ -1819,6 +1819,8 @@ input[type=range]::-webkit-slider-thumb {
     overflow-y: auto;
     margin-right: -24px;
     padding-right: 24px;
+    height: 705px;
+
 }
 
 .calculate-standard::-webkit-scrollbar {
@@ -1841,7 +1843,6 @@ input[type=range]::-webkit-slider-thumb {
 .calculate-standard-wrap {
     width: 100%;
     gap: 30px 18px;
-    height: 705px;
 }
 
 .calculate-standard-rel {
@@ -2769,7 +2770,8 @@ input[type=range]::-webkit-slider-thumb {
         margin-right: -130px;
         padding-right: 40px;
     }
-    .calculate-standard-wrap {
+
+    .calculate-standard {
         height: 632px;
     }
 }
@@ -2925,8 +2927,9 @@ input[type=range]::-webkit-slider-thumb {
     .calculate-mort-block {
         max-width: 100%;
     }
-    .calculate-standard-wrap {
-        height: auto;
+
+    .calculate-standard {
+        height: auto
     }
     .calculate-standard {
         overflow-y: unset;
