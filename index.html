@@ -83,7 +83,8 @@
                     </div>
                     <div class="documents-column G-flex-column">
                         <div class="documents-box G-flex-column">
-                            <a href="https://afi-development.itrielt.ru/auth" target="_blank" class="documents-name G-align-center">
+                            <a href="https://afi-development.itrielt.ru/auth" target="_blank"
+                               class="documents-name G-align-center">
                                 <i class="icon-slaq"></i>
                                 <h3>Кабинет брокера</h3>
                             </a>
@@ -215,7 +216,7 @@
 
     </div>
 </section>
-<section id="complex" >
+<section id="complex">
     <div class="container">
         <div class="about-resid-marg">
             <h2>О жилом квартале</h2>
@@ -2700,7 +2701,6 @@
                         </div>
 
 
-
                     </div>
 
                     <div class="calculate-standard-rel">
@@ -2984,7 +2984,8 @@
 
                 <div class="nothing-was-found">
                     <div class="nothing-was-found-tit G-center">
-                        <h3>К сожалению, по выбранным параметрам ничего не найдено, попробуйте изменить или сбросить параметры фильтра
+                        <h3>К сожалению, по выбранным параметрам ничего не найдено, попробуйте изменить или сбросить
+                            параметры фильтра
                         </h3>
                     </div>
                 </div>
@@ -3344,7 +3345,8 @@
             </div>
             <div class="documents-column G-flex-column">
                 <div class="documents-box G-flex-column">
-                    <a href="https://afi-development.itrielt.ru/auth" target="_blank" class="documents-name G-align-center">
+                    <a href="https://afi-development.itrielt.ru/auth" target="_blank"
+                       class="documents-name G-align-center">
                         <i class="icon-slaq"></i>
                         <h3>Кабинет брокера</h3>
                     </a>
@@ -3586,35 +3588,23 @@
 </div>
 
 
-
-
-
-
-
-
-
 <div id="all-map" class="modal">
     <div class="modal-content">
         <div class="modal-map-box">
             <div class="close"></div>
-           <div class="modal-map-rel">
-               <div class="infrast-map-cnt">
-                   <ul id="category-list-modal" class="G-flex-column">
+            <div class="modal-map-rel">
+                <div class="infrast-map-cnt">
+                    <ul id="category-list-modal" class="G-flex-column">
 
-                   </ul>
-               </div>
-               <div id="modal-map">
+                    </ul>
+                </div>
+                <div id="modal-map">
 
-               </div>
-           </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-
-
-
-
 
 
 <div class="cookie">
@@ -3726,6 +3716,7 @@
     const homePageMa = new YandexMapConstructor({
         mapContainerId: 'map',
         defaultMarker: defaultMarker,
+        isMultiSelect:true
     })
 
     const categoryListContainer = document.getElementById('category-list')
@@ -3738,13 +3729,11 @@
         `
         productItem.addEventListener('click', function () {
             let selectedItem = homePageMa.changeCategory(productsList[i])
-
-            const items = categoryListContainer.querySelectorAll('li')
-            items.forEach((item) => {
-                item.classList.remove('map-act')
-            })
-
-            if (selectedItem) {
+            // const items = categoryListContainer.querySelectorAll('li')
+            // items.forEach((item) => {
+            //     item.classList.remove('map-act')
+            // })
+            if (selectedItem.some(x=>x.title===productsList[i].title)) {
                 productItem.classList.add('map-act')
             } else {
                 productItem.classList.remove('map-act')
@@ -3766,15 +3755,12 @@
     }
 </script>
 
-
 <script>
     const homePageModalMap = new YandexMapConstructor({
         mapContainerId: 'modal-map',
         defaultMarker: defaultMarker,
+        isMultiSelect:true
     })
-
-
-
 
 
     const categoryListContainerModal = document.getElementById('category-list-modal')
@@ -3788,12 +3774,7 @@
         productItem.addEventListener('click', function () {
             let selectedItem = homePageModalMap.changeCategory(productsList[i])
 
-            const items = categoryListContainerModal.querySelectorAll('li')
-            items.forEach((item) => {
-                item.classList.remove('map-act')
-            })
-
-            if (selectedItem) {
+            if (selectedItem.some(x=>x.title===productsList[i].title)) {
                 productItem.classList.add('map-act')
             } else {
                 productItem.classList.remove('map-act')
