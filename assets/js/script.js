@@ -198,6 +198,8 @@ $(window).on('click', function (e) {
 $('.menu-scroll').on('click', function (e) {
     $('.menu-scroll').removeClass('master-active');
     $(this).addClass('master-active');
+    $('.menu-content').removeClass('transition-menu');
+    $('body').removeClass('body_fix');
 })
 
 
@@ -244,7 +246,6 @@ $('.menu-scroll').click(function() {
         }
     }
 });
-
 
 
 

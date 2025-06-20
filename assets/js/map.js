@@ -30,6 +30,9 @@ class YandexMapConstructor {
     initMap() {
         this.myMap = new ymaps.Map(this.mapContainerId, {
             center: this.defaultCenter, zoom: this.zoom, controls: []
+        }, {
+            suppressMapOpenBlock: true, // запрет на переход в Яндекс.Карты
+            yandexMapDisablePoiInteractivity: true // отключить клики по POI
         });
         if (this.defaultMarker.length) {
             this.defaultMarker.forEach(marker => {
@@ -47,10 +50,14 @@ class YandexMapConstructor {
                     iconContentLayout: iconContent
                 });
 
+
                 this.myMap.geoObjects.add(defaultMarkers);
             })
             this.#generateDefaultMarker()
         }
+
+
+
     }
 
     #generateDefaultMarker() {
@@ -109,6 +116,8 @@ class YandexMapConstructor {
         });
         this.myMap.geoObjects.add(this.pointCollection);
         this.myMap.geoObjects.add(this.mainPlacemark);
+
+
     }
 
     changeCategory(category) {
@@ -154,4 +163,9 @@ class YandexMapConstructor {
             });
         }
     }
+
+
+
+
 }
+
