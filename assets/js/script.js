@@ -348,6 +348,7 @@ document.querySelectorAll('.favorable-box').forEach(box => {
         const date = box.querySelector('.favorable-data')?.textContent || '';
         const title = box.querySelector('h4')?.textContent || '';
         const text = box.querySelector('p')?.textContent || '';
+        const dataNew = box.querySelector('.favorable-desc span')?.textContent || '';
 
         // 2. Находим модальное окно
         const modal = document.getElementById('favorable');
@@ -361,6 +362,7 @@ document.querySelectorAll('.favorable-box').forEach(box => {
     `;
 
         modalText.innerHTML = `
+      <span>${dataNew}</span>
       <h4>${title}</h4>
       <p>${text}</p>
     `;

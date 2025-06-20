@@ -251,6 +251,8 @@ p {
 .master-plan-menu {
     overflow: hidden;
     margin-right: -130px;
+
+    padding-right: 20px;
 }
 
 .master-plan-menu ul {
@@ -1428,6 +1430,7 @@ input[type=range]::-webkit-slider-thumb {
     line-height: 100%;
     padding-top: 4px;
     display: block;
+    text-transform: capitalize;
 }
 
 .radiobtn {
@@ -1513,7 +1516,9 @@ input[type=range]::-webkit-slider-thumb {
     width: 100%;
     height: 1570px;
 }
-
+.catalog-cards{
+    width: 100%;
+}
 .commercial-wrap {
     gap: 32px 24px;
 }
@@ -1843,6 +1848,7 @@ input[type=range]::-webkit-slider-thumb {
 .calculate-standard-wrap {
     width: 100%;
     gap: 30px 18px;
+    align-items: flex-start;
 }
 
 .calculate-standard-rel {
@@ -1939,6 +1945,7 @@ input[type=range]::-webkit-slider-thumb {
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
+    white-space: nowrap;
 }
 
 .monthly-payment-pric .btn {
@@ -2150,11 +2157,17 @@ input[type=range]::-webkit-slider-thumb {
 .favorable-photo {
     position: relative;
     width: 100%;
+    display: flex;
 }
 
 .favorable-photo img {
     width: 100%;
     border-radius: 36px;
+}
+.favorable-desc{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .favorable-data {
@@ -2196,12 +2209,23 @@ input[type=range]::-webkit-slider-thumb {
     max-width: 461px;
     width: 100%;
 }
-
+.favorable-modal-cnt .favorable-photo img{
+    height: 293px;
+}
 .favorable-modal-text {
     max-width: 461px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
+.favorable-modal-text span{
+    margin-bottom: 8px;
+    color: #686868;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    display: block;
+}
 .favorable-modal-text h4 {
     font-weight: 600;
     margin-bottom: 8px;
@@ -2309,7 +2333,13 @@ input[type=range]::-webkit-slider-thumb {
     max-width: 531px;
     width: 100%;
 }
+.news-box .favorable-photo span{
+    display: none;
+}
+.modal-news .favorable-photo span{
+    display: none;
 
+}
 .news-box img {
     width: 100%;
     border-radius: 36px;

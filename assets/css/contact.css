@@ -31,7 +31,9 @@
 .page-contact-box .btn{
     width: 100%;
 }
-
+.page-contact-box:first-child .btn{
+    margin-top: 40px;
+}
 .page-contact-map{
     margin-top: 32px;
     position: relative;
@@ -87,10 +89,17 @@
     display: none;
 }
 .in-park p{
-    color: #1A1A1A;
+    color: #fff;
     font-weight: 500;
     font-size: 20px;
     line-height: 100%;
+}
+
+@media (max-width: 1599px){
+    .page-contact-numb span {
+        font-size: 16px;
+        line-height: 23px;
+    }
 }
 
 @media (max-width: 1399px){
@@ -111,7 +120,9 @@
         top: 24px;
     }
 
-
+    .page-contact-box:first-child .btn {
+        margin-top: 33px;
+    }
 
 
 
@@ -152,5 +163,14 @@
         width: 10px;
         height: 10px;
 
+    }
+    .page-contact-box:first-child .btn {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 767px){
+    .page-contact-box:first-child .btn {
+        margin-top: 0;
     }
 }
