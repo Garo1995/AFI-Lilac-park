@@ -264,6 +264,7 @@ p {
     user-select: none;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none; /* Firefox */
+    padding-right: 120px;
 }
 
 .master-plan-menu ul::-webkit-scrollbar {
@@ -1926,6 +1927,7 @@ input[type=range]::-webkit-slider-thumb {
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
+    white-space: nowrap;
 }
 
 .monthly-payment-min {
@@ -2612,7 +2614,9 @@ input[type=range]::-webkit-slider-thumb {
         padding: 36px;
     }
 
-
+    .master-plan-menu ul {
+        padding-right: 20px;
+    }
 }
 
 @media (max-width: 1599px) {
@@ -2623,6 +2627,9 @@ input[type=range]::-webkit-slider-thumb {
 
     .master-plan-info {
         margin-top: 32px;
+    }
+    .master-plan-menu ul {
+        padding-right: 90px;
     }
 
     .master-plan-cnt {
@@ -2680,7 +2687,9 @@ input[type=range]::-webkit-slider-thumb {
         height: 650px;
         border-radius: 32px;
     }
-
+    .standard-bid-name span {
+        font-size: 18px;
+    }
     .commercial-photo {
         padding: 35px 45px;
         border-radius: 32px;
@@ -2832,7 +2841,9 @@ input[type=range]::-webkit-slider-thumb {
     .swiper-button-next {
         right: -16px;
     }
-
+    .master-plan-menu ul {
+        padding-right: 20px;
+    }
     h3 {
         font-size: 20px;
     }
