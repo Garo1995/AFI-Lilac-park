@@ -15,16 +15,16 @@
 }
 .page-contact-numb p{
     color: #1A1A1A99;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 100%;
     text-align: left;
 }
 .page-contact-numb span{
     display: block;
     color: #1A1A1A;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 24px;
     margin-top: 8px;
 }

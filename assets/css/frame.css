@@ -45,14 +45,14 @@
 }
 .frame-box-name span{
     color: #FFFFFF;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 100%;
 }
 .frame-box-name strong{
     color: #FFFFFF;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
     line-height: 100%;
     text-align: right;
     white-space: nowrap;
@@ -74,8 +74,8 @@
 }
 .frame-box-price strong{
     color: #FFFFFF;
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 26px;
     line-height: 29.79px;
     text-align: left;
 }
@@ -141,16 +141,16 @@
     justify-content: center;
     transition: 0.3s;
     color: #8F8F8F;
-    font-weight: 600;
-    font-size: 36px;
+    font-weight: 500;
+    font-size: 30px;
     line-height: 90%;
     text-align: center;
     height: 100%;
 }
 .swiper-slide-active .count-slid-floor{
     color: #754ABC;
-    font-weight: 800;
-    font-size: 64px;
+    font-weight: 600;
+    font-size: 52px;
 
 }
 .count-slid{
@@ -305,12 +305,7 @@
         max-width: 360px;
         padding: 20px;
     }
-    .comme-line-info p {
-        font-size: 14px;
-    }
-    .comme-line-info span {
-        font-size: 14px;
-    }
+
     .floor-plan-rel {
         max-width: 560px;
         margin-top: 30px;

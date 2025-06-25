@@ -13,8 +13,8 @@ i{
 }
 .icon-slaq{
     content: url("../img/icons/slaq.svg");
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 .sun-light{
     content: url("../img/icons/sun-light.svg");
@@ -89,8 +89,8 @@ i{
 
 }
 .icon-arrow-top{
-    width: 24px;
-    height: 27px;
+    width: 20px;
+    height: 22px;
     content: url("../img/icons/arrow-top.svg");
 
 }

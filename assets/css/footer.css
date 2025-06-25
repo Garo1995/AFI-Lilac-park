@@ -11,7 +11,6 @@ footer{
     line-height: 90%;
     text-transform: uppercase;
     color: #FFFFFF;
-    font-family: 'TT Travels';
     text-align: left;
     max-width: 410px;
     width: 100%;
@@ -23,8 +22,8 @@ footer{
     margin-top: 60px;
 }
 .footer-office-center .header-phone {
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 28px;
     text-align: right;
     margin-right: 0;
     color: #FFFFFF;
@@ -43,8 +42,8 @@ footer .head-menu-main {
 }
 .footer-policy a, .footer-policy p{
     color: #FFFFFFCC;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 15px;
     line-height: 100%;
 
 }

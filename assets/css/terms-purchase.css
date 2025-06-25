@@ -74,8 +74,8 @@
 .down-payment strong{
     display: block;
     color: #754ABC;
-    font-weight: 700;
-    font-size: 48px;
+    font-weight: 600;
+    font-size: 40px;
     line-height: 100%;
     text-align: center;
     white-space: nowrap;
@@ -162,7 +162,7 @@
 }
 @media (max-width: 1499px){
     .down-payment strong {
-        font-size: 40px;
+        font-size: 36px;
     }
     .down-payment + .down-payment:before {
         left: -83px;
@@ -178,7 +178,7 @@
         gap: 12px;
     }
     .down-payment strong {
-        font-size: 34px;
+        font-size: 30px;
     }
     .down-payment p {
         font-size: 14px;

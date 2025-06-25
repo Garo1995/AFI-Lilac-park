@@ -14,11 +14,10 @@ header{
 }
 .open-menu strong{
     color: #1A1A1A;
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 90%;
     text-transform: uppercase;
-    font-family: 'TT Travels';
 
 }
 .open-menu .icon-menu{
@@ -32,7 +31,7 @@ header{
 .header-phone{
     color: #754ABC;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 100%;
     text-align: left;
     margin-right: 10px;
@@ -49,7 +48,7 @@ header{
     background: unset;
     color: #754ABC;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 100%;
 }
 .btn-select:hover{
@@ -132,11 +131,11 @@ header{
 }
 .logo{
     color: #FFFFFF;
-    max-width: 420px;
+    max-width: 360px;
     width: 100%;
     font-weight: 800;
-    font-size: 48px;
-    line-height: 90%;
+    font-size: 40px;
+    line-height: 98%;
     text-transform: uppercase;
 }
 
@@ -150,8 +149,8 @@ header{
 }
 .header-menu a{
     color: #FFFFFF;
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 100%;
     transition: 0.3s;
     white-space: nowrap;
@@ -190,8 +189,8 @@ header{
 }
 .documents-box ul li a{
     color: #FFFFFF;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 100%;
     transition: 0.3s;
     border-bottom: 1px solid transparent;
@@ -211,8 +210,8 @@ header{
 }
 .sales-office-time span{
     color: #FFFFFF;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 17px;
     line-height: 100%;
 }
 .sales-office-time p{
@@ -436,6 +435,12 @@ header{
     }
     .btn-select {
         padding: 10px 20px;
+    }
+    .header-menu a {
+        font-size: 14px;
+    }
+    .documents-column h3 {
+        font-size: 15px;
     }
 }
 @media (max-width: 370px){

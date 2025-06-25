@@ -1,96 +1,103 @@
-
-
 @font-face {
-    font-family: 'TT Travels';
-    src: url('TTTravels-Medium.eot');
-    src: local('TT Travels Medium'), local('TTTravels-Medium'),
-    url('TTTravels-Medium.eot?#iefix') format('embedded-opentype'),
-    url('TTTravels-Medium.woff2') format('woff2'),
-    url('TTTravels-Medium.woff') format('woff'),
-    url('TTTravels-Medium.ttf') format('truetype');
-    font-weight: 500;
+    font-family: 'Bounded';
+    src: url('Bounded-Light.eot');
+    src: url('Bounded-Light.eot?#iefix') format('embedded-opentype'),
+    url('Bounded-Light.woff2') format('woff2'),
+    url('Bounded-Light.woff') format('woff'),
+    url('Bounded-Light.ttf') format('truetype'),
+    url('Bounded-Light.svg#Bounded-Light') format('svg');
+    font-weight: 300;
     font-style: normal;
-}
-
-
-
-@font-face {
-    font-family: 'TT Travels';
-    src: url('TTTravels-Regular.eot');
-    src: local('TT Travels Regular'), local('TTTravels-Regular'),
-    url('TTTravels-Regular.eot?#iefix') format('embedded-opentype'),
-    url('TTTravels-Regular.woff2') format('woff2'),
-    url('TTTravels-Regular.woff') format('woff'),
-    url('TTTravels-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'TT Travels';
-    src: url('TTTravels-Bold.eot');
-    src: local('TT Travels Bold'), local('TTTravels-Bold'),
-    url('TTTravels-Bold.eot?#iefix') format('embedded-opentype'),
-    url('TTTravels-Bold.woff2') format('woff2'),
-    url('TTTravels-Bold.woff') format('woff'),
-    url('TTTravels-Bold.ttf') format('truetype');
+    font-family: 'Bounded';
+    src: url('Bounded-ExtraLight.eot');
+    src: url('Bounded-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('Bounded-ExtraLight.woff2') format('woff2'),
+    url('Bounded-ExtraLight.woff') format('woff'),
+    url('Bounded-ExtraLight.ttf') format('truetype'),
+    url('Bounded-ExtraLight.svg#Bounded-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bounded';
+    src: url('Bounded-ExtraBold.eot');
+    src: url('Bounded-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('Bounded-ExtraBold.woff2') format('woff2'),
+    url('Bounded-ExtraBold.woff') format('woff'),
+    url('Bounded-ExtraBold.ttf') format('truetype'),
+    url('Bounded-ExtraBold.svg#Bounded-ExtraBold') format('svg');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
-
-
-
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Regular.eot');
-    src: local('Montserrat Regular'), local('Montserrat-Regular'),
-    url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-    url('Montserrat-Regular.woff2') format('woff2'),
-    url('Montserrat-Regular.woff') format('woff'),
-    url('Montserrat-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Bounded';
+    src: url('Bounded-Black.eot');
+    src: url('Bounded-Black.eot?#iefix') format('embedded-opentype'),
+    url('Bounded-Black.woff2') format('woff2'),
+    url('Bounded-Black.woff') format('woff'),
+    url('Bounded-Black.ttf') format('truetype'),
+    url('Bounded-Black.svg#Bounded-Black') format('svg');
+    font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Bold.eot');
-    src: local('Montserrat Bold'), local('Montserrat-Bold'),
-    url('Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-    url('Montserrat-Bold.woff2') format('woff2'),
-    url('Montserrat-Bold.woff') format('woff'),
-    url('Montserrat-Bold.ttf') format('truetype');
+    font-family: 'Bounded';
+    src: url('Bounded-Bold.eot');
+    src: url('Bounded-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Bounded-Bold.woff2') format('woff2'),
+    url('Bounded-Bold.woff') format('woff'),
+    url('Bounded-Bold.ttf') format('truetype'),
+    url('Bounded-Bold.svg#Bounded-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Medium.eot');
-    src: local('Montserrat Medium'), local('Montserrat-Medium'),
-    url('Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-    url('Montserrat-Medium.woff2') format('woff2'),
-    url('Montserrat-Medium.woff') format('woff'),
-    url('Montserrat-Medium.ttf') format('truetype');
+    font-family: 'Bounded';
+    src: url('Bounded-Regular.eot');
+    src: url('Bounded-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Bounded-Regular.woff2') format('woff2'),
+    url('Bounded-Regular.woff') format('woff'),
+    url('Bounded-Regular.ttf') format('truetype'),
+    url('Bounded-Regular.svg#Bounded-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bounded';
+    src: url('Bounded-Medium.eot');
+    src: url('Bounded-Medium.eot?#iefix') format('embedded-opentype'),
+    url('Bounded-Medium.woff2') format('woff2'),
+    url('Bounded-Medium.woff') format('woff'),
+    url('Bounded-Medium.ttf') format('truetype'),
+    url('Bounded-Medium.svg#Bounded-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
-
-
-
-
-
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-SemiBold.eot');
-    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
-    url('Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('Montserrat-SemiBold.woff2') format('woff2'),
-    url('Montserrat-SemiBold.woff') format('woff'),
-    url('Montserrat-SemiBold.ttf') format('truetype');
+    font-family: 'Bounded';
+    src: url('Bounded-SemiBold.eot');
+    src: url('Bounded-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('Bounded-SemiBold.woff2') format('woff2'),
+    url('Bounded-SemiBold.woff') format('woff'),
+    url('Bounded-SemiBold.ttf') format('truetype'),
+    url('Bounded-SemiBold.svg#Bounded-SemiBold') format('svg');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
-

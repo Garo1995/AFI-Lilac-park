@@ -22,7 +22,7 @@
     padding: 12px 24px;
     color: #686868;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 100%;
     background: unset;
     width: 198px;
@@ -39,7 +39,7 @@
 .catalog-btn .btn-sign-up{
     font-weight: 400;
     width: 198px;
-
+    font-size: 15px;
 }
 
 .see-more-catalog{
@@ -58,8 +58,8 @@
     width: 100%;
 }
 .price-ascending-number span{
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 100%;
     color: #1A1A1A;
 }
@@ -139,6 +139,9 @@
     }
     .see-more-catalog {
         margin-top: 32px;
+    }
+    .btn-lin {
+        padding: 9px 20px;
     }
 }
 
