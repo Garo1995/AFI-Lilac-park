@@ -101,8 +101,12 @@
     max-width: 400px;
     width: 100%;
     margin-top: 62px;
-}
+    border-radius: 22px;
 
+}
+.page-floor-map img{
+    border-radius: 22px;
+}
 .floor-plan-rel{
     max-width: 677px;
     width: 100%;

@@ -315,7 +315,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const floorCountSwiper = new Swiper(".count-slid", {
         slidesPerView: 7,
         direction: "vertical",
-        loop: true,
         spaceBetween: 5,
         centeredSlides: true,
         breakpoints: {

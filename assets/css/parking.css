@@ -14,6 +14,7 @@
     border-radius: 36px;
     padding: 32px;
     background: #F6F6F6;
+    z-index: 911;
 }
 
 .rooms-frame-cnt{
@@ -130,11 +131,13 @@
     max-width: 800px;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 .zoom-picture{
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 2;
 }
 
 .zoom-picture span{
@@ -153,7 +156,7 @@
 .zoom-pic-plus{
 
 }
-.zoom-pic-minus{
+.zoom-pic-minus.disabled{
     opacity: 0.5;
 }
 .zoom-picture .zoom-pic-minus{
@@ -162,9 +165,14 @@
 }
 .parking-photo{
     position: relative;
-    width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
+    width: 147%;
+    margin: 0 -24vh;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    cursor: grab;
+}
+.parking-photo.dragging {
+    cursor: grabbing;
 }
 .parking-photo img{
     width: 100%;
@@ -172,9 +180,14 @@
 .parking-photo svg{
     position: absolute;
     width: 100%;
-
+    top: 0;
+    left: 0;
 }
-
+.parking-photo svg path {
+    fill: #754abc;
+    fill-opacity: .5;
+    cursor: pointer;
+}
 .parking-floor-svg{
     max-width: 300px;
     width: 100%;
@@ -185,6 +198,7 @@
     right: 0;
     top: 0;
     gap: 15px;
+    z-index: 2;
 }
 .parking-storage span{
     cursor: pointer;
@@ -348,9 +362,7 @@
 
 
 @media (max-width: 1599px){
-    .parking-photo {
-        max-width: 340px;
-    }
+
     .parking-rooms-frame {
         max-width: 400px;
         border-radius: 24px;
