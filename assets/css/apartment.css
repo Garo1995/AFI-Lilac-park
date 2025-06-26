@@ -85,7 +85,7 @@
 }
 .page-apartment-info .comme-line-info p {
     color: #1A1A1A;
-    font-weight: 500;
+    font-weight: 400;
 }
 .page-apartment-info .commercial-item{
     margin-top: 0;
@@ -133,8 +133,8 @@
 }
 .apartment-mortgage-href{
     color: #686868;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 100%;
     gap: 12px;
 }

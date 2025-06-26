@@ -193,19 +193,19 @@
     color: #FFFFFF;
 }
 .floor-plan-price{
-    margin-top: 30px;
+    margin-top: 25px;
     gap: 8px;
 }
 .floor-plan-price strong{
     color: #FFFFFF;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 29.79px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 26px;
     text-align: left;
 }
 .floor-plan-price del{
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 20px;
     line-height: 23.83px;
     text-align: left;
     color: #FFFFFF;

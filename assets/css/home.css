@@ -1665,18 +1665,20 @@ input[type=range]::-webkit-slider-thumb {
 
 .comme-line-info p {
     color: #4F4F4F;
+    font-size: 14px;
+
 }
 
 .comme-line-info span {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 12.35px;
     text-align: right;
     color: #4F4F4F;
 }
 
 .comme-line-info span b {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .calculate-mortgage {
@@ -2565,7 +2567,7 @@ input[type=range]::-webkit-slider-thumb {
     .calculate-click {
         padding: 11px 9px;
         width: 186px;
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .view-options {
@@ -2606,6 +2608,19 @@ input[type=range]::-webkit-slider-thumb {
 
     .master-plan-menu ul {
         padding-right: 20px;
+    }
+    .standard-bid-name span {
+        font-size: 13px;
+    }
+    .standard-bid-name p, .monthly-payment-min p {
+        font-size: 11px;
+    }
+    .monthly-payment-pric .btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    .mortgage-label h4 {
+        font-size: 14px;
     }
 }
 
@@ -2677,9 +2692,7 @@ input[type=range]::-webkit-slider-thumb {
         height: 650px;
         border-radius: 32px;
     }
-    .standard-bid-name span {
-        font-size: 18px;
-    }
+
     .commercial-photo {
         padding: 35px 45px;
         border-radius: 32px;
@@ -2721,7 +2734,7 @@ input[type=range]::-webkit-slider-thumb {
     .calculate-click {
         padding: 8px 13px;
         width: 48%;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .mortgage-price strong {
@@ -4043,9 +4056,7 @@ input[type=range]::-webkit-slider-thumb {
         font-size: 12px;
     }
 
-    .standard-bid-name span {
-        font-size: 14px;
-    }
+
 
     .afi-dev-count strong {
         font-size: 32px;

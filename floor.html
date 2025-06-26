@@ -482,8 +482,8 @@
     });
 
     function updateTooltipPosition(event, tooltip) {
-        const top = window.scrollY + event.clientY - tooltip.offsetHeight - 20;
-        const left = window.scrollX + event.clientX + 15;
+        const top = window.scrollY + event.clientY - tooltip.offsetHeight - 150;
+        const left = window.scrollX + event.clientX + 25;
         tooltip.style.top = `${top}px`;
         tooltip.style.left = `${left}px`;
     }

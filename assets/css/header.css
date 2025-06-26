@@ -442,6 +442,9 @@ header{
     .documents-column h3 {
         font-size: 15px;
     }
+    .btn-select {
+        font-size: 12px;
+    }
 }
 @media (max-width: 370px){
     .header-menu a {
