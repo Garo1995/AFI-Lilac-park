@@ -259,7 +259,6 @@ $('.time-call-click').on('click', function (e) {
 
 $('.time-call-drop ul li').on('click', function () {
     $('.time-call').removeClass('time-call-act')
-
     let selected_text = $(this).html();
     $('.time-call-click ').html(selected_text);
 });
@@ -459,6 +458,78 @@ document.querySelectorAll('.corps-queue').forEach(block => {
         });
     }
 });
+
+
+
+
+
+
+
+$('.rooms-frame-click').on('click', function (e) {
+    $(this).parent().toggleClass('rooms-frame-box-act');
+    e.stopPropagation();
+});
+
+$('.rooms-frame-down ul li').on('click', function () {
+    $('.rooms-frame-box').removeClass('rooms-frame-box-act')
+    let text_rooms = $('.rooms-frame-click span').html();
+    let selected_rooms = $(this).html();
+    $('.rooms-frame-click span').html(selected_rooms);
+    $(this).html(text_rooms)
+});
+$(window).on('click', function (e) {
+    let menuRooms = $('.rooms-frame-box');
+    if (e.target !== menuRooms) {
+        menuRooms.removeClass('rooms-frame-box-act');
+    }
+});
+
+
+$('.sort-ascending-click').on('click', function (e) {
+    $(this).parent().toggleClass('sort-ascending-act');
+    e.stopPropagation();
+});
+
+$('.sort-ascending-down ul li').on('click', function () {
+    $('.sort-ascending').removeClass('sort-ascending-act')
+    let text_rooms = $('.sort-ascending-click span').html();
+    let selected_rooms = $(this).html();
+    $('.sort-ascending-click span').html(selected_rooms);
+    $(this).html(text_rooms)
+});
+$(window).on('click', function (e) {
+    let menuSort = $('.sort-ascending');
+    if (e.target !== menuSort) {
+        menuSort.removeClass('sort-ascending-act');
+    }
+});
+
+
+
+
+
+$('.parking-storage span').on('click', function (){
+    $('.parking-storage span').removeClass('parking-storage-act')
+    $(this).addClass('parking-storage-act')
+})
+
+
+$('.parking-storage-all').on('click', function (){
+    $('.parking-cards').addClass('parking-cards-act');
+    $('.parking-cards-tab').removeClass('parking-cards-tab-act');
+})
+
+
+$('.parking-storage-table').on('click', function (){
+    $('.parking-cards').removeClass('parking-cards-act');
+    $('.parking-cards-tab').addClass('parking-cards-tab-act');
+})
+
+
+
+
+
+
 
 
 

@@ -150,11 +150,17 @@ img {
 }
 body {
     font-family: 'Bounded';
-
 }
 .container{
     max-width: 1660px;
     width: 100%;
     margin: 0 auto;
     padding: 0 10px;
+}
+
+button,
+a,
+input,
+textarea{
+    font-family: 'Bounded';
 }

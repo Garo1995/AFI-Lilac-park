@@ -1249,11 +1249,14 @@ p {
 }
 
 .commercial-title h2 + h2 {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .commercial-title h2 + h2 a {
     color: #C2C2C2;
+}
+.commercial-title h2   a {
+    margin-left: 10px;
 }
 
 .commercial-flex {
@@ -1323,6 +1326,7 @@ p {
     margin-bottom: 7px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .values {
@@ -1499,15 +1503,15 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .commercial-scr::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+    width: 2px;
+    height: 2px;
     background: #B2B2B2;
     border-radius: 24px;
 }
 
 .commercial-scr::-webkit-scrollbar-thumb {
-    width: 4px;
-    height: 4px;
+    width: 2px;
+    height: 2px;
     background: #754ABC;
     border-radius: 24px;
 }
@@ -2432,8 +2436,8 @@ input[type=range]::-webkit-slider-thumb {
     margin: 0;
     padding: 0;
     font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
+    font-weight: 300;
+    font-size: 12px;
     line-height: 18px;
     color: #000000;
     max-width: 295px;
@@ -4189,6 +4193,7 @@ input[type=range]::-webkit-slider-thumb {
 
     .gallery-menu {
         overflow-x: scroll;
+        padding-bottom: 7px;
     }
 
     .gallery-menu::-webkit-scrollbar {
@@ -4273,6 +4278,7 @@ input[type=range]::-webkit-slider-thumb {
 
     .construction-cnt {
         overflow-x: scroll;
+        padding-bottom: 7px;
     }
 
     .construction-cnt::-webkit-scrollbar {

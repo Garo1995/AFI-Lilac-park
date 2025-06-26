@@ -607,13 +607,17 @@
         font-size: 18px;
     }
    .consultation-check .check-form label small {
-        font-size: 16px;
+        font-size: 12px;
     }
     .modal-map-rel .infrast-map-cnt {
         position: absolute;
         top: 10px;
         left: 5px;
         width: 244px;
+    }
+    .modal-form-inp input {
+        padding: 12px 24px;
+        font-size: 13px;
     }
 }
 
@@ -646,5 +650,20 @@
     .application-mod-box:nth-child(4){
         width: calc(50.5% - 6px);
     }
-
+    .consultation-form-fl {
+        gap: 30px;
+    }
+    .check-form {
+        margin-top: 10px;
+    }
+    .booking-request-flex {
+        margin-top: 25px;
+    }
+    .modal .btn {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    .modal-registration h3 {
+        font-size: 22px;
+    }
 }
