@@ -89,6 +89,7 @@ $('.standard').on('click', function () {
 
 const svg = document.getElementById('svg-map');
 const infoBlock = document.getElementById('info-block');
+let hoverTimeout = null;
 
 svg.addEventListener('mouseover', (e) => {
     const path = e.target.closest('path');
@@ -113,17 +114,34 @@ svg.addEventListener('mouseover', (e) => {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
 
-    infoBlock.style.left = (rect.right + scrollLeft - 350) + 'px';
+    infoBlock.style.left = (rect.right + scrollLeft - 110) + 'px';
     infoBlock.style.top = (rect.top + scrollTop - 340) + 'px';
     infoBlock.style.display = 'block';
 });
 
+
+
 svg.addEventListener('mouseout', (e) => {
-    if (e.target.tagName === 'path') {
-        infoBlock.style.display = 'none';
+    if (!e.relatedTarget || (!svg.contains(e.relatedTarget) && !infoBlock.contains(e.relatedTarget))) {
+        hoverTimeout = setTimeout(() => {
+            infoBlock.style.display = 'none';
+        }, 200); // 200 мс — даёт время на переход в окно
     }
 });
 
+// Отменить закрытие, если мышка зашла в окно
+infoBlock.addEventListener('mouseover', () => {
+    clearTimeout(hoverTimeout);
+});
+
+// Скрыть, если ушли и из окна
+infoBlock.addEventListener('mouseout', (e) => {
+    if (!e.relatedTarget || (!infoBlock.contains(e.relatedTarget) && !svg.contains(e.relatedTarget))) {
+        hoverTimeout = setTimeout(() => {
+            infoBlock.style.display = 'none';
+        }, 200);
+    }
+});
 
 
 
