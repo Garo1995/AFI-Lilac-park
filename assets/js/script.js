@@ -84,6 +84,59 @@ $('.standard').on('click', function () {
 })
 
 
+
+
+
+const svg = document.getElementById('svg-map');
+const infoBlock = document.getElementById('info-block');
+
+svg.addEventListener('mouseover', (e) => {
+    const path = e.target.closest('path');
+    if (!path) return;
+
+    // Получаем данные
+    const num = path.getAttribute('data-num') || '-';
+    const square = path.getAttribute('data-square') || '-';
+    const price = path.getAttribute('data-price') || '-';
+    const status = path.getAttribute('data-status') || '-';
+
+    // Вставляем данные
+    infoBlock.querySelector('.value-num').textContent = num;
+    infoBlock.querySelector('.value-square').textContent = square;
+    infoBlock.querySelector('.value-price').textContent = price;
+    infoBlock.querySelector('.value-status').textContent = status;
+
+    // Получаем координаты path
+    const rect = path.getBoundingClientRect();
+
+    // Ставим окно рядом с path
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+
+    infoBlock.style.left = (rect.right + scrollLeft - 350) + 'px';
+    infoBlock.style.top = (rect.top + scrollTop - 340) + 'px';
+    infoBlock.style.display = 'block';
+});
+
+svg.addEventListener('mouseout', (e) => {
+    if (e.target.tagName === 'path') {
+        infoBlock.style.display = 'none';
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function () {
 
 
@@ -633,7 +686,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
+$('.parking-filter-types span').on('click', function (){
+    $(this).toggleClass('parking-types-act');
+})
 
 
 const slider = document.querySelector('.master-plan-menu ul');
@@ -700,4 +755,16 @@ updateSlider('price-min', 'price-max', 'price-val', 'price-track');
 updateSlider('sqm-min', 'sqm-max', 'sqm-val', 'sqm-track');
 updateSlider('area-min', 'area-max', 'area-val', 'area-track');
 updateSlider('floor-min', 'floor-max', 'floor-val', 'floor-track');
+
+
+
+
+
+
+
+
+
+
+
+
 

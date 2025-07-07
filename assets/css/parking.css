@@ -90,7 +90,7 @@
     margin-top: 30px;
 }
 .parking-filter-types{
-    gap: 8px;
+    gap: 4px;
     max-width: 250px;
     width: 100%;
 }
@@ -99,7 +99,13 @@
     transition: 0.3s;
     font-size: 16px;
     display: inline-block;
-
+    padding: 5px;
+    border-radius: 5px;
+    line-height: 18px;
+}
+.parking-types-act {
+    background: #754ABC;
+    color: #FFFFFF;
 }
 .parking-filter-btn{
     margin-top: 25px;
@@ -165,8 +171,8 @@
 }
 .parking-photo{
     position: relative;
-    width: 147%;
-    margin: 0 -24vh;
+    width: 173%;
+    margin: 0 -29vh;
     transition: transform 0.3s ease;
     transform-origin: center;
     cursor: grab;
@@ -174,6 +180,64 @@
 .parking-photo.dragging {
     cursor: grabbing;
 }
+.value-price-marg{
+    margin-bottom: 30px;
+}
+.parking-results-info{
+
+    background: #754ABC;
+    max-width: 300px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 24px 24px;
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    display: none;
+}
+.value-price{
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.parking-results-count{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.parking-results-count div{
+    justify-content: center;
+    gap: 6px;
+}
+.parking-results-count p{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.parking-results-count span{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.parking-results-info .btn-white{
+    margin-top: 15px;
+}
+.flat-buttons{
+    margin-top: 15px;
+}
+.flat-buttons a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.fill path{
+    fill: #FFFFFF;
+}
+
 .parking-photo img{
     width: 100%;
 }
@@ -187,6 +251,9 @@
     fill: #754abc;
     fill-opacity: .5;
     cursor: pointer;
+}
+.parking-photo svg path:hover{
+    fill-opacity: 1;
 }
 .parking-floor-svg{
     max-width: 300px;
