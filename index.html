@@ -15,25 +15,24 @@
 <header>
     <div class="container">
         <div class="header-main G-align-center G-justify-between">
-            <div class="open-menu G-align-center">
-                <strong>Меню</strong>
-                <i class="icon-menu"></i>
+            <div class="header-main-flex G-align-center">
+                <div class="open-menu G-align-center">
+                    <i class="icon-menu"></i>
+                </div>
+                <div class="header-main-fave G-align-center">
+                    <a href="#commercial" class="btn menu-scroll G-center">Выбрать квартиру</a>
+                    <a href="./favorite.html" class="card-favorite">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24" fill="none">
+                            <path d="M14.633 3.35705C17.3623 0.549332 21.8035 0.549332 24.5336 3.35705C27.2072 6.10776 27.2245 10.4679 24.5739 13.4992C22.1553 16.2635 15.0235 22.235 14.721 22.4878C14.5089 22.6652 14.2528 22.7549 13.9987 22.7428C13.9909 22.7431 13.9829 22.7431 13.9747 22.7431C13.729 22.7431 13.4819 22.6595 13.2765 22.4878C12.9739 22.235 5.8429 16.2635 3.425 13.4995C0.774007 10.4679 0.791371 6.10776 3.46527 3.35705C6.19459 0.548951 10.6362 0.548951 13.3655 3.35705L13.9991 4.00882L14.633 3.35705Z"
+                                  stroke="#4F4F4F" stroke-width="1.76406"></path>
+                        </svg>
+                    </a>
+                </div>
             </div>
-
-
             <div class="header-btn G-align-center">
                 <a href="tel:+7 (495) 324-97-58" class="header-phone">+7 (495) 324-97-58</a>
-                <a href="./favorite.html" class="card-favorite">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24" fill="none">
-                        <path d="M14.633 3.35705C17.3623 0.549332 21.8035 0.549332 24.5336 3.35705C27.2072 6.10776 27.2245 10.4679 24.5739 13.4992C22.1553 16.2635 15.0235 22.235 14.721 22.4878C14.5089 22.6652 14.2528 22.7549 13.9987 22.7428C13.9909 22.7431 13.9829 22.7431 13.9747 22.7431C13.729 22.7431 13.4819 22.6595 13.2765 22.4878C12.9739 22.235 5.8429 16.2635 3.425 13.4995C0.774007 10.4679 0.791371 6.10776 3.46527 3.35705C6.19459 0.548951 10.6362 0.548951 13.3655 3.35705L13.9991 4.00882L14.633 3.35705Z"
-                              stroke="#4F4F4F" stroke-width="1.76406"></path>
-                    </svg>
-                </a>
-                <a href="#commercial" class="btn-select menu-scroll G-center">Выбрать квартиру</a>
                 <button class="btn-sign-up open_modal G-center" data-val="modal">Записаться на просмотр</button>
-
             </div>
-
         </div>
         <div class="menu-content">
             <div class="menu-content-main">
@@ -2185,8 +2184,27 @@
                 <div class="apartments-btn-mob">
                     <div class="apartments-info-btn">Чистовая отделка</div>
                 </div>
-                <div class="apartments-photo G-flex">
-                    <img src="./assets/img/apartments-2.webp" alt="apartments">
+                <div class="apartments-photo apartments-photo-two G-flex">
+                   <div class="apartments-photo-select G-flex">
+                       <img src="./assets/img/park-pic-1.png" alt="park">
+                       <div class="apartments-photo-fav G-align-center G-justify-between">
+                           <div class="apartments-photo-span G-align-center">
+                               <span class="bg-circ col-silver-one"></span>
+                               <span class="bg-circ col-silver-two"></span>
+                           </div>
+                           <strong>LIGHT</strong>
+                       </div>
+                   </div>
+                    <div class="apartments-photo-select G-flex">
+                        <img src="./assets/img/park-pic-2.png" alt="park">
+                        <div class="apartments-photo-fav G-align-center G-justify-between">
+                            <div class="apartments-photo-span G-align-center">
+                                <span class="bg-circ col-silver-three"></span>
+                                <span class="bg-circ col-silver-four"></span>
+                            </div>
+                            <strong>DARK</strong>
+                        </div>
+                    </div>
                 </div>
                 <div class="apartments-info">
                     <div class="apartments-info-btn">Чистовая отделка</div>

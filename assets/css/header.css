@@ -9,29 +9,33 @@ header{
     width: 100%;
 }
 .open-menu{
-    gap: 12px;
     cursor: pointer;
-}
-.open-menu strong{
-    color: #1A1A1A;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 90%;
-    text-transform: uppercase;
-
 }
 .open-menu .icon-menu{
     width: 26px;
     height: 26px;
     content: url("../img/icons/menu.svg");
 }
+.header-main-flex{
+    gap: 16px;
+}
+.header-main-fave{
+    gap: 16px;
+}
 .header-btn{
     gap: 16px;
 }
+.header-main-fave .btn{
+    padding: 12px 24px 10px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
 .header-phone{
-    color: #754ABC;
+    color: #1A1A1A;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 100%;
     text-align: left;
     margin-right: 10px;
@@ -58,15 +62,15 @@ header{
 .btn-sign-up{
     white-space: nowrap;
     transition: 0.3s;
-    background: #754ABC;
+    background: #B497E1;
     border-radius: 32px;
     gap: 8px;
     padding: 12px 32px;
-    color: #FBF9ED;
-    font-weight: 500;
-    font-size: 16px;
+    color: #1A1A1A;
+    font-weight: 300;
+    font-size: 18px;
     line-height: 100%;
-    border: 1px solid #754ABC;
+    border: 1px solid #B497E1;
 }
 .btn-sign-up:hover{
     color: #754ABC;
@@ -247,6 +251,11 @@ header{
 .card-favorite{
     display: flex;
     transition: 0.3s;
+    width: 40px;
+}
+.card-favorite svg{
+    width: 100%;
+    height: 34px;
 }
 .card-favorite:hover svg path{
     stroke: #754ABC;
@@ -331,9 +340,7 @@ header{
     }
 }
 @media (max-width: 1020px){
-    .open-menu strong {
-        font-size: 16px;
-    }
+
     .open-menu .icon-menu {
         width: 24px;
         height: 24px;
@@ -406,8 +413,16 @@ header{
         font-size: 12px;
     }
 
-
-
+    .header-main-fave .btn {
+        padding: 10px 24px 9px;
+        font-size: 16px;
+    }
+    .card-favorite {
+        width: 30px;
+    }
+    .card-favorite svg {
+        height: 28px;
+    }
 }
 @media (max-width: 767px){
     .header-btn .btn-sign-up{
@@ -415,6 +430,19 @@ header{
     }
     .header-btn {
         gap: 20px;
+        flex-direction: row-reverse;
+    }
+    .header-main-flex {
+        gap: 16px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .open-menu .icon-menu {
+        width: 31px;
+        height: 31px;
+    }
+    .header-main-fave {
+        gap: 16px;
         flex-direction: row-reverse;
     }
 }
@@ -443,6 +471,9 @@ header{
     }
     .btn-select {
         font-size: 12px;
+    }
+    .header-main-fave .btn {
+        font-size: 15px;
     }
 }
 @media (max-width: 370px){

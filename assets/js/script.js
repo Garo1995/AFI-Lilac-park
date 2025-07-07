@@ -87,65 +87,6 @@ $('.standard').on('click', function () {
 
 
 
-const svg = document.getElementById('svg-map');
-const infoBlock = document.getElementById('info-block');
-let hoverTimeout = null;
-
-svg.addEventListener('mouseover', (e) => {
-    const path = e.target.closest('path');
-    if (!path) return;
-
-    // Получаем данные
-    const num = path.getAttribute('data-num') || '-';
-    const square = path.getAttribute('data-square') || '-';
-    const price = path.getAttribute('data-price') || '-';
-    const status = path.getAttribute('data-status') || '-';
-
-    // Вставляем данные
-    infoBlock.querySelector('.value-num').textContent = num;
-    infoBlock.querySelector('.value-square').textContent = square;
-    infoBlock.querySelector('.value-price').textContent = price;
-    infoBlock.querySelector('.value-status').textContent = status;
-
-    // Получаем координаты path
-    const rect = path.getBoundingClientRect();
-
-    // Ставим окно рядом с path
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const scrollLeft = window.scrollX || document.documentElement.scrollLeft;
-
-    infoBlock.style.left = (rect.right + scrollLeft - 110) + 'px';
-    infoBlock.style.top = (rect.top + scrollTop - 340) + 'px';
-    infoBlock.style.display = 'block';
-});
-
-
-
-svg.addEventListener('mouseout', (e) => {
-    if (!e.relatedTarget || (!svg.contains(e.relatedTarget) && !infoBlock.contains(e.relatedTarget))) {
-        hoverTimeout = setTimeout(() => {
-            infoBlock.style.display = 'none';
-        }, 200); // 200 мс — даёт время на переход в окно
-    }
-});
-
-// Отменить закрытие, если мышка зашла в окно
-infoBlock.addEventListener('mouseover', () => {
-    clearTimeout(hoverTimeout);
-});
-
-// Скрыть, если ушли и из окна
-infoBlock.addEventListener('mouseout', (e) => {
-    if (!e.relatedTarget || (!infoBlock.contains(e.relatedTarget) && !svg.contains(e.relatedTarget))) {
-        hoverTimeout = setTimeout(() => {
-            infoBlock.style.display = 'none';
-        }, 200);
-    }
-});
-
-
-
-
 
 
 

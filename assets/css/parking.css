@@ -180,6 +180,11 @@
 .parking-photo.dragging {
     cursor: grabbing;
 }
+.storerooms-pics .parking-photo{
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+}
 .value-price-marg{
     margin-bottom: 30px;
 }
@@ -222,6 +227,11 @@
 
 .parking-results-info .btn-white{
     margin-top: 15px;
+
+}
+.parking-results-info .btn-white:hover{
+    background: unset;
+    color: #FFFFFF;
 }
 .flat-buttons{
     margin-top: 15px;

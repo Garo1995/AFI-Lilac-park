@@ -1045,10 +1045,62 @@ p {
     width: 100%;
 }
 
+
 .apartments-photo img {
     border-radius: 36px;
     width: 100%;
 }
+.apartments-photo-two{
+    gap: 24px;
+}
+.apartments-photo-select{
+    position: relative;
+    width: 100%;
+    max-width: 391px;
+}
+
+.apartments-photo-fav{
+    position: absolute;
+    bottom: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFFFFF;
+    width: 244px;
+    gap: 8px;
+    border-radius: 24px;
+    padding: 12px 24px 12px 12px;
+
+}
+.apartments-photo-span{
+    gap: 8px;
+}
+.bg-circ{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.apartments-photo-fav strong{
+    color: #1A1A1A;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.col-silver-one{
+    background: #C6BFB7;
+}
+.col-silver-two{
+    background: #D8D8D0;
+}
+.col-silver-three{
+    background: #ADACAA;
+}
+.col-silver-four{
+    background: #8C8B89;
+}
+
 
 .apartments-info {
     max-width: 808px;
@@ -3297,6 +3349,11 @@ input[type=range]::-webkit-slider-thumb {
         flex-direction: column;
         align-items: center;
     }
+    .apartments-photo-fav {
+        width: 200px;
+        border-radius: 16px;
+        padding: 10px 20px 10px 10px;
+    }
 }
 
 @media (max-width: 1020px) {
@@ -4327,7 +4384,20 @@ input[type=range]::-webkit-slider-thumb {
     .accordion-click span {
         font-size: 16px;
     }
-
+    .apartments-photo-two {
+        gap: 16px;
+    }
+    .apartments-photo-fav strong {
+        font-size: 16px;
+    }
+    .bg-circ {
+        width: 24px;
+        height: 24px;
+    }
+    .apartments-photo-fav {
+        width: 90%;
+        padding: 8px 16px 8px 8px;
+    }
     .close-filter {
         width: 15px;
         height: 15px;
@@ -4363,7 +4433,14 @@ input[type=range]::-webkit-slider-thumb {
         font-size: 13px;
     }
 }
-
+@media (max-width: 410px){
+    .apartments-photo-fav strong {
+        font-size: 14px;
+    }
+    .apartments-photo-span {
+        gap: 5px;
+    }
+}
 @media (max-width: 370px) {
     .lilac-park-title h1 {
         font-size: 36px;
@@ -4372,7 +4449,12 @@ input[type=range]::-webkit-slider-thumb {
     .favorable-desc p {
         font-size: 13px;
     }
-
+    .btn-white {
+        font-size: 13px;
+    }
+    .btn-liners {
+        font-size: 13px;
+    }
 }
 
 
