@@ -4455,6 +4455,9 @@ input[type=range]::-webkit-slider-thumb {
     .btn-liners {
         font-size: 13px;
     }
+    .calculate-click {
+        font-size: 11px;
+    }
 }
 
 

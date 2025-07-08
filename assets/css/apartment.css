@@ -107,6 +107,7 @@
     line-height: 100%;
     text-align: left;
     color: #754ABC;
+    display: block;
 }
 
 .page-apartment-price{
@@ -119,6 +120,8 @@
     text-decoration: line-through;
     color: #754ABC;
     opacity: 0.5;
+    display: block;
+
 }
 
 .apartment-mortgage{

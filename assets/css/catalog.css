@@ -23,7 +23,7 @@
     color: #686868;
     font-weight: 400;
     font-size: 15px;
-    line-height: 100%;
+    line-height: 99%;
     background: unset;
     width: 198px;
     display: flex;
@@ -140,8 +140,10 @@
     .see-more-catalog {
         margin-top: 32px;
     }
+
     .btn-lin {
-        padding: 9px 20px;
+        padding: 9px 15px;
+        white-space: nowrap;
     }
 }
 
