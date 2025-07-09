@@ -343,6 +343,7 @@
 .check-form label small a{
     color: #1A1A1A;
     text-decoration: underline;
+    display: inline;
 }
 .checkmark {
     position: absolute;
@@ -381,7 +382,7 @@
 }
 
 #apartment .btn{
-    margin-top: 65px;
+    margin-top: 35px;
 }
 .booking-request-floor img{
     max-width: 240px;
