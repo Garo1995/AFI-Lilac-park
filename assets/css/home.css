@@ -544,49 +544,622 @@ p {
     padding: 74px 0;
 }
 
-.about-resid-marg {
+.about-residential {
     margin-top: 64px;
 }
-
-.about-resid {
+.residential-rel{
+    position: relative;
     margin-top: 64px;
-    gap: 23px;
-}
 
-.about-resid-img {
-    max-width: 713px;
-    width: 100%;
 }
-
-.about-resid-img img {
-    width: 100%;
+.residential-rel .swiper-button-next, .residential-rel .swiper-button-prev {
+    top: 45%;
+}
+.residential-box{
+    border: 1px solid #D9D9D9;
     border-radius: 36px;
+    overflow: hidden;
+    padding-left: 80px;
+    background: #FFFFFF;
+    gap: 24px;
+    height: 740px;
+}
+.residential-fon{
+    background: #F8F8F8;
+
 }
 
-.about-resid-info {
-    max-width: 904px;
+.residential-info{
+    padding: 64px 40px 44px 0;
+    max-width: 760px;
     width: 100%;
-    flex-direction: column;
-    gap: 23px;
 }
 
-.about-resid-title {
-    gap: 23px;
-    max-width: 700px;
+
+.residential-box h3{
+    color: #1A1A1A;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 43px;
+    text-transform: uppercase;
+
+}
+.resid-title-style{
+    color: #FFFFFF;
+    background: #754ABC;
+    border-radius: 1000px;
+    padding: 6px 16px 4px;
+    white-space: nowrap;
+}
+
+.residential-cnt{
+    margin-top: 64px;
+}
+.residential-info{
+    max-width: 616px;
     width: 100%;
 }
 
-.about-resid-title h3 {
+.high-materials-item{
+    margin-top: 24px;
+    gap: 24px;
+}
+
+.high-materials-item img{
+    width: 34px;
+    height: 34px;
+}
+.high-materials-name h4{
+    color: #754ABC;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+}
+.high-materials-name p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 3px;
+}
+
+.residential-photo{
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+}
+
+.residential-photo img{
+    border-radius: 0 36px 36px 0;
+}
+
+
+
+
+
+
+.neighborhood-info{
+    max-width: 940px;
+    width: 100%;
+}
+
+.neighborhood-photo{
+    max-width: 560px;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.photo-radio img{
+    border-radius: 36px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.neighborhood-cnt{
+    margin-top: 19px;
+
+}
+
+.neighborhood-flex{
+    margin-top: 24px;
+    gap: 24px;
+}
+.neighborhood-box{
+    max-width: 296px;
+    width: 100%;
+    background: #F8F8F8;
+    border-radius: 24px;
+    padding: 24px;
+}
+.neighborhood-name span{
+    color: #1A1A1A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: left;
+}
+.apart-keys-photo-first{
+    height: 100%;
+}
+.neighborhood-col{
+    margin-top: 24px;
+    gap: 16px;
+}
+.neighborhood-cart strong{
+    color: #754ABC;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.neighborhood-cart p{
+    color: #754ABC;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+.apart-keys-info{
+    max-width: 576px;
+    width: 100%;
+}
+
+.apart-keys-text{
+    margin: 64px 0;
+    height: 267px;
+    max-width: 500px;
+    width: 100%;
+}
+.apart-keys-text p + p{
+    margin-top: 10px;
+}
+.apart-keys-info h4{
+    color: #1A1A1A;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: left;
+}
+.apart-keys-info h4 span{
+    text-align: left;
+    color: #754ABC;
+    display: block;
+}
+
+
+.apart-keys-photo{
+    gap: 24px;
+    max-width: 920px;
+    width: 100%;
+    height: 100%;
+}
+
+.apart-keys-photo-first img{
+    border-radius: 36px 0 0 36px;
+
+}
+
+.apart-keys-photo-last img{
+    border-radius: 0 36px 36px 0;
+}
+
+.cozy-quarter-info{
+    max-width: 676px;
+    width: 100%;
+}
+.cozy-quarter-text{
+    margin: 64px 0;
+    height: 275px;
+}
+.cozy-quarter-text ul{
+    margin: 12px 0;
+    gap: 12px;
+}
+.cozy-quarter-text ul li{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    color: #1A1A1A;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+}
+.cozy-quarter-text ul li:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: #754ABC;
+    opacity: 0.48;
+}
+
+
+.cozy-quarter-info h4{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #754ABC;
+}
+.cozy-quarter-info h4 span{
+    display: block;
+    font-weight: 500;
+}
+
+
+
+.cozy-quarter-photo{
+    max-width: 820px;
+    width: 100%;
+}
+.white-box-lin{
+    border: 1px solid #1A1A1AAB;
+    background: #FFFFFF;
+}
+
+.solutions-ready{
+    max-width: 920px;
+    width: 100%;
+    gap: 24px;
+}
+
+.solutions-ready .apartments-photo-select{
+    height: 560px;
+}
+
+.solutions-ready .apartments-photo-select:nth-child(2){
+    margin-top: 180px;
+}
+
+
+
+.mfc-afi-photo{
+    position: relative;
+    max-width: 920px;
+    width: 100%;
+    height: 100%;
+}
+.mfc-afi-info{
+    max-width: 580px;
+    width: 100%;
+    padding: 30px 0;
+}
+.mfc-afi-park{
+    position: absolute;
+    bottom: 45px;
+    right: 70px;
+    background: #FFFFFFE0;
+    backdrop-filter: blur(12px);
+    max-width: 500px;
+    width: 100%;
+    padding: 24px 40px;
+    border-radius: 24px;
+}
+
+.cozy-quarter-text span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #1A1A1A;
+    display: block;
+    margin-top: 10px;
+}
+
+.mfc-afi-park h3{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: left;
+    color: #754ABC;
+    max-width: 315px;
+    width: 100%;
+}
+.mfc-afi-park h3 span{
+    color: #754ABC;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.mfc-afi-park p{
+    margin-top: 8px;
+}
+
+.mfc-afi-info h3{
+    max-width: 330px;
+    width: 100%;
+}
+.mfc-afi-info h4 span{
+    display: inline-block;
+}
+.mfc-afi-title{
+    color: #754ABC;
+}
+
+.family-property{
+    margin-top: 24px;
+    gap: 0 12px;
+}
+.family-property-name{
+    gap: 12px;
+    margin-top: 12px;
+}
+.family-property-name i{
+    width: 24px;
+    height: 24px;
+}
+.family-property-text{
+    height: 332px;
+    margin-top: 64px;
+}
+.family-property-text span{
+    color: #1A1A1A;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.family-property-rel{
+    position: relative;
+    max-width: 820px;
+    width: 100%;
+    height: 100%;
+}
+.family-property-rel:before{
+    content: "";
+    position: absolute;
+    top: 270px;
+    left: -72px;
+    background: #BAA4DD;
+    width: 200px;
+    height: 200px;
+    border-radius: 24px;
+    z-index: 0;
+}
+.family-property-rel img{
+    position: relative;
+    z-index: 1;
+}
+.family-property-camera{
+    position: absolute;
+    left: -168px;
+    top: 269px;
+    max-width: 274px;
+    width: 100%;
+}
+
+
+
+.childrens-infrast-photo{
+    max-width: 560px;
+    width: 100%;
+}
+
+
+.childrens-infrast-info{
+    max-width: 936px;
+    width: 100%;
+}
+.childrens-infrast-cnt {
+    margin-top: 64px;
+
+}
+.childrens-infrast-cnt>p{
+    margin-bottom: 10px;
+}
+
+.childrens-infrast-flex{
+    margin-top: 56px;
+    gap: 24px;
+}
+.childrens-infrast-box{
+    max-width: 456px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 24px;
+
+}
+.childrens-infrast-box h4{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    text-align: left;
+    color: #754ABC;
+}
+.childrens-infrast-box ul{
+    margin-top: 24px;
+}
+.ul-info{
+    gap: 9px;
+}
+.ul-info li{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1A1A1A;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+}
+.ul-info li:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: #754ABC;
+    opacity: 0.48;
+}
+.equal-opportunities{
+    margin-top: 24px;
+}
+
+
+
+.educational-info{
     max-width: 520px;
     width: 100%;
 }
+.educational-text{
+    margin-top: 64px;
 
-
-.about-resid-title span {
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 100%;
 }
+.educational-text img{
+    margin: 24px 0;
+    border-radius: 24px;
+    width: 100%;
+}
+
+.educational-text h4{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.educational-text h4 span{
+    color: #754ABC;
+}
+
+.educational-padd{
+    padding: 64px 80px;
+}
+.educational-cnt{
+    max-width: 896px;
+    width: 100%;
+    gap: 16px;
+}
+.educational-blick{
+    max-width: 440px;
+    width: 100%;
+    gap: 16px;
+}
+.educational-box{
+    background: #F8F8F8;
+    backdrop-filter: blur(20px);
+    width: 100%;
+    padding: 16px 24px;
+    border-radius: 24px;
+
+}
+.educational-box h4{
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+    color: #754ABC;
+}
+
+.educational-box span{
+    display: block;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.educational-box:last-child{
+    height: 270px;
+}
+
+
+.educational-flex ul + ul{
+    max-width: 225px;
+    width: 100%;
+}
+.another-educat ul{
+    gap: 12px;
+}
+
+.walking-distance-info{
+    max-width: 467px;
+    width: 100%;
+}
+
+.walking-distance-name{
+    height: 300px;
+    margin: 64px 0;
+}
+
+.walking-distance-title strong{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: #754ABC;
+}
+.walking-distance-title h5 {
+    margin-left: 12px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #754ABC;
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.walking-distance-title h5 .healthicons-walki{
+    margin-bottom: -9px;
+}
+.walking-distance-href{
+    margin-top: 12px;
+    border: 1px solid #754ABC;
+    background: #fff;
+    max-width: 405px;
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 24px;
+     color: #1A1A1A;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+
+}
+
+
+
+.walking-distance-photo{
+    max-width: 1026px;
+    width: 100%;
+    margin-right: 43px;
+    padding: 22px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .bright-apartments {
     gap: 18px;
@@ -612,10 +1185,6 @@ p {
     color: #FFFFFF;
 }
 
-.about-resid-info > p {
-    max-width: 760px;
-    width: 100%;
-}
 
 .on-foot-car {
     gap: 24px;
@@ -1068,7 +1637,7 @@ p {
     width: 244px;
     gap: 8px;
     border-radius: 24px;
-    padding: 12px 24px 12px 12px;
+    padding: 8px 24px 8px 12px;
 
 }
 .apartments-photo-span{
@@ -1567,7 +2136,9 @@ input[type=range]::-webkit-slider-thumb {
     background: #754ABC;
     border-radius: 24px;
 }
-
+.residential-mob{
+    display: none;
+}
 .commercial-height {
     width: 100%;
     height: 1570px;
@@ -2536,6 +3107,15 @@ input[type=range]::-webkit-slider-thumb {
     overflow: hidden;
     padding-top: 74px;
 }
+
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
     .cookie {
         flex-direction: row;
@@ -2693,9 +3273,7 @@ input[type=range]::-webkit-slider-thumb {
         margin-top: 32px;
     }
 
-    .about-resid {
-        margin-top: 32px;
-    }
+
     .metro-station-min strong {
         font-size: 30px;
     }
@@ -2889,6 +3467,170 @@ input[type=range]::-webkit-slider-thumb {
         font-size: 24px;
     }
 
+
+    .residential-info {
+        max-width: 550px;
+        padding: 28px 0 20px 0;
+    }
+    .residential-box h3 {
+        font-size: 26px;
+        line-height: 39px;
+    }
+    .residential-cnt {
+        margin-top: 28px;
+    }
+    .high-materials-item {
+        margin-top: 18px;
+        gap: 18px;
+    }
+    .high-materials-name h4 {
+        font-size: 20px;
+    }
+    .residential-rel {
+        margin-top: 30px;
+    }
+
+    .residential-box {
+        padding-left: 45px;
+    }
+    .neighborhood-flex {
+        margin-top: 16px;
+        gap: 16px;
+    }
+    .neighborhood-box {
+        padding: 16px;
+    }
+    .neighborhood-col {
+        margin-top: 16px;
+        gap: 12px;
+    }
+    .neighborhood-cart strong {
+        font-size: 20px;
+    }
+    .neighborhood-cart p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .neighborhood-name span {
+        font-size: 13px;
+    }
+    .apart-keys-text {
+        margin: 40px 0;
+        height: 200px;
+    }
+    .apart-keys-info {
+        max-width: 470px;
+    }
+    .neighborhood-photo {
+        max-width: 490px;
+    }
+    .cozy-quarter-text {
+        margin: 40px 0;
+        height: 170px;
+    }
+
+    .solutions-ready .apartments-photo-select {
+        height: 527px;
+    }
+    .solutions-ready .apartments-photo-select:nth-child(2) {
+        margin-top: 110px;
+    }
+
+
+    .residential-box {
+        height: 640px;
+    }
+    .cozy-quarter-info {
+        max-width: 583px;
+    }
+    .family-property-text {
+        height: 298px;
+        margin-top: 44px;
+    }
+    .mfc-afi-info {
+        max-width: 500px;
+    }
+    .family-property-rel {
+        max-width: 705px;
+    }
+    .family-property-rel:before {
+        top: 250px;
+        left: -65px;
+        width: 180px;
+        height: 180px;
+    }
+    .family-property-camera {
+        left: -130px;
+        top: 253px;
+        max-width: 230px;
+    }
+    .residential-photo {
+        height: 100%;
+
+        max-width: 692px;
+    }
+    .mfc-afi-park h3 {
+        max-width: 251px;
+        width: 100%;
+    }
+    .childrens-infrast-box h4 {
+        font-size: 20px;
+    }
+    .childrens-infrast-flex {
+        margin-top: 34px;
+        gap: 16px;
+    }
+    .childrens-infrast-cnt {
+        margin-top: 32px;
+    }
+    .childrens-infrast-photo {
+        max-width: 481px;
+        height: 100%;
+    }
+    .cozy-quarter-info h4 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .cozy-quarter-photo {
+        max-width: 742px;
+        height: 100%;
+    }
+    .educational-text {
+        margin-top: 32px;
+    }
+    .educational-padd {
+        padding: 25px 45px;
+    }
+    .ul-info li {
+        font-size: 14px;
+        line-height: 18px;
+
+    }
+    .ul-info {
+        gap: 8px;
+    }
+    .educational-box h4 {
+        margin-bottom: 11px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .walking-distance-name {
+        height: 190px;
+        margin: 40px 0;
+    }
+    .walking-distance-info {
+        max-width: 391px;
+    }
+    .walking-distance-photo {
+        padding: 14px 0;
+        margin-right: 1px;
+    }
+    .walking-distance-href {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
 }
 @media (max-width: 1499px) {
     .master-plan-menu {
@@ -3052,13 +3794,91 @@ input[type=range]::-webkit-slider-thumb {
         margin-right: 0;
         padding-right: 0;
     }
+
+    .neighborhood-cart strong {
+        font-size: 18px;
+    }
+    .residential-box h3 {
+        font-size: 22px;
+        line-height: 37px;
+    }
+    .walking-distance-title strong {
+        font-size: 60px;
+    }
+    .walking-distance-title h5 {
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 0;
+    }
+    .solutions-ready {
+        gap: 16px;
+    }
+    .apart-keys-info {
+        max-width: 400px;
+    }
+    .apart-keys-info h4 {
+        font-weight: 400;
+        font-size: 17px;
+    }
+    .cozy-quarter-text {
+        height: auto;
+    }
+    .mfc-afi-info {
+        max-width: 406px;
+    }
+
+    .family-property {
+        margin-top: 10px;
+    }
+    .educational-padd {
+        padding: 20px 35px;
+    }
+    .educational-box h4 {
+        margin-bottom: 9px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .educational-info {
+        max-width: 440px;
+    }
+    .educational-text h4 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+    }
+    .high-materials-name p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .residential-info {
+        max-width: 463px;
+    }
+    .cozy-quarter-text ul li {
+        font-size: 14px;
+    }
+    .high-materials-name h4 {
+        font-size: 18px;
+    }
+    .educational-box:last-child {
+        height: 100%;
+    }
+    .family-property-text span {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+    }
+    .childrens-infrast-box h4 {
+        font-size: 18px;
+    }
+    .ul-info li {
+        font-size: 13px;
+    }
+
+
 }
 
 @media (max-width: 1299px) {
-    .about-resid {
-        margin-top: 32px;
-        flex-direction: column-reverse;
-    }
+
 
     .infrastructure-box h3 {
         font-size: 18px;
@@ -3354,6 +4174,148 @@ input[type=range]::-webkit-slider-thumb {
         border-radius: 16px;
         padding: 10px 20px 10px 10px;
     }
+
+    .residential-box {
+        height: 570px;
+        padding-left: 33px;
+        border-radius: 24px;
+    }
+    .residential-box h3 {
+        font-size: 20px;
+        line-height: 34px;
+    }
+    .high-materials-item img {
+        width: 24px;
+        height: 24px;
+    }
+    .high-materials-name h4 {
+        font-size: 16px;
+    }
+    .high-materials-name p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .residential-info {
+        max-width: 400px;
+    }
+    .photo-radio img {
+        border-radius: 24px;
+    }
+    .neighborhood-flex {
+        margin-top: 12px;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: unset;
+    }
+
+    .neighborhood-box{
+        max-width: calc(50% - 8px);
+    }
+    .neighborhood-box:last-child{
+        max-width: 100%;
+    }
+    .neighborhood-cart p {
+        font-size: 9px;
+        line-height: 14px;
+    }
+    .neighborhood-cart strong {
+        font-size: 16px;
+    }
+    .neighborhood-col {
+        margin-top: 10px;
+        gap: 8px;
+    }
+
+
+    .solutions-ready .apartments-photo-select:last-child{
+        display: none;
+    }
+    .solutions-ready .apartments-photo-select:nth-child(2) {
+        margin-top: 0;
+    }
+    .mfc-afi-park {
+        bottom: 30px;
+        right: 25px;
+        max-width: 414px;
+        padding: 20px 20px;
+    }
+    .cozy-quarter-info h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .family-property-text {
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .family-property-rel:before {
+        top: 230px;
+        left: -58px;
+        width: 200px;
+        height: 200px;
+    }
+    .family-property-camera {
+        left: -102px;
+        top: 254px;
+        max-width: 200px;
+    }
+    .childrens-infrast-cnt>p {
+        font-size: 12px;
+        line-height: 124%;
+    }
+    .childrens-infrast-cnt {
+        margin-top: 16px;
+    }
+    .childrens-infrast-flex {
+        margin-top: 19px;
+    }
+    .childrens-infrast-box {
+        border-radius: 18px;
+        padding: 14px;
+    }
+    .equal-opportunities {
+        margin-top: 14px;
+    }
+    .equal-opportunities p{
+        font-size: 12px;
+    }
+    .educational-box {
+        padding: 12px 14px;
+        border-radius: 18px;
+    }
+    .educational-text img {
+        margin: 14px 0;
+        border-radius: 16px;
+    }
+    .educational-text {
+        margin-top: 20px;
+    }
+    .ul-info li {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .educational-box span {
+        font-size: 13px;
+    }
+    .educational-box h4 {
+        font-size: 14px;
+    }
+
+    .walking-distance-title h5 {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 0;
+        max-width: 190px;
+    }
+    .walking-distance-name {
+        height: 165px;
+        margin: 38px 0;
+    }
+    .walking-distance-info {
+        max-width: 371px;
+    }
+
+
 }
 
 @media (max-width: 1020px) {
@@ -3490,9 +4452,7 @@ input[type=range]::-webkit-slider-thumb {
         display: none;
     }
 
-    .about-resid-img img {
-        border-radius: 16px;
-    }
+
 
     .infrastructure-info {
         border-radius: 17px;
@@ -4003,6 +4963,183 @@ input[type=range]::-webkit-slider-thumb {
         z-index: 2;
     }
 
+    .residential-box {
+        height: 844px;
+        padding-left: 0;
+        border-radius: 16px;
+        flex-direction: column;
+        gap: 0;
+    }
+    .residential-info {
+        max-width: 100%;
+        padding: 32px 16px;
+    }
+    .residential-photo img {
+        border-radius: 0 16px 16px 0;
+    }
+    .residential-photo {
+        max-width: 100%;
+        height: 418px;
+    }
+    .residential-rel {
+        margin-top: 20px;
+        padding-bottom: 28px;
+    }
+    .neighborhood-info {
+        padding: 32px 16px;
+    }
+    .neighborhood-photo {
+        max-width: 100%;
+        height: 306px;
+    }
+    .neighborhood-photo img{
+        object-fit: cover;
+    }
+    .photo-radio img {
+        border-radius: 16px;
+    }
+    .apart-keys-text {
+        margin: 24px 0;
+        height: auto;
+    }
+    .apart-keys-info {
+        max-width: 100%;
+        padding: 32px 16px;
+    }
+    .apart-keys-info h4 {
+        font-size: 16px;
+        line-height: 112%;
+    }
+    .neighborhood-box {
+        padding: 12px;
+        border-radius: 12px;
+    }
+    .apart-keys-photo-first img {
+        border-radius: 16px 0 0 16px;
+    }
+    .apart-keys-photo-last img {
+        border-radius: 0 16px 16px 0;
+    }
+
+    .cozy-quarter-info {
+        max-width: 100%;
+        padding: 32px 16px;
+    }
+
+    .cozy-quarter-text {
+        margin: 24px 0;
+    }
+    .cozy-quarter-photo {
+        max-width: 100%;
+        height: 469px;
+    }
+    .solutions-ready .apartments-photo-select:last-child {
+        display: flex;
+    }
+    .solutions-ready {
+        flex-direction: column;
+    }
+
+    .solutions-ready .apartments-photo-select {
+        height: 140px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .solutions-ready .apartments-photo-select img{
+        width: 100%;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+    .solutions-ready .apartments-photo-fav {
+        width: 200px;
+        border-radius: 16px;
+        padding: 12px 24px 12px 12px;
+        background: #1A1A1A29;
+        backdrop-filter: blur(4px);
+        right: 8px;
+        left: auto;
+        transform: unset;
+        bottom: 4px;
+    }
+    .solutions-ready .apartments-photo-fav strong {
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .mfc-afi-photo {
+        height: 482px;
+    }
+    .family-property-text {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .family-property-rel {
+        max-width: 562px;
+        margin-left: auto;
+    }
+    .family-property-camera {
+        left: -94px;
+        top: 179px;
+        max-width: 165px;
+    }
+    .family-property-rel:before {
+        top: 156px;
+    }
+    .childrens-infrast-info {
+        padding: 32px 16px;
+    }
+    .childrens-infrast-photo {
+        max-width: 100%;
+        height: 402px;
+    }
+    .photo-radio img {
+        object-fit: cover;
+    }
+    .educational-padd {
+        padding: 32px 10px;
+    }
+    .educational-text img{
+        display: none;
+    }
+    .educational-info{
+        max-width: 100%;
+    }
+    .educational-text {
+        margin-top: 24px;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+    .walking-distance-info {
+        max-width: 100%;
+        padding: 32px 16px;
+    }
+    .walking-distance-name {
+        height: auto;
+        margin: 24px 0;
+    }
+    .walking-distance-photo {
+        padding: 0;
+        margin-right: 0;
+        height: auto;
+        max-width: 689px;
+        margin-bottom: 15px;
+    }
+    .walking-distance-title h5 .healthicons-walki {
+        margin-bottom: -7px;
+        width: 24px;
+        height: 24px;
+    }
+    .walking-distance-title strong {
+        font-size: 48px;
+        line-height: 86%;
+    }
+    .walking-distance-href {
+        padding: 8px 12px;
+        max-width: max-content;
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -4131,6 +5268,90 @@ input[type=range]::-webkit-slider-thumb {
     .modal-gallery {
         padding: 60px 15px 20px;
     }
+    .residential-photo {
+        height: 377px;
+    }
+    .neighborhood-name img{
+        width: 24px;
+    }
+    .family-property-rel {
+        max-width: 80%;
+    }
+    .childrens-infrast-box h4 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .childrens-infrast-box {
+        border-radius: 12px;
+        padding: 12px;
+    }
+    .educational-cnt {
+        gap: 9px;
+        flex-direction: column;
+        margin-top: 24px;
+    }
+    .educational-blick {
+        max-width: 100%;
+        gap: 9px;
+    }
+    .educational-box {
+        padding: 12px 12px;
+        border-radius: 12px;
+    }
+    .educational-box ul{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .ul-info {
+        gap: 4px 8px;
+    }
+    .educational-text h4 {
+        margin: 0;
+    }
+    .another-educat ul {
+        gap: 4px 8px;
+    }
+    .residential-box h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .educational-padd {
+        padding: 20px 10px;
+    }
+
+    .ul-info li {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .ul-info li br{
+        display: none;
+    }
+    .educational-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .educational-flex ul  {
+        max-width: 100%;
+    }
+    .educational-flex ul + ul {
+        max-width: 100%;
+    }
+    .ul-info li:before {
+        top: 1px;
+    }
+    .residential-desc{
+        display: none;
+    }
+    .residential-mob{
+        display: block;
+    }
+    .walking-distance-photo img{
+      object-fit: unset;
+    }
+    .walking-distance-photo {
+        max-width: 377px;
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 575px) {
@@ -4151,11 +5372,7 @@ input[type=range]::-webkit-slider-thumb {
     .lilac-park-photo {
         justify-content: flex-start;
     }
-    .about-resid-title span {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 108%;
-    }
+
     .lilac-park-photo h3 {
         font-size: 18px;
     }
@@ -4172,9 +5389,6 @@ input[type=range]::-webkit-slider-thumb {
         padding-top: 32px;
     }
 
-    .about-resid-info > p {
-        font-size: 12px;
-    }
 
     .metro-station-min span {
         font-size: 14px;
@@ -4184,10 +5398,7 @@ input[type=range]::-webkit-slider-thumb {
         font-size: 12px;
     }
 
-    .about-resid-img img {
-        height: 248px;
-        object-fit: cover;
-    }
+
 
     .commercial-price {
         gap: 16px;
@@ -4411,7 +5622,7 @@ input[type=range]::-webkit-slider-thumb {
         line-height: 100%;
     }
 
-    .about-resid-marg {
+    .about-residential {
         margin-top: 48px;
     }
 
@@ -4432,6 +5643,112 @@ input[type=range]::-webkit-slider-thumb {
     .afi-dev-count small {
         font-size: 13px;
     }
+    .residential-box h3 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .high-materials-item {
+        margin-top: 14px;
+        gap: 12px;
+    }
+    .high-materials-name h4 {
+        font-size: 12px;
+    }
+    .high-materials-name p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .neighborhood-box:nth-child(1) .neighborhood-name,
+    .neighborhood-box:nth-child(2) .neighborhood-name{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .residential-cnt {
+        margin-top: 22px;
+    }
+    .neighborhood-name span {
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .apart-keys-photo-first {
+
+        display: none;
+    }
+    .apart-keys-photo-last img {
+        border-radius: 16px;
+    }
+    .cozy-quarter-text ul li {
+        font-size: 12px;
+    }
+    .cozy-quarter-info h4 {
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .mfc-afi-park{
+        display: none;
+    }
+    .mfc-afi-photo img{
+        object-position: left;
+    }
+    .family-property-text span {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .family-property-rel {
+        max-width: 77%;
+        height: 518px;
+    }
+
+    .family-property-rel:before {
+        left: -40px;
+    }
+    .family-property-camera {
+        left: -77px;
+        top: 190px;
+        max-width: 149px;
+    }
+    .childrens-infrast-flex {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .childrens-infrast-info {
+        padding: 32px 10px;
+    }
+    .childrens-infrast-box h4{
+        font-size: 13px;
+    }
+    .childrens-infrast-box h4 br{
+        display: none;
+    }
+    .family-property-name {
+        margin-top: 7px;
+    }
+    .childrens-infrast-box ul {
+        margin-top: 14px;
+    }
+    .educational-text h4 {
+        font-size: 13px;
+        line-height: 123%;
+    }
+    .ul-info li {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .educational-box span {
+        font-size: 12px;
+    }
+    .educational-box h4 {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 6px;
+    }
+
+
+
 }
 @media (max-width: 410px){
     .apartments-photo-fav strong {

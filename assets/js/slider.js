@@ -270,6 +270,24 @@ let galleryModSlider = new Swiper(".gallery-mod-slider", {
 
 
 
+let residentialSlider = new Swiper(".residential-slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    speed: 600,
+    pagination: {
+        el: ".residential-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".residential-button-next",
+        prevEl: ".residential-button-prev",
+    }
+});
+
+
+
+
 
 
 

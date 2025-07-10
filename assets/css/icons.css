@@ -102,3 +102,38 @@ i{
 .moscow-metro{
     content: url("../img/icons/moscow-metro.svg");
 }
+.icon-time{
+    content: url("../img/icons/time-half-pass.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.icon-camera{
+    content: url("../img/icons/video-01.svg");
+    width: 24px;
+    height: 24px;
+}
+.icon-strollers{
+    content: url("../img/icons/strollers.svg");
+    width: 24px;
+    height: 24px;
+}
+.icon-bicycle{
+    content: url("../img/icons/bicycle.svg");
+    width: 24px;
+    height: 24px;
+}
+.icon-wheelchair{
+    content: url("../img/icons/wheelchair.svg");
+    width: 24px;
+    height: 24px;
+}
+.icon-fast-wind{
+    content: url("../img/icons/fast-wind.svg");
+}
+.icon-child{
+    content: url("../img/icons/child.svg");
+}
+.icon-beach{
+    content: url("../img/icons/beach.svg");
+}
