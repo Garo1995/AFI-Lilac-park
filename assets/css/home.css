@@ -737,20 +737,16 @@ p {
 
 
 .apart-keys-photo{
-    gap: 24px;
     max-width: 920px;
     width: 100%;
     height: 100%;
 }
-
-.apart-keys-photo-first img{
-    border-radius: 36px 0 0 36px;
-
+.apart-keys-photo img{
+    border-radius: 36px;
 }
 
-.apart-keys-photo-last img{
-    border-radius: 0 36px 36px 0;
-}
+
+
 
 .cozy-quarter-info{
     max-width: 676px;
@@ -4508,6 +4504,10 @@ input[type=range]::-webkit-slider-thumb {
         margin-top: 17px;
         flex-wrap: wrap;
     }
+    .apart-keys-photo img{
+        border-radius: 16px;
+    }
+
 
     .apartments-box {
         height: 118px;
@@ -5746,8 +5746,6 @@ input[type=range]::-webkit-slider-thumb {
         line-height: 16px;
         margin-bottom: 6px;
     }
-
-
 
 }
 @media (max-width: 410px){
