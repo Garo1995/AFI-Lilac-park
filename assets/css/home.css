@@ -116,8 +116,11 @@ p {
     color: #FFFFFF;
     font-weight: 300;
     font-size: 20px;
-    line-height: 100%;
+    line-height: 120%;
     text-transform: uppercase;
+    max-width: 340px;
+    width: 100%;
+    display: inline-block;
 }
 
 .lilac-park-btn {
@@ -1917,7 +1920,7 @@ p {
     cursor: pointer;
     transition: 0.3s;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 24px;
     color:  #754ABC;
     border-radius: 10px;
 }
