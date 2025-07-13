@@ -90,7 +90,9 @@ $('.standard').on('click', function () {
 
 
 
-
+$('.filter-param-count').on('click', function () {
+    $(this).toggleClass('filter-param-count-act')
+})
 
 
 

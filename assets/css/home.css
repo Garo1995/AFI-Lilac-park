@@ -1894,6 +1894,38 @@ p {
     position: relative;
 
 }
+.param-filter-field{
+    gap: 20px;
+    margin-top: 20px;
+}
+.param-filter-label{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: #1A1A1A;
+}
+.param-filter-rooms{
+    gap: 5px;
+}
+.filter-param-count{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 36px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+    font-size: 20px;
+    color:  #754ABC;
+    border-radius: 10px;
+}
+.filter-param-count-act{
+    background: #754ABC;
+    color: #FFFFFF;
+}
+
 
 .filter-search-btn {
     display: flex;
