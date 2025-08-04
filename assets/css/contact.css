@@ -31,7 +31,7 @@
 .page-contact-box .btn{
     width: 100%;
 }
-.page-contact-box:first-child .btn{
+.page-contact-box:nth-child(2) .btn{
     margin-top: 40px;
 }
 .page-contact-map{
@@ -120,7 +120,7 @@
         top: 24px;
     }
 
-    .page-contact-box:first-child .btn {
+    .page-contact-box:nth-child(2) .btn {
         margin-top: 33px;
     }
 
@@ -131,8 +131,9 @@
 @media (max-width: 1300px){
     .page-contact-fl {
         margin-top: 48px;
-        gap: 16px;
+        gap: 24px;
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
     .page-contact-box {
         max-width: 340px;
@@ -145,6 +146,7 @@
         top: 0;
         position: relative;
         margin-bottom: 16px;
+        width: max-content;
     }
     .page-contact-map{
         flex-direction: column;
@@ -164,13 +166,13 @@
         height: 10px;
 
     }
-    .page-contact-box:first-child .btn {
+    .page-contact-box:nth-child(2) .btn {
         margin-top: 24px;
     }
 }
 
 @media (max-width: 767px){
-    .page-contact-box:first-child .btn {
+    .page-contact-box:nth-child(2) .btn {
         margin-top: 0;
     }
 }
